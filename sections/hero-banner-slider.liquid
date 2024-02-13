@@ -18,14 +18,13 @@
 
 {% capture slider-options-data %}
           {
-          autoplay : {{ section.settings.slider_autoplay }},
-          interval : {{ section.settings.slider_autoplay_duration }},
-          type : "{{ section.settings.slide_animation }}",
-          pagination : {{ section.settings.slide_dots }},
-          arrows : {{ section.settings.slide_arrows }},
-          rewind : {{ section.settings.infinite_scroll }}
+          "autoplay" : {{ section.settings.slider_autoplay }},
+          "interval" : {{ section.settings.slider_autoplay_duration }},
+          "type" : "{{ section.settings.slide_animation }}",
+          "pagination" : {{ section.settings.slide_dots }},
+          "arrows" : {{ section.settings.slide_arrows }},
+          "rewind" : {{ section.settings.infinite_scroll }}
         }
-  
 {% endcapture %}  
 
 
