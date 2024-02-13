@@ -3504,7 +3504,9 @@ details-disclosure > details {
   overflow: hidden;
 }
 
-.align-start,justify-start {
+.align-start {
   align-self : start
 }
-
+.justify-start{
+  justify-self : start
+}
