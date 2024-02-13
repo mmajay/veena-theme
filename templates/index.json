@@ -45,6 +45,7 @@
         "banner_EaEAPH": {
           "type": "banner",
           "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/1.png",
             "banner_caption": "",
             "banner_heading": "Elevate your wardrobe with our limited-time fashion offer!",
             "banner_button_text": "",
