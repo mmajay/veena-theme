@@ -43,7 +43,7 @@
 }
 
 
-.splide__arrow--prev{
+.slide-section .splide__arrow--prev{
   top: inset;
   transform : unset;
   bottom: 0;
