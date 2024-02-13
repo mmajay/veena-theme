@@ -48,12 +48,7 @@
                       {% endif %}  
                       {% if block.settings.banner_heading != blank %}
                         <h2 class="h1">{{ block.settings.banner_heading }} 
-                          {% if block.settings.banner_heading_link_text != blank %}
-                            <a href="{{ block.settings.banner_heading_link }}" > {{ block.settings.banner_heading_link_text }}</a>
-                          {% endif %}
-                          {% if block.settings.banner_heading_end_text != blank %}
-                            {{ block.settings.banner_heading_end_text }}
-                          {% endif %}  
+                          {{ block.settings.banner_heading }}
                         </h2>
                       {% endif %}  
                       {% if block.settings.banner_button_text != blank %}
@@ -138,37 +133,10 @@
           "default" : "Women's Apparel"
         },
         {
-          "type": "text",
+          "type": "richtext",
           "id" : "banner_heading",
           "label" : "Banner Heading",
-          "default" : "Elevate your wardrobe with our "
-        },
-        {
-          "type": "text",
-          "id" : "banner_heading_link_text",
-          "label" : "Banner Heading Link Text",
-          "default" : "limited-time"
-        },
-        {
-          "type": "url",
-          "id" : "banner_heading_link",
-          "label" : "Banner Heading Link"
-        },
-        {
-          "type": "text",
-          "id" : "banner_heading_end_text",
-          "label" : "Banner Heading End Text",
-          "default" : " fashion offer! "
-        },
-        {
-          "type": "text",
-          "id" : "banner_button_text",
-          "label" : "Button Text"
-        },
-        {
-          "type" : "url",
-          "id" : "banner_button_link",
-          "label" : "Button Link"
+          "default" : "<p>Elevate your wardrobe with our<p>"
         },
         {
           "type": "color_scheme",
