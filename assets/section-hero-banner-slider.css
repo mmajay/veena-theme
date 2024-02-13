@@ -47,6 +47,9 @@
   top: unset;
   bottom: 0;
   transform : unset;
-  background: none;
-  color: #fff;
+}
+
+.slide-section .splide__arrows .splide__arrow--prev svg{
+  fill : #fff;
+  
 }
