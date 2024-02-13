@@ -46,4 +46,5 @@
 .splide__arrows .splide__arrow--prev{
   top: unset;
   bottom: 0;
+  transform : unset;
 }
