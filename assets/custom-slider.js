@@ -6,11 +6,7 @@ class CustomSlider extends HTMLElement {
   }
 
   mountSplider() {
-    new Splide(this.splideEl, {
-      perPage: 4,
-      gap: "20px",
-      pagination: false,
-    }).mount();
+    new Splide(this.splideEl).mount();
   }
 }
 
