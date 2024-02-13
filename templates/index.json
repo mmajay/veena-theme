@@ -53,7 +53,7 @@
             "banner_button_text": "Explore more",
             "banner_button_link": "",
             "banner_color_scheme": "scheme_1",
-            "text_alignment": "left",
+            "text_alignment": "center",
             "vertical_alignment": "center",
             "horizantal_alignment": "center",
             "slider_autoplay": "true",
