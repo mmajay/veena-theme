@@ -23,7 +23,9 @@
         <div class="splide__track">
           <ul class="splide__list">
             {% for block in section.blocks %}
-              <li class="splide__slide">{{ block.settings.banner_heading }}</li>
+              <li class="splide__slide">
+                {% render "responsive-image" desktopImage: block.settings.desktop_image, mobileImage: block.settings.mobile_image, class:"media media--square"  %}
+              </li>
             {% endfor %}  
           </ul>
         </div>
@@ -68,7 +70,7 @@
       "name": "Banner",
       "type": "banner",
       "settings": [
-           {
+        {
       "type" : "header",
       "content" : "Image Settings"
     },
