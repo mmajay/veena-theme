@@ -92,12 +92,12 @@
         "banner_G6GNmM"
       ],
       "settings": {
-        "slider_autoplay": false,
+        "slider_autoplay": true,
         "slide_dots": true,
         "slide_arrows": false,
         "infinite_scroll": false,
         "slide_animation": "fade",
-        "slider_autoplay_duration": 3000,
+        "slider_autoplay_duration": 1000,
         "padding_top": 0,
         "padding_bottom": 0
       }
