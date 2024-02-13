@@ -49,6 +49,7 @@
   transform : unset;
   background: none;
   cursor: pointer;
+  left: 40%;
 }
 
 .slide-section .splide__arrows .splide__arrow--prev svg{
@@ -61,6 +62,7 @@
   transform : unset;
   background: none;
   cursor: pointer;
+  right: 40%;
 }
 
 .slide-section .splide__arrows .splide__arrow--next svg{
