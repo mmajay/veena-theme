@@ -24,7 +24,9 @@
           <ul class="splide__list">
             {% for block in section.blocks %}
               <li class="splide__slide">
-                {% render "responsive-image" desktopImage: block.settings.desktop_image, mobileImage: block.settings.mobile_image, class:""  %}
+                <div class="hero-banner-slider__image-container">
+                  {% render "responsive-image" desktopImage: block.settings.desktop_image, mobileImage: block.settings.mobile_image, class:""  %}
+                </div>
               </li>
             {% endfor %}  
           </ul>
@@ -173,6 +175,22 @@
       }
     ],
     "default": "center"
+    },
+    {
+      "type": "select",
+      "id": "slider_autoplay",
+      "label": "Slider Autoplay",
+      "options": [
+      {
+        "value": "true",
+        "label": "Yes"
+      },
+      {
+        "value": "false",
+        "label": "No"
+      }
+    ],
+    "default": "true"
     }
   ]
   }
