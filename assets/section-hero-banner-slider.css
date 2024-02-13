@@ -47,10 +47,10 @@
   top: unset;
   bottom: 0;
   transform : unset;
+  background: none;
 }
 
 .slide-section .splide__arrows .splide__arrow--prev svg{
   fill : #fff;
-  background: transparent;
   
 }
