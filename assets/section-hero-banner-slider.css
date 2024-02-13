@@ -96,7 +96,7 @@
 
 .splide__pagination {
         position: absolute;
-        bottom: 60px; /* Adjust as needed */
+        bottom: 2%; /* Adjust as needed */
         left: 50%; /* Center horizontally */
         transform: translateX(-50%);
     }
