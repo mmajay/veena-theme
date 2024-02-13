@@ -95,8 +95,7 @@
         "banner_G6GNmM"
       ],
       "settings": {
-        "show_autoplay": false,
-        "slider_autoplay_duration": 2000,
+        "slider_autoplay_duration": 3000,
         "padding_top": 0,
         "padding_bottom": 0
       }
