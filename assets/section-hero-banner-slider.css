@@ -1,5 +1,6 @@
 .hero-banner-slider__slide{
   position:relative;
+  padding:20px;
 }
 
 .hero-banner-slider__image-container img{
