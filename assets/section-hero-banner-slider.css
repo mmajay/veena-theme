@@ -44,7 +44,7 @@
 
 
 .slide-section .splide__arrow .splide__arrow--prev{
-  top: inset;
+  top: unset;
   transform : unset;
   bottom: 0;
 }
