@@ -88,8 +88,8 @@
             "banner_button_link": "#",
             "banner_color_scheme": "scheme_1",
             "text_alignment": "left",
-            "vertical_alignment": "center",
-            "horizantal_alignment": "center",
+            "vertical_alignment": "end",
+            "horizantal_alignment": "start",
             "slider_autoplay": "true",
             "slider_autoplay_duration": 2000
           }
