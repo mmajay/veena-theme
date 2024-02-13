@@ -48,6 +48,7 @@
   bottom: 0;
   transform : unset;
   background: none;
+  cursor: pointer;
 }
 
 .slide-section .splide__arrows .splide__arrow--prev svg{
