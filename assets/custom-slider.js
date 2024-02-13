@@ -8,7 +8,7 @@ class CustomSlider extends HTMLElement {
   }
 
   mountSplider() {
-    new Splide(this.splideEl).mount();
+    new Splide(this.splideEl,this.options).mount();
   }
 }
 
