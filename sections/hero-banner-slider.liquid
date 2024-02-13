@@ -16,7 +16,7 @@
 
 {% endstyle %}
 
-{% capture slide %}
+{% capture slider-options-data %}
           {
           "autoplay" : {{ section.settings.slider_autoplay }},
           "interval" : {{ section.settings.slider_autoplay_duration }},
@@ -32,7 +32,7 @@
 <div class="hero-banner-slider padding-{{ section.id }} slide-section">
   <div class="page-width">
     <custom-slider>
-      <section class="splide cutom-border-radius" aria-label="Slide Show" data-slider-options='{{ slide }}'>
+      <section class="splide cutom-border-radius" aria-label="Slide Show" data-slider-options='{{ slider-options-data }}'>
         <div class="splide__track">
           <ul class="splide__list">
             {% if section.blocks != blank %} 
@@ -72,16 +72,6 @@
           </ul>
         </div>
       </section>
-      <script>
-        {
-          "autoplay" : {{ section.settings.slider_autoplay }},
-          "interval" : {{ section.settings.slider_autoplay_duration }},
-          "type" : "{{ section.settings.slide_animation }}",
-          "pagination" : {{ section.settings.slide_dots }},
-          "arrows" : {{ section.settings.slide_arrows }},
-          "rewind" : {{ section.settings.infinite_scroll }}
-        }
-      </script>
     </custom-slider>
   </div>
 </div>
