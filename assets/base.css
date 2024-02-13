@@ -3520,10 +3520,10 @@ details-disclosure > details {
   justify-content : start;
 }
 
-.justify-start{
+.justify-center{
   justify-content : center;
 }
 
-.justify-start{
+.justify-end{
   justify-content : end;
 }
