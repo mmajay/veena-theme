@@ -1,5 +1,3 @@
-console.log("jay")
-
 class CustomSlider extends HTMLElement {
   constructor() {
     super();
