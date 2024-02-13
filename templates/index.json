@@ -41,6 +41,24 @@
     },
     "hero_banner_slider_hMhRdj": {
       "type": "hero-banner-slider",
+      "blocks": {
+        "banner_EaEAPH": {
+          "type": "banner",
+          "settings": {
+            "banner_caption": "",
+            "banner_heading": "Elevate your wardrobe with our limited-time fashion offer!",
+            "banner_button_text": "",
+            "banner_button_link": "",
+            "banner_color_scheme": "scheme_1",
+            "text_alignment": "left",
+            "vertical_alignment": "center",
+            "horizantal_alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "banner_EaEAPH"
+      ],
       "settings": {
         "padding_top": 36,
         "padding_bottom": 36
