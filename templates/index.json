@@ -87,12 +87,27 @@
             "vertical_alignment": "end",
             "horizantal_alignment": "start"
           }
+        },
+        "banner_XR4FGC": {
+          "type": "banner",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/1.png",
+            "banner_caption": "Women's Apparel",
+            "banner_heading": "<p> Elevate your wardrobe with our limited-time fashion offer! <\/p><p><\/p>",
+            "banner_button_text": "Explore more",
+            "banner_button_link": "",
+            "banner_color_scheme": "scheme_1",
+            "text_alignment": "left",
+            "vertical_alignment": "center",
+            "horizantal_alignment": "center"
+          }
         }
       },
       "block_order": [
         "banner_NmdDyR",
         "banner_FchdrT",
-        "banner_G6GNmM"
+        "banner_G6GNmM",
+        "banner_XR4FGC"
       ],
       "settings": {
         "slider_autoplay": "true",
