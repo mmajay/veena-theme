@@ -3505,8 +3505,8 @@ details-disclosure > details {
 }
 
 .align-start {
-  align-self : start
+  align-self : center
 }
 .justify-start{
-  justify-self : start
+  justify-self : center
 }
