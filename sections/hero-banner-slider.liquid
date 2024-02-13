@@ -1,3 +1,5 @@
+<script src="{{ "custom-slider.js" | asset_url }}" defer></script>
+
 {% style %}
   .padding-{{ section.id }} {
       padding-top: {{ section.settings.padding_top | divided_by: 2 }}px;
@@ -15,7 +17,19 @@
 
 
 <div class="hero-banner-slider padding-{{ section.id }}">
-  
+  <div class="page-width">
+    <custom-slider>    
+      <section class="splide" aria-label="Splide Basic HTML Example">
+        <div class="splide__track">
+          <ul class="splide__list">
+              <li class="splide__slide">Slide 01</li>
+              <li class="splide__slide">Slide 02</li>
+              <li class="splide__slide">Slide 03</li>
+          </ul>
+        </div>
+      </section> 
+    </custom-slider>
+  </div>
 </div>
 
 
