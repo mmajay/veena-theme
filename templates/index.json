@@ -53,9 +53,7 @@
             "banner_button_text": "Explore More",
             "banner_button_link": "#",
             "banner_color_scheme": "scheme-1",
-            "text_alignment": "center",
-            "vertical_alignment": "end",
-            "horizantal_alignment": "center"
+            "text_alignment": "center"
           }
         },
         "banner_FchdrT": {
@@ -68,9 +66,7 @@
             "banner_button_text": "Shop Now",
             "banner_button_link": "",
             "banner_color_scheme": "scheme_1",
-            "text_alignment": "left",
-            "vertical_alignment": "center",
-            "horizantal_alignment": "start"
+            "text_alignment": "left"
           }
         },
         "banner_G6GNmM": {
@@ -83,9 +79,7 @@
             "banner_button_text": "Explore Now",
             "banner_button_link": "#",
             "banner_color_scheme": "scheme_1",
-            "text_alignment": "left",
-            "vertical_alignment": "end",
-            "horizantal_alignment": "start"
+            "text_alignment": "left"
           }
         }
       },
@@ -95,10 +89,10 @@
         "banner_G6GNmM"
       ],
       "settings": {
-        "slider_autoplay": true,
+        "slider_autoplay": false,
         "slide_dots": true,
         "slide_arrows": false,
-        "infinite_scroll": true,
+        "infinite_scroll": false,
         "slide_animation": "fade",
         "slider_autoplay_duration": 3000,
         "padding_top": 0,
