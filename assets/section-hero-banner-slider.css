@@ -27,11 +27,6 @@
   
 }
 
-.hero-banner-slider_heading {
-  position: relative;
-  text-decoration: none;
-}
-
 .hero-banner-slider_heading a::before {
   content: "";
   position: absolute;
