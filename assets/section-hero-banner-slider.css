@@ -94,8 +94,8 @@
 }
 
 
-.splide__pagination {
+.slide-section .splide__pagination {
         position: absolute;
         bottom: 3%;
-    }
+}
 
