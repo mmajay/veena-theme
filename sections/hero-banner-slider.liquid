@@ -32,9 +32,9 @@
 <div class="hero-banner-slider padding-{{ section.id }}">
   <div class="page-width">
     <custom-slider>
-      <section class="splide slide-section" aria-label="Splide Basic HTML Example">
+      <section class="splide" aria-label="Splide Basic HTML Example">
         <div class="splide__track">
-          <ul class="splide__list">
+          <ul class="splide__list slide-section">
             {% if section.blocks != blank %} 
               {% for block in section.blocks %}
                 <li class="splide__slide hero-banner-slider__slide">
