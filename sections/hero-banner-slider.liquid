@@ -36,12 +36,12 @@
                     {% endif %}  
                     {% if block.settings.banner_heading != blank %}
                       <h2 class="h1">{{ block.settings.banner_heading }} 
-                      {% if block.settings.banner_heading_link_text != blank %}
-                        <a href="{{ block.settings.banner_heading_link }}" > {{ block.settings.banner_heading_link_text }}</a>
-                      {% endif %}
-                      {% if block.settings.banner_heading_end_text != blank %}
-                        {{ block.settings.banner_heading_end_text }}
-                      {% endif %}  
+                        {% if block.settings.banner_heading_link_text != blank %}
+                          <a href="{{ block.settings.banner_heading_link }}" > {{ block.settings.banner_heading_link_text }}</a>
+                        {% endif %}
+                        {% if block.settings.banner_heading_end_text != blank %}
+                          {{ block.settings.banner_heading_end_text }}
+                        {% endif %}  
                       </h2>
                     {% endif %}  
                     {% if block.settings.banner_button_text != blank %}
