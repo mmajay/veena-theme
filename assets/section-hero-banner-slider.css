@@ -70,5 +70,6 @@
 }
 
 .splide__pagination__page{
-  width: 20px;
+  top: unset;
+  bottom: 3%;
 }
