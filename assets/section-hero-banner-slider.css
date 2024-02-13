@@ -68,3 +68,7 @@
 .slide-section .splide__arrows .splide__arrow--next svg{
   fill : #fff;
 }
+
+.splide__pagination__page{
+  width: 20px;
+}
