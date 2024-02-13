@@ -16,6 +16,11 @@
   border : 1px solid #fff;
 }
 
+.hero-banner-slider_heading a{
+  text-decoration: none;
+  
+}
+
 .hero-banner-slider__text-container{
   display : flex;
   flex-direction : column;
