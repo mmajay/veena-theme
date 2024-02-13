@@ -9,14 +9,12 @@
   object-position : center;
 }
 
-.hero-banner-slider__caption{
-  /* padding: 0 13px 0 30px; */
-  border-radius: 30px;
-  /* display:inline-block; */
-  list-style: disc;
-  border : 1px solid #fff;
+.hero_banner__caption-text{
+  display: inline-block;
+  padding: 0 13px 0 30px;
+  border: 1px solid #fff;
+  
 }
-
 
 .hero-banner-slider_heading h1 a{
   text-decoration: none;
