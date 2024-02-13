@@ -70,6 +70,8 @@
 
 .slide-section .splide__arrows .splide__arrow--next svg{
   fill : #fff;
+  height: 44px;
+  width: 44px;
 }
 
 .slider-counter__link--active.slider-counter__link--dots .dot {
