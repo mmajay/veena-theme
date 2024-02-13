@@ -12,7 +12,7 @@
 .hero-banner-slider__caption{
   padding: 0 13px 0 30px;
   border-radius: 30px;
-  list-style-type:disc;
+  list-style: disc;
   display:inline-block;
   border : 1px solid #fff;
 }
