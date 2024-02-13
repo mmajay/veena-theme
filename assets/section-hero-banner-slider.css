@@ -1,6 +1,5 @@
 .hero-banner-slider__slide{
   position:relative;
-  padding:20px;
 }
 
 .hero-banner-slider__image-container img{
@@ -58,7 +57,7 @@
 
 }
 
-.slide-section .splide__arrows .splide__arrow--prev svg{
+.slide-section .splide__arrows .splide__arrow--prev svg,.slide-section .splide__arrows .splide__arrow--next svg{
   fill : #fff;
   height: 44px;
   width: 44px;
@@ -73,11 +72,11 @@
   right: 40%;
 }
 
-.slide-section .splide__arrows .splide__arrow--next svg{
+/* .slide-section .splide__arrows .splide__arrow--next svg{
   fill : #fff;
   height: 44px;
   width: 44px;
-}
+} */
 
 .slide-section .slider-counter__link--active.slider-counter__link--dots .dot {
     background-color: #fff;
