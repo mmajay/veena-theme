@@ -30,6 +30,11 @@
                       {% render "responsive-image" desktopImage: block.settings.desktop_image, mobileImage: block.settings.mobile_image, class:""  %}
                     {% endif %}  
                   </div>
+                  <div class="hero-banner-slider__text-container">
+                    {% if block.settings.banner_caption != blank %}
+                      <h2 class="h3">{{ block.settings.banner_caption }}</h2>
+                    {% endif %}  
+                  </div>
                 </li>
               {% endfor %}
             {% else %}
