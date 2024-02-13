@@ -49,7 +49,7 @@
             "desktop_image": "shopify:\/\/shop_images\/1.png",
             "mobile_image": "shopify:\/\/shop_images\/1.png",
             "banner_caption": "Women's Apparel",
-            "banner_heading": "<h2>Elevate your wardrobe with our <a href=\"#\" target=\"_blank\" title=\"#\">limited-time<\/a> fashion offer!<\/h2>",
+            "banner_heading": "<h1>Elevate your wardrobe with our <a href=\"#\" target=\"_blank\" title=\"#\">limited-time<\/a> fashion offer!<\/h1>",
             "banner_button_text": "Explore more",
             "banner_button_link": "",
             "banner_color_scheme": "scheme-1",
