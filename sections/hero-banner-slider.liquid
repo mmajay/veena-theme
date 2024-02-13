@@ -20,6 +20,12 @@
       align-items : {{ block.settings.horizantal_alignment }};
     }
 
+    .hero-banner-slider__text-alignment-{{ block.id }}{
+        text-alignment : {{ block.settings.text_alignment }};
+      }
+
+    
+
   {% endfor %}}  
 
   
@@ -42,7 +48,7 @@
                     {% endif %}  
                   </div>
                   <div class="hero-banner-slider__text-container hero-banner-slider__position-{{ block.id }}">
-                    <div class="hero-banner-slider__text-alignment">                    
+                    <div class="hero-banner-slider__text-alignment-{{ block.id }}">                    
                       {% if block.settings.banner_caption != blank %}
                         <h2 class="h3">{{ block.settings.banner_caption }}</h2>
                       {% endif %}  
