@@ -98,7 +98,9 @@
         "slider_autoplay": true,
         "slide_dots": true,
         "slide_arrows": false,
-        "slider_autoplay_duration": 5000,
+        "infinite_scroll": true,
+        "slide_animation": "fade",
+        "slider_autoplay_duration": 2000,
         "padding_top": 0,
         "padding_bottom": 0
       }
