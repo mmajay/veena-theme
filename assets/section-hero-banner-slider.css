@@ -49,7 +49,7 @@
 
 .slide-section .splide__arrows .splide__arrow--prev{
   top: unset;
-  bottom: 1%;
+  bottom: 2%;
   transform : unset;
   background: none;
   cursor: pointer;
@@ -59,8 +59,8 @@
 
 .slide-section .splide__arrows .splide__arrow--prev svg,.slide-section .splide__arrows .splide__arrow--next svg{
   fill : #fff;
-  height: 24px;
-  width: 24px;
+  height: 14px;
+  width: 14px;
 }
 
 .slide-section .splide__arrows .splide__arrow--next{
