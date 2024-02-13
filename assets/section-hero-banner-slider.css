@@ -51,6 +51,6 @@
 
 .slide-section .splide__arrows .splide__arrow--prev svg{
   fill : #fff;
-  background:none;
+  background: transparent;
   
 }
