@@ -42,6 +42,64 @@
     },
     "hero_banner_slider_hMhRdj": {
       "type": "hero-banner-slider",
+      "blocks": {
+        "banner_NmdDyR": {
+          "type": "banner",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/1.png",
+            "mobile_image": "shopify:\/\/shop_images\/1.png",
+            "banner_caption": "",
+            "banner_heading": "",
+            "banner_button_text": "",
+            "banner_button_link": "",
+            "banner_color_scheme": "scheme_1",
+            "text_alignment": "left",
+            "vertical_alignment": "center",
+            "horizantal_alignment": "center",
+            "slider_autoplay": "true",
+            "slider_autoplay_duration": 2000
+          }
+        },
+        "banner_FchdrT": {
+          "type": "banner",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/4.png",
+            "mobile_image": "shopify:\/\/shop_images\/4.png",
+            "banner_caption": "",
+            "banner_heading": "",
+            "banner_button_text": "",
+            "banner_button_link": "",
+            "banner_color_scheme": "scheme_1",
+            "text_alignment": "left",
+            "vertical_alignment": "center",
+            "horizantal_alignment": "center",
+            "slider_autoplay": "true",
+            "slider_autoplay_duration": 2000
+          }
+        },
+        "banner_G6GNmM": {
+          "type": "banner",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/3.png",
+            "mobile_image": "shopify:\/\/shop_images\/3.png",
+            "banner_caption": "",
+            "banner_heading": "",
+            "banner_button_text": "",
+            "banner_button_link": "",
+            "banner_color_scheme": "scheme_1",
+            "text_alignment": "left",
+            "vertical_alignment": "center",
+            "horizantal_alignment": "center",
+            "slider_autoplay": "true",
+            "slider_autoplay_duration": 2000
+          }
+        }
+      },
+      "block_order": [
+        "banner_NmdDyR",
+        "banner_FchdrT",
+        "banner_G6GNmM"
+      ],
       "settings": {
         "padding_top": 36,
         "padding_bottom": 36
