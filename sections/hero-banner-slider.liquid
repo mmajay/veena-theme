@@ -26,9 +26,13 @@
 
   {% endfor %}}  
 
-  
-  
 {% endstyle %}
+
+{% capture slider-options %}
+  {
+    ""
+  }
+{% endcapture %}  
 
 
 <div class="hero-banner-slider padding-{{ section.id }}">
@@ -72,6 +76,11 @@
           </ul>
         </div>
       </section> 
+      <script>
+        {
+          "autoplay" : {{ }}
+        }
+      </script>
     </custom-slider>
   </div>
 </div>
@@ -82,6 +91,32 @@
   "name": "Hero Banner Slider",
   "tag" : "section",
   "settings" : [
+            {
+          "type" : "header",
+          "content" : "Slider Settings"
+        },
+        {
+          "type": "select",
+          "id": "slider_autoplay",
+          "label": "Slider Autoplay",
+          "options": [
+          {
+            "value": "true",
+            "label": "Yes"
+          },
+          {
+            "value": "false",
+            "label": "No"
+          }
+        ],
+        "default": "true"
+        },
+        {
+          "type": "number",
+          "id": "slider_autoplay_duration",
+          "label": "Slider Autoplay Duration",
+          "default": 2000
+        },
     {
       "type" : "header",
       "content" : "Section Padding Settings"
@@ -222,32 +257,6 @@
           }
         ],
         "default": "center"
-        },
-        {
-          "type" : "header",
-          "content" : "Slider Settings"
-        },
-        {
-          "type": "select",
-          "id": "slider_autoplay",
-          "label": "Slider Autoplay",
-          "options": [
-          {
-            "value": "true",
-            "label": "Yes"
-          },
-          {
-            "value": "false",
-            "label": "No"
-          }
-        ],
-        "default": "true"
-        },
-        {
-          "type": "number",
-          "id": "slider_autoplay_duration",
-          "label": "Slider Autoplay Duration",
-          "default": 2000
         }
   ]
   }
