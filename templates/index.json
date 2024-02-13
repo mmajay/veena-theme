@@ -53,7 +53,8 @@
             "banner_button_text": "Explore More",
             "banner_button_link": "#",
             "banner_color_scheme": "scheme-1",
-            "text_alignment": "center"
+            "text_alignment": "center",
+            "alignment_position": "align-end justify-center"
           }
         },
         "banner_FchdrT": {
@@ -66,7 +67,8 @@
             "banner_button_text": "Shop Now",
             "banner_button_link": "",
             "banner_color_scheme": "scheme_1",
-            "text_alignment": "left"
+            "text_alignment": "left",
+            "alignment_position": "align-center justify-center"
           }
         },
         "banner_G6GNmM": {
@@ -79,7 +81,8 @@
             "banner_button_text": "Explore Now",
             "banner_button_link": "#",
             "banner_color_scheme": "scheme_1",
-            "text_alignment": "left"
+            "text_alignment": "left",
+            "alignment_position": "align-center justify-center"
           }
         }
       },
