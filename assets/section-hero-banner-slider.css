@@ -23,6 +23,7 @@
 
 .hero-banner-slider_heading a{
   text-decoration: none;
+  display: inline-block;
   color:inherit;
   
 }
