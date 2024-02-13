@@ -15,7 +15,8 @@
 
   {% for block in section.blocks %}
     .hero-banner-slider__position-{{ block.id }}{
-      justify-content: {{block.settings.horizantal_alignment}}
+      justify-content: {{ block.settings.horizantal_alignment }};
+      align-items : {{ block.settings.vertical_alignment }};
     }
 
   {% endfor %}}  
