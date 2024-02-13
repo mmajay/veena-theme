@@ -3517,13 +3517,13 @@ details-disclosure > details {
 }
 
 .justify-start{
-  justify-items : start;
+  justify-content : start;
 }
 
 .justify-start{
-  justify-items : center;
+  justify-content : center;
 }
 
 .justify-start{
-  justify-items : end;
+  justify-content : end;
 }
