@@ -9,6 +9,10 @@
   object-position : center;
 }
 
+.hero-banner-slider__caption{
+  padding: 0 13px 0 30px;
+}
+
 .hero-banner-slider__text-container{
   display : flex;
   flex-direction : column;
