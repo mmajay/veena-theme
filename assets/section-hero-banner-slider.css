@@ -41,3 +41,10 @@
   padding: 2rem 3.5rem;
   margin-bottom : 7rem;
 }
+
+
+.slide-section .splide__arrow--prev{
+  top: inset;
+  transform : unset;
+  bottom: 0;
+}
