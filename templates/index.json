@@ -26,6 +26,7 @@
         "heading",
         "button"
       ],
+      "disabled": true,
       "settings": {
         "image_overlay_opacity": 40,
         "image_height": "large",
@@ -59,8 +60,23 @@
         "banner_RHpm3a": {
           "type": "banner",
           "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/4.png",
             "banner_caption": "",
             "banner_heading": "Elevate your wardrobe with our limited-time fashion offer!",
+            "banner_button_text": "",
+            "banner_button_link": "",
+            "banner_color_scheme": "scheme_1",
+            "text_alignment": "left",
+            "vertical_alignment": "center",
+            "horizantal_alignment": "center"
+          }
+        },
+        "banner_zVyqr3": {
+          "type": "banner",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/3.png",
+            "banner_caption": "",
+            "banner_heading": "",
             "banner_button_text": "",
             "banner_button_link": "",
             "banner_color_scheme": "scheme_1",
@@ -72,7 +88,8 @@
       },
       "block_order": [
         "banner_EaEAPH",
-        "banner_RHpm3a"
+        "banner_RHpm3a",
+        "banner_zVyqr3"
       ],
       "settings": {
         "padding_top": 36,
