@@ -108,10 +108,13 @@
     "default": "true"
     },
     {
-      "type": "number",
+      "type": "range",
       "id": "slider_autoplay_duration",
       "label": "Slider Autoplay Duration",
-      "default": 2000
+      "min" : 1000,
+      "step":1000,
+      "max" : 8000,
+      "default": 3000
     },
     {
       "type" : "header",
