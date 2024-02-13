@@ -41,6 +41,8 @@
                   <div class="hero-banner-slider__image-container">
                     {% if block.settings.desktop_image != blank and block.settings.mobile_image != blank %}
                       {% render "responsive-image" desktopImage: block.settings.desktop_image, mobileImage: block.settings.mobile_image, class:""  %}
+                    {% else %}
+                       {{ 'hero-apparel-' | append: i | placeholder_svg_tag }}
                     {% endif %}  
                   </div>
                   <div class="hero-banner-slider__text-container hero-banner-slider__position-{{ block.id }}">
