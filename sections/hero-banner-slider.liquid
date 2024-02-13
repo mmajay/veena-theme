@@ -11,8 +11,10 @@
         padding-top: {{ section.settings.padding_top }}px;
         padding-bottom: {{ section.settings.padding_bottom }}px;
       }
-
     }
+
+  
+  
 {% endstyle %}
 
 
@@ -30,7 +32,7 @@
                       {% render "responsive-image" desktopImage: block.settings.desktop_image, mobileImage: block.settings.mobile_image, class:""  %}
                     {% endif %}  
                   </div>
-                  <div class="hero-banner-slider__text-container">
+                  <div class="hero-banner-slider__text-container hero-banner-slider__position-{{ block.id }}">
                     {% if block.settings.banner_caption != blank %}
                       <h2 class="h3">{{ block.settings.banner_caption }}</h2>
                     {% endif %}  
