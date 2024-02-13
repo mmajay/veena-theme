@@ -29,12 +29,12 @@
 {% endstyle %}
 
 
-<div class="hero-banner-slider padding-{{ section.id }} slide-section cutom-border-radius">
+<div class="hero-banner-slider padding-{{ section.id }} slide-section">
   <div class="page-width">
     <custom-slider>
       <section class="splide" aria-label="Splide Basic HTML Example">
         <div class="splide__track">
-          <ul class="splide__list">
+          <ul class="splide__list cutom-border-radius">
             {% if section.blocks != blank %} 
               {% for block in section.blocks %}
                 <li class="splide__slide hero-banner-slider__slide">
