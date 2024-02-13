@@ -28,11 +28,11 @@
 
 {% endstyle %}
 
-{% capture slider-options %}
+<!-- {% capture slider-options %}
   {
     ""
   }
-{% endcapture %}  
+{% endcapture %}   -->
 
 
 <div class="hero-banner-slider padding-{{ section.id }}">
@@ -78,7 +78,8 @@
       </section> 
       <script>
         {
-          "autoplay" : {{ }}
+          "autoplay" : {{ section.settings.slider_autoplay}},
+          "pagination" : true
         }
       </script>
     </custom-slider>
