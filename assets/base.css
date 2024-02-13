@@ -3505,8 +3505,25 @@ details-disclosure > details {
 }
 
 .align-start {
-  align-items : start
+  align-items : start;
 }
+
+.align-center {
+  align-items : center;
+}
+
+.align-end {
+  align-items : end;
+}
+
 .justify-start{
-  justify-items : start
+  justify-items : start;
+}
+
+.justify-start{
+  justify-items : center;
+}
+
+.justify-start{
+  justify-items : end;
 }
