@@ -43,7 +43,7 @@
 }
 
 
-.splide__arrow--prev{
+.splide__arrows .splide__arrow--prev{
   top: unset;
   bottom: 0;
 }
