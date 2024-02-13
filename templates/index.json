@@ -52,8 +52,8 @@
             "banner_heading": "<h2>Elevate your wardrobe with our <a href=\"#\" target=\"_blank\" title=\"#\">limited-time<\/a> fashion offer!<\/h2>",
             "banner_color_scheme": "scheme_1",
             "text_alignment": "left",
-            "vertical_alignment": "center",
-            "horizantal_alignment": "center",
+            "vertical_alignment": "start",
+            "horizantal_alignment": "start",
             "slider_autoplay": "true",
             "slider_autoplay_duration": 2000
           }
