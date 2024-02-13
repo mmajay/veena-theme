@@ -93,7 +93,7 @@
       ],
       "settings": {
         "slider_autoplay": true,
-        "slide_dots": true,
+        "slide_dots": false,
         "slide_arrows": false,
         "infinite_scroll": false,
         "slide_animation": "fade",
