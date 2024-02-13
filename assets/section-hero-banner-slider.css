@@ -10,9 +10,9 @@
 }
 
 .hero-banner-slider__caption{
-  padding: 0 13px 0 30px;
+  /* padding: 0 13px 0 30px; */
   border-radius: 30px;
-  display:inline-block;
+  /* display:inline-block; */
   list-style: disc;
   border : 1px solid #fff;
 }
