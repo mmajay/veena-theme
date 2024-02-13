@@ -78,13 +78,13 @@
   width: 44px;
 }
 
-.slider-counter__link--active.slider-counter__link--dots .dot {
+.slide-section .slider-counter__link--active.slider-counter__link--dots .dot {
     background-color: #fff;
     width: 30px;
     border-radius: 10px;
 }
 
-.slideshow-with-text .splide__pagination__page {
+.slide-section .splide__pagination__page {
   width: 10px;
   height: 10px;
   margin: 0 5px;
@@ -93,7 +93,7 @@
   transition: background-color 0.3s ease;
   border: 1px solid white;
 }
-.slideshow-with-text .splide__pagination .is-active{
+.slide-section .splide__pagination .is-active{
   width: 30px;
   border-radius: 10px;
   background-color: #fff;
