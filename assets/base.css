@@ -3501,4 +3501,5 @@ details-disclosure > details {
 
 .cutom-border-radius{
   border-radius:16px;
+  overflow: hidden;
 }
