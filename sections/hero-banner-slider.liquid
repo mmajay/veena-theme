@@ -34,10 +34,10 @@
     <custom-slider>
       <section class="splide cutom-border-radius" aria-label="Slide Show">
         <div class="splide__track">
-          <ul class="splide__list pad">
+          <ul class="splide__list">
             {% if section.blocks != blank %} 
               {% for block in section.blocks %}
-                <li class="splide__slide hero-banner-slider__slide">
+                <li class="splide__slide hero-banner-slider__slide pad">
                   <div class="hero-banner-slider__image-container">
                     {% if block.settings.desktop_image != blank and block.settings.mobile_image != blank %}
                       {% render "responsive-image" desktopImage: block.settings.desktop_image, mobileImage: block.settings.mobile_image, class:""  %}
