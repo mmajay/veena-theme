@@ -69,7 +69,6 @@
   fill : #fff;
 }
 
-.splide__pagination__page{
-  top: unset;
-  bottom: 3%;
+.slider-counter__link{
+  padding :0 2rem;
 }
