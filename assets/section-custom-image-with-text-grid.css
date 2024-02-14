@@ -33,11 +33,11 @@
 
 }
 
-.custom-image-with-text-grid__position-rel:hover{
-  .custom-image-with-text-grid__image-container img{
+.custom-image-with-text-grid__position-rel:hover img{
+  
      transform: scale(1.1);
     
-  }
+  
 }
 
 .animation-heading__button:hover {
