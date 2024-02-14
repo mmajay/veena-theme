@@ -15,7 +15,7 @@
   margin: 0;
 }
 
-.custom-richtext {
+/* .custom-richtext {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -23,8 +23,8 @@
 }
 .custom-richtext__text {
   width: 50%;
-  /* margin-bottom: 50px; */
-}
+  margin-bottom: 50px;
+} */
 .custom-richtext__heading a {
   opacity: 0;
   text-decoration: none;
@@ -52,9 +52,6 @@
   background-image: linear-gradient(to right, transparent 50%, black 50%);
   background-size: 200% 100%;
   transition: background-position 0.3s ease-in-out;
-}
-.custom-richtext__heading {
-  /* margin-bottom: 50px; */
 }
 
 .letter {
