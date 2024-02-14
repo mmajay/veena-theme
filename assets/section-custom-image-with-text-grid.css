@@ -10,9 +10,16 @@
   display:flex;
 }
 
+
 .custom-image-with-text-grid__image-container{
   position : relative;
-  padding-bottom : 45%;
+  padding-bottom : 60%;
+}
+
+@media screen and (min-width: 750px){
+  .custom-image-with-text-grid__image-container{
+    padding-bottom: 45%
+  }
 }
 
 .custom-image-with-text-grid__image-container img{
