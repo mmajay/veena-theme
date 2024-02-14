@@ -3590,7 +3590,7 @@ details-disclosure > details {
   display: inline-block;
   padding: 8px 20px;
   border-radius: 10rem;
-  color: #000;
+  color: #fff;
   text-transform: capitalize;
   transition: all 0.3s;
   position: relative;
@@ -3617,13 +3617,13 @@ details-disclosure > details {
 	 left: 0;
 	 width: 0%;
 	 height: 100%;
-	 background-color: #F5F5F5;
+	 background-color: #000;
 	 transition: all 0.3s;
 	 border-radius: 10rem;
 	 z-index: -1;
 }
  .custom-button-secondary:hover {
-	 color: #d03c3f;
+	 color: #fff;
 }
  .custom-button-secondary:hover:before {
 	 width: 100%;
