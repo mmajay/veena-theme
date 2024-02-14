@@ -44,8 +44,8 @@
                        {{ 'hero-apparel-1' | placeholder_svg_tag }}
                     {% endif %}  
                   </div>
-                  <div class="hero-banner-slider__text-container {{ block.settings.alignment_position }}">
-                    <div class="hero-banner-slider_text hero-banner-slider__text-alignment-{{ block.id }} {{ block.settings.text_alignment }} ">                    
+                  <div class="hero-banner-slider__text-container {{ block.settings.alignment_position }} {{ block.settings.mobile_alignment_position }}">
+                    <div class="hero-banner-slider_text hero-banner-slider__text-alignment-{{ block.id }} {{ block.settings.text_alignment }}  ">                    
                       {% if block.settings.banner_caption != blank %}
                         <ul class="hero_banner__caption-text">
                           <li class="h3 hero-banner-slider__caption"> {{ block.settings.banner_caption }} </li>
@@ -244,6 +244,54 @@
           "type" : "select",
           "id" : "alignment_position",
           "label" : "Desktop content position",
+          "options" : [
+            {
+              "value" : "align-start justify-start",
+              "label" : "Top left"
+            },
+            {
+              "value" : "align-start justify-center",
+              "label" : "Top center"
+            },
+            {
+              "value" : "align-start justify-end",
+              "label" : "Top right"
+            },
+            {
+              "value" : "align-center justify-start",
+              "label" : "Middle left"
+            },
+            {
+              "value" : "align-center justify-center",
+              "label" : "Middle center"
+            },
+            {
+              "value" : "align-center justify-end",
+              "label" : "Middle right"
+            },
+            {
+              "value" : "align-end justify-start",
+              "label" : "Bottom left"
+            },
+            {
+              "value" : "align-end justify-center",
+              "label" : "Bottom center"
+            },
+            {
+              "value" : "align-end justify-end",
+              "label" : "Bottom end"
+            }
+          ],
+          "default": "align-center justify-center"
+        },
+        {
+          "type": "header",
+          "content" : "Mobile content poisition"
+        },
+        {
+          "type" : "select",
+          "id" : "mobile_alignment_position",
+          "label" : "Mobile content position",
           "options" : [
             {
               "value" : "align-start justify-start",
