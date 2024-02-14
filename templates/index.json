@@ -106,16 +106,16 @@
     "custom_rich_text_UWGyxp": {
       "type": "custom-rich-text",
       "blocks": {
-        "heading_rVJJ8E": {
+        "heading_LRKwhy": {
           "type": "heading",
           "settings": {
-            "heading": "Talk about your brand",
+            "heading": "",
             "heading_size": "h2"
           }
         }
       },
       "block_order": [
-        "heading_rVJJ8E"
+        "heading_LRKwhy"
       ],
       "settings": {
         "content_position": "justify-start",
