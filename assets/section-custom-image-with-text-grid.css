@@ -20,11 +20,11 @@
 }
 
 .image-landscape{
-  padding-bottom: 100%;
+  padding-bottom: 70%;
 }
 
 .image-potrait{
-  padding-bottom: 100%;
+  padding-bottom: 140%;
 }
 
 @media screen and (min-width: 750px){
