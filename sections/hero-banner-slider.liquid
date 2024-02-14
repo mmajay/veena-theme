@@ -37,7 +37,7 @@
             {% if section.blocks != blank %} 
               {% for block in section.blocks %}
                 <li class="splide__slide hero-banner-slider__slide">
-                  <div class="hero-banner-slider__image-container media media--square">
+                  <div class="hero-banner-slider__image-container">
                     {% if block.settings.desktop_image != blank and block.settings.mobile_image != blank %}
                       {% render "responsive-image" desktopImage: block.settings.desktop_image, mobileImage: block.settings.mobile_image %}
                     {% else %}
