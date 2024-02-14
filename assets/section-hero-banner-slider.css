@@ -141,10 +141,10 @@
 }
 
 
-.scroll-line-animation a {
+.rich-text-wrapper__heading a {
     position: relative;
   }
-.scroll-line-animation a::before {
+  .rich-text-wrapper__heading a::before {
     content: "";
     position: absolute;
     background-color: #D03C3F;
@@ -152,18 +152,17 @@
     left: 0;
     width: 0;
     height: 3px;
-    transition: width 0.3s ease;
+    transition: width 0.5s ease-in-out;
     z-index: -1;
   }
-  .scroll-line-animation a:hover::before {
+  .rich-text-wrapper__heading a:hover::before {
     width: 100%;
   }
-  .scroll-line-animation a:not(:hover)::before {
+  .rich-text-wrapper__heading a:not(:hover)::before {
     width: 0;
     right: 0;
     left: auto;
-}
-
+  }
 
 
 
