@@ -3542,7 +3542,7 @@ details-disclosure > details {
 /* Scroll Line Animation End */
 
 /*  Button Styles */
-
+/* 
 .custom-button-primary {
   display: inline-block;
   padding: 8px 20px;
@@ -3586,7 +3586,7 @@ details-disclosure > details {
 	 width: 100%;
 }
 
-.custom-button-primary {
+.custom-button-secondary {
   display: inline-block;
   padding: 8px 20px;
   border-radius: 10rem;
@@ -3599,7 +3599,7 @@ details-disclosure > details {
   font-size: 16px;
   text-decoration: none;
 }
- .custom-button-primary:after {
+ .custom-button-secondary:after {
 	 content: '';
 	 position: absolute;
 	 bottom: 0;
@@ -3610,7 +3610,7 @@ details-disclosure > details {
 	 border-radius: 10rem;
 	 z-index: -2;
 }
- .custom-button-primary:before {
+ .custom-button-secondary:before {
 	 content: '';
 	 position: absolute;
 	 bottom: 0;
@@ -3622,12 +3622,12 @@ details-disclosure > details {
 	 border-radius: 10rem;
 	 z-index: -1;
 }
- .custom-button-primary:hover {
+ .custom-button-secondary:hover {
 	 color: #d03c3f;
 }
- .custom-button-primary:hover:before {
+ .custom-button-secondary:hover:before {
 	 width: 100%;
-}
+} */
  */
 /*  Button Styles End */
 
