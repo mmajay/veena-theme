@@ -107,7 +107,7 @@
       "type": "custom-rich-text-section",
       "settings": {
         "pre_heading": "What You Wear",
-        "heading": "<h1>Fashion Emerges <br\/>As A Universal Language<\/h1>",
+        "heading": "<h1>Fashion Emerges <br\/>As A Universal <a href=\"#\" title=\"#\">Language<\/a><\/h1>",
         "button_text": "Explore More",
         "button_link": "",
         "color_scheme": "scheme-2",
