@@ -75,32 +75,33 @@
       {
         "type" : "heading",
         "name" : "Block",
+        "limit" : 3,
         "settings" : [
-          {
-            "type" : "text",
-            "id" : "pre_heading",
-            "label" : "Pre Heading"
-          },
           {
             "type" : "inline_richtext",
             "id" : "heading",
-            "label" : "Heading"
+            "label" : "Pre Heading"
           },
           {
-            "type" : "richtext",
-            "id" : "description",
-            "label" : "Description"
-          },
-          {
-            "type" : "text",
-            "id" : "button_text",
-            "label" : "Button text"
-          },
-          {
-            "type" : "url",
-            "id" : "button_link",
-            "label" : "Button link"
-          }
+            "type" : "select",
+            "id" : "heading_size",
+            "label" : "Heading Size" ,
+            "options" : [
+              {
+                "value" : "h2",
+                "label" : "small"
+              },
+              {
+                "value" : "h1",
+                "label" : "medium"
+              },
+              {
+                "value" : "h0",
+                "label" : "large"
+              }
+            ],
+            "default" : "h2"
+           }
         ]
       }
     ],
