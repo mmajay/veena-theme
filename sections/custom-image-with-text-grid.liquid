@@ -35,7 +35,12 @@
               <div class="custom-image-with-text-grid__text-align {{ block.settings.text_alignment }}">
                 
                 {% if block.settings.caption != blank %}
-                  <h2 class="h3 caption-text"> {{ block.settings.caption }} </h2>
+                  <ul>
+                    <li>
+                     {{ block.settings.caption }} 
+                      
+                    </li>
+                  </ul>
                 {% endif %}
               
                 {% if block.settings.heading != blank %}
