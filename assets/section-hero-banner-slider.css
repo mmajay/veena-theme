@@ -144,7 +144,7 @@
 .scroll-line-animation a {
     position: relative;
   }
-  .scroll-line-animation a::before {
+.scroll-line-animation a::before {
     content: "";
     position: absolute;
     background-color: #D03C3F;
@@ -164,23 +164,6 @@
     left: auto;
 }
 
-
-
-.custom-button-primary:hover, .custom-button-primary:focus {
-	 box-shadow: inset 14.5rem 0 0 0 #66c887;
-}
-
-.custom-button-primary  {
-	 background: #000;
-	 border: none;
-	 font: inherit;
-	 line-height: 1;
-	 margin: 0.5em;
-	 padding: 1em 2em;
-   color: #fff;
-   border-radius: 130px;
-	 transition: 0.25s;
-}
 
 
 
