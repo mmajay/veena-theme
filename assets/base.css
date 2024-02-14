@@ -3528,15 +3528,3 @@ details-disclosure > details {
   justify-content : end;
 }
 
-
-@media (min-width:750px){
-  .l-left{
-    text-align : left;
-  }
-  .l-center{
-    text-align : center;
-  }
-  .l-right{
-    text-align : right;
-  }
-}
