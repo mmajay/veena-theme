@@ -25,7 +25,7 @@
           <div class="grid__item custom-image-with-text-grid__position-rel">
             {% if block.settings.desktop_image != blank %}
               <div class="custom-image-with-text-grid__image-container">
-                {% render "responsive-image", desktopImage:block.settings.desktop_image, mobileImage: block.settings.mobile_image  %}
+                {% render "responsive-image", desktopImage:block.settings.desktop_image, mobileImage: block.settings.mobile_image, class="media media--landscape"  %}
               </div>
             {% else %}
               {{ "detailed-apparel-1" | placeholder_svg_tag }}
