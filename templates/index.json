@@ -103,10 +103,10 @@
         "padding_bottom": 36
       }
     },
-    "custom_rich_text_section_AFnzEr": {
+    "custom_rich_text_section_fABLJV": {
       "type": "custom-rich-text-section",
       "settings": {
-        "pre_heading": "nmbgf",
+        "pre_heading": "",
         "heading": "",
         "button_text": "",
         "button_link": "",
@@ -119,6 +119,6 @@
   "order": [
     "hero_banner_slider_hMhRdj",
     "custom_image_with_text_grid_cH7kLX",
-    "custom_rich_text_section_AFnzEr"
+    "custom_rich_text_section_fABLJV"
   ]
 }
