@@ -107,11 +107,6 @@
   bottom: 3%;
 }
 
-.hero-banner-slider_heading{
-  font-size: 24px;
-}
-
-
 
 @media (min-width: 750px) {
   .hero-banner-slider__image-container{
