@@ -1,19 +1,5 @@
 {
   "sections": {
-    "custom_rich_text_section_xnXzEz": {
-      "type": "custom-rich-text-section",
-      "settings": {
-        "pre_heading": "What You Wear",
-        "heading": "<h1>Fashion Emerges As A Universal <a href=\"#\" title=\"#\">Language<\/a><\/h1>",
-        "button_text": "Explore More",
-        "button_link": "#",
-        "color_scheme": "scheme-2",
-        "text_alignment": "center",
-        "alignment_position": "align-start justify-center",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "hero_banner_slider_hMhRdj": {
       "type": "hero-banner-slider",
       "blocks": {
@@ -116,11 +102,25 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "custom_rich_text_section_xnXzEz": {
+      "type": "custom-rich-text-section",
+      "settings": {
+        "pre_heading": "What You Wear",
+        "heading": "<h1>Fashion Emerges As A Universal <a href=\"#\" title=\"#\">Language<\/a><\/h1>",
+        "button_text": "Explore More",
+        "button_link": "#",
+        "color_scheme": "scheme-2",
+        "text_alignment": "center",
+        "alignment_position": "align-start justify-center",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
-    "custom_rich_text_section_xnXzEz",
     "hero_banner_slider_hMhRdj",
-    "custom_image_with_text_grid_cH7kLX"
+    "custom_image_with_text_grid_cH7kLX",
+    "custom_rich_text_section_xnXzEz"
   ]
 }
