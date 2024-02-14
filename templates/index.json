@@ -91,7 +91,6 @@
         "banner_FchdrT",
         "banner_G6GNmM"
       ],
-      "disabled": true,
       "settings": {
         "slider_autoplay": true,
         "slide_dots": true,
@@ -115,21 +114,10 @@
             "button_text": "",
             "button_link": ""
           }
-        },
-        "heading_jLinpC": {
-          "type": "heading",
-          "settings": {
-            "pre_heading": "",
-            "heading": "",
-            "description": "",
-            "button_text": "",
-            "button_link": ""
-          }
         }
       },
       "block_order": [
-        "heading_rVJJ8E",
-        "heading_jLinpC"
+        "heading_rVJJ8E"
       ],
       "settings": {
         "content_position": "justify-start",
