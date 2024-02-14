@@ -11,6 +11,10 @@
   display: flex;
 }
 
+.custom-rich-text-section__heading scroll{
+  margin: 0;
+}
+
 .custom-richtext {
   display: flex;
   justify-content: center;
