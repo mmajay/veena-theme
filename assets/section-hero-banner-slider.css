@@ -17,7 +17,7 @@
   object-position : center;
 }
 
-@meida screen and (min-width: 750px){
+@meida  (min-width: 750px){
   .hero-banner-slider__image-container{
     padding-bottom: 50%;
   }
