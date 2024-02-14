@@ -45,14 +45,14 @@
                     {% endif %}  
                   </div>
                   <div class="hero-banner-slider__text-container {{ block.settings.alignment_position }} {{ block.settings.mobile_alignment_position }}">
-                    <div class="hero-banner-slider_text hero-banner-slider__text-alignment-{{ block.id }} {{ block.settings.text_alignment }} scroll-line-animation ">                    
+                    <div class="hero-banner-slider_text hero-banner-slider__text-alignment-{{ block.id }} {{ block.settings.text_alignment }}">                    
                       {% if block.settings.banner_caption != blank %}
                         <ul class="hero_banner__caption-text">
                           <li class="h4 hero-banner-slider__caption"> {{ block.settings.banner_caption }} </li>
                         </ul>
                       {% endif %}  
                       {% if block.settings.banner_heading != blank %}
-                        <div class="h1 hero-banner-slider_heading"> {{ block.settings.banner_heading }} </div>
+                        <div class="h1 hero-banner-slider_heading scroll-line-animation "> {{ block.settings.banner_heading }} </div>
                       {% endif %}  
                       {% if block.settings.banner_button_text != blank %}
                         <a class="custom-button-primary" 
