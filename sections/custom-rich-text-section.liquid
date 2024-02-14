@@ -19,7 +19,7 @@
 <div class="custom-rich-text-section padding-{{ section.id }}">
   <div class="page-width">
     <div class="custom-rich-text-section__text-position {{ section.settings.alignment_position }}">
-      <div class="custom-rich-text-section__text-alignment color-{{ section.settings.color_scheme.id }} {{ section.settings.text_alignment }}">
+      <div class="custom-rich-text-section__text-alignment color-{{ section.settings.color_scheme.id }} {{ section.settings.text_alignment }} scroll-line-animation">
         {% if section.settings.pre_heading != blank %}
           <h2 class="h3 custom-rich-text-section__caption"> {{ section.settings.pre_heading }} </h2>
         {% endif %}
@@ -29,7 +29,7 @@
         {% endif %}
         
         {% if section.settings.button_text != blank %}
-          <a class="button custom-rich-text-section__button animation-heading__buttons scroll-line-animation" 
+          <a class="button custom-rich-text-section__button animation-heading__buttons" 
               {% if section.settings.button_link == blank %}
                   role="link" aria-disabled="true"
               {% else %}
