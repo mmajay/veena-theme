@@ -91,6 +91,7 @@
         "banner_FchdrT",
         "banner_G6GNmM"
       ],
+      "disabled": true,
       "settings": {
         "slider_autoplay": true,
         "slide_dots": true,
@@ -104,8 +105,21 @@
     },
     "custom_rich_text_UWGyxp": {
       "type": "custom-rich-text",
+      "blocks": {
+        "heading_rVJJ8E": {
+          "type": "heading",
+          "settings": {
+            "heading": "Talk about your brand",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_rVJJ8E"
+      ],
       "settings": {
         "content_position": "justify-start",
+        "content_alignment": "center",
         "padding_top": 36,
         "padding_bottom": 36
       }
