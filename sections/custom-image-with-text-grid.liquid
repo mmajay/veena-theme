@@ -31,7 +31,7 @@
               {{ "detailed-apparel-1" | placeholder_svg_tag }}
             {% endif %}
 
-            <div class="custom-image-with-text-grid__text-container">
+            <div class="custom-image-with-text-grid__text-container {{ block.settings.alignment_position }}">
               <div class="custom-image-with-text-grid__text-align {{ block.settings.text_alignment }}">
                 
                 {% if block.settings.caption != blank %}
