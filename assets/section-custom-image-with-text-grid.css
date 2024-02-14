@@ -23,11 +23,11 @@
 }
 
 .caption-text{
-  /* position: relative; */
-  position: absolute;
+  position: relative;
 }
 
 .caption-text::before{
   content: ".ab"
+  top:10%;
   
 }
