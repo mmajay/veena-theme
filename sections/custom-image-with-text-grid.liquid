@@ -28,7 +28,37 @@
         "default": 36
       }
     ],
-    "blocks": [],
+    "blocks": [
+      {
+        "type" : "imageGrid",
+        "name" : "image with text",
+        "settings" : [
+          {
+            "type" : "image_picker",
+            "id" : "image",
+            "label" : "Upload Image"
+          },
+          {
+            "type" : "text",
+            "id" : "caption",
+            "label" : "Caption",
+            "default" : "Pre Heading"
+          },
+          {
+            "type" : "text",
+            "id" : "heading",
+            "label" : "Heading",
+            "default" : "Heading"
+          },
+          {
+            "type" : "richtext",
+            "id" : "description",
+            "label" : "Description",
+            "default" : "<p>Heading<p>"
+          }
+        ]
+      }
+    ],
     "presets" : [
       {
         "name" : "Image With Text Grid"
