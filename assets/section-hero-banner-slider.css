@@ -140,17 +140,17 @@
 
 }
 
-.hero-banner-slider_heading a {
+.scroll-line-animation a {
 	color: #18272F;
   position: relative;
   text-decoration: none;
 }
 
-.hero-banner-slider_heading a:hover{
+.scroll-line-animation a:hover{
   color: red;
 }
 
-.hero-banner-slider_heading a::before {
+.scroll-line-animation a::before {
   content: '';
   position: absolute;
   width: 100%;
@@ -164,7 +164,7 @@
   transition: transform .3s ease;
 }
 
-.hero-banner-slider_heading a:hover::before {
+.scroll-line-animation a:hover::before {
   transform-origin: left;
   transform: scaleX(1);
 }
