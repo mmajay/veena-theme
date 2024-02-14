@@ -19,7 +19,7 @@
 }
 .custom-richtext__text {
   width: 50%;
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
 }
 .custom-richtext__heading a {
   opacity: 0;
