@@ -21,11 +21,25 @@
   <div class="page-width">
     <div class="grid grid--1-col grid--2-col-desktop">
       {% if section.blocks != blank %}
+        {% for block in section.blocks %}
+          <div class="grid__item">
+            {% if block.settings.desktop_image != blank %}
+              <div class="custom-image-with-text-grid__image-container">
+                {% render "responsive-image", desktopImage:block.settings.desktop_image, mobileImage: block.settings.mobile_image  %}
+              </div>
+              
+            {% else %}
+              {{ "image" | placeholder_svg_tag }}
+            {% endif %}
+          </div>
+        {% endfor %}
 
       {% else %}
-        <div class="grid__item">
-          {{ 'detailed-apparel-1' | placeholder_svg_tag }}
-        </div>
+        {% for i in (1..2) %}
+          <div class="grid__item">
+            {{ 'detailed-apparel-1' | placeholder_svg_tag }}
+          </div>
+        {% endfor %}
       {% endif %} 
       
     </div
@@ -72,8 +86,13 @@
         "settings" : [
           {
             "type" : "image_picker",
-            "id" : "image",
-            "label" : "Upload Image"
+            "id" : "desktop_image",
+            "label" : "Desktop Image"
+          },
+          {
+            "type" : "image_picker",
+            "id" : "mobile_image",
+            "label" : "Mobile Image"
           },
           {
             "type" : "text",
