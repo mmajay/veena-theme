@@ -140,3 +140,29 @@
 
 }
 
+
+
+
+ .custom-button-primary:hover, .custom-button-primary:focus {
+	 box-shadow: inset 6.5rem 0 0 0 #66c887;
+}
+
+custom-button-primary {
+	 color: #8fc866;
+	 transition: 0.25s;
+}
+ custom-button-primary:hover, custom-button-primary:focus {
+	 color: #fff;
+}
+
+ custom-button-primary {
+	 background: none;
+	 border: 2px solid;
+	 font: inherit;
+	 line-height: 1;
+	 margin: 0.5em;
+	 padding: 1em 2em;
+}
+
+
+  
