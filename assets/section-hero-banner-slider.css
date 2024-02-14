@@ -131,7 +131,7 @@
 
 
 
-/* .custom-button-primary {
+.custom-button-primary {
   text-decoration: none;
   color: #351435;
   border-radius: 50px;
@@ -142,7 +142,6 @@
   position: relative;
   transition: all 0.3s;
   overflow: hidden;
-  z-index: 1;
   
 }
 .custom-button-primary::before {
@@ -161,10 +160,11 @@
 }
 .custom-button-primary:hover::before {
   transform: translateX(0);
+  z-index: 1;
 }
 .custom-button-primary:hover {
   color: #fff;
 }
- */
+
 
   
