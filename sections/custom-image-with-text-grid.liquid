@@ -1,4 +1,4 @@
-{{ "section-hero-banner-slider.css" | asset_url | stylesheet_tag }}
+{{ "section-custom-image-with-text-grid.css" | asset_url | stylesheet_tag }}
 
 
 {% style %}
@@ -22,7 +22,7 @@
     <div class="grid grid--1-col grid--2-col-desktop">
       {% if section.blocks != blank %}
         {% for block in section.blocks %}
-          <div class="grid__item">
+          <div class="grid__item custom-image-with-text-grid__position-rel">
             {% if block.settings.desktop_image != blank %}
               <div class="custom-image-with-text-grid__image-container">
                 {% render "responsive-image", desktopImage:block.settings.desktop_image, mobileImage: block.settings.mobile_image  %}
