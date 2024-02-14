@@ -113,5 +113,9 @@
   .hero-banner-slider__image-container{
     padding-bottom: 50%;
   }
+
+  .slide-section .splide__arrows .splide__arrow--next{
+    left: 20%;
+  }
 }
 
