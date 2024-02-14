@@ -29,6 +29,5 @@
 .caption-text::before{
   content: ".ab"
   position: absolute;
-  top: 10%;
   
 }
