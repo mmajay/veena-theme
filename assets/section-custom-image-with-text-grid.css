@@ -12,12 +12,24 @@
 
 .custom-image-with-text-grid__image-container{
   position : relative;
-  padding-bottom : 70%;
+  /* padding-bottom : 70%; */
+}
+
+.image-square{
+  padding-bottom: 100%;
+}
+
+.image-landscape{
+  padding-bottom: 100%;
+}
+
+.image-potrait{
+  padding-bottom: 100%;
 }
 
 @media screen and (min-width: 750px){
   .custom-image-with-text-grid__image-container{
-    padding-bottom: 45%
+    /* padding-bottom: 45% */
   }
 }
 
