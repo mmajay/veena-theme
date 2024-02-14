@@ -12,13 +12,15 @@
 
 .custom-image-with-text-grid__image-container{
   position : relative;
-  padding-bottom : 40%;
+  padding-bottom : 38%;
 }
 
 .custom-image-with-text-grid__image-container img{
   position: absolute;
   top: 0;
   width: 100%;
+  object-fit: cover;
+  object-position: center;
   height: 100%
 }
 
