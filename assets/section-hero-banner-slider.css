@@ -125,5 +125,11 @@
   .slide-section .splide__arrows .splide__arrow--next{
     right: 43%;
   }
+
+  .hero-banner-slider__banner-button{
+  font-size: 16px;
+  padding: 5px;
+}
+
 }
 
