@@ -45,7 +45,7 @@
                     {% endif %}  
                   </div>
                   <div class="hero-banner-slider__text-container {{ block.settings.alignment_position }} {{ block.settings.mobile_alignment_position }}">
-                    <div class="hero-banner-slider_text hero-banner-slider__text-alignment-{{ block.id }} {{ block.settings.text_alignment }} {{ block.settings.mobile_text_alignment }} ">                    
+                    <div class="hero-banner-slider_text hero-banner-slider__text-alignment-{{ block.id }} {{ block.settings.mobile_text_alignment }} {{ block.settings.text_alignment }} ">                    
                       {% if block.settings.banner_caption != blank %}
                         <ul class="hero_banner__caption-text">
                           <li class="h3 hero-banner-slider__caption"> {{ block.settings.banner_caption }} </li>
@@ -222,7 +222,7 @@
         },
         {
           "type": "select",
-          "id": "text_alignment",
+          "id": "mobile_text_alignment",
           "label": "Text Alignment",
           "options": [
             {
@@ -286,23 +286,23 @@
         },
         {
           "type": "select",
-          "id": "mobile_text_alignment",
+          "id": "text_alignment",
           "label": "Text Alignment",
           "options": [
             {
-              "value": "left",
+              "value": "l-left",
               "label": "Left"
             },
             {
-              "value": "center",
+              "value": "l-center",
               "label": "Center"
             },
             {
-              "value": "right",
+              "value": "l-right",
               "label": "Right"
             }
           ],
-          "default": "left"
+          "default": "l-left"
         }
       ]
   }
