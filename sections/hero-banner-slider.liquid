@@ -45,7 +45,7 @@
                     {% endif %}  
                   </div>
                   <div class="hero-banner-slider__text-container {{ block.settings.alignment_position }} {{ block.settings.mobile_alignment_position }}">
-                    <div class="hero-banner-slider_text hero-banner-slider__text-alignment-{{ block.id }} {{ block.settings.text_alignment }}  ">                    
+                    <div class="hero-banner-slider_text hero-banner-slider__text-alignment-{{ block.id }} {{ block.settings.text_alignment }} {{ block.settings.mobile_text_alignment }} ">                    
                       {% if block.settings.banner_caption != blank %}
                         <ul class="hero_banner__caption-text">
                           <li class="h3 hero-banner-slider__caption"> {{ block.settings.banner_caption }} </li>
@@ -285,8 +285,24 @@
           "default": "align-center justify-center"
         },
         {
-          "type": "header",
-          "content" : "Mobile content poisition"
+          "type": "select",
+          "id": "mobile_text_alignment",
+          "label": "Text Alignment",
+          "options": [
+            {
+              "value": "left",
+              "label": "Left"
+            },
+            {
+              "value": "center",
+              "label": "Center"
+            },
+            {
+              "value": "right",
+              "label": "Right"
+            }
+          ],
+          "default": "left"
         }
       ]
   }
