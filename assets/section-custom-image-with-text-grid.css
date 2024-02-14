@@ -21,8 +21,8 @@
   width: 100%;
   object-fit: cover;
   object-position: center;
-  height: 100%
-  transition: transform 0.5s ease
+  height: 100%;
+  transition: transform 0.5s ease;
 }
 
 .custom-image-with-text-grid__image-container:hover img{
