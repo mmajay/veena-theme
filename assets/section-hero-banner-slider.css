@@ -142,6 +142,8 @@
   position: relative;
   transition: all 0.3s;
   overflow: hidden;
+  z-index: 1;
+  
 }
 .custom-button-primary::before {
   content: "";
