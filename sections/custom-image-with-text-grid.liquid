@@ -32,7 +32,7 @@
             {% endif %}
 
             <div class="custom-image-with-text-grid__text-container">
-              <div class="custom-image-with-text-grid__text-align">
+              <div class="custom-image-with-text-grid__text-align {{ block.settings.text_alignment }}">
                 
                 {% if block.settings.caption != blank %}
                   <h2 class="h3"> {{ block.settings.caption }} </h2>
