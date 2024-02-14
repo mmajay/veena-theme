@@ -141,9 +141,32 @@
 }
 
 
+.scroll-line-animation a {
+    position: relative;
+  }
+  .scroll-line-animation a::before {
+    content: "";
+    position: absolute;
+    background-color: #D03C3F;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: width 0.3s ease;
+    z-index: -1;
+  }
+  .scroll-line-animation a:hover::before {
+    width: 100%;
+  }
+  .scroll-line-animation a:not(:hover)::before {
+    width: 0;
+    right: 0;
+    left: auto;
+}
 
 
- .custom-button-primary:hover, .custom-button-primary:focus {
+
+.custom-button-primary:hover, .custom-button-primary:focus {
 	 box-shadow: inset 14.5rem 0 0 0 #66c887;
 }
 
