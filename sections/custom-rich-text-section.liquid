@@ -1,9 +1,6 @@
 {{ "section-custom-rich-text-section.css" | asset_url | stylesheet_tag }}
 <script src="{{ "section-custom-rich-text-section.js" | asset_url }}" defer ></script>
 
-
-
-
 {% style %}
   .padding-{{ section.id }} {
       padding-top: {{ section.settings.padding_top  }}px;
@@ -45,7 +42,6 @@
     </div>
   </div>
 </div>
-
 
 
 {% schema %}
