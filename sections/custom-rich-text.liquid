@@ -9,7 +9,7 @@
       {
         "type" : "select",
         "id" : "content_position",
-        "label" : "Content Position",
+        "label" : "Content position",
         "options": [
           {
             "value" : "justify-start",
@@ -24,11 +24,31 @@
             "label" : "Right"
           }
         ],
-        "default" : "justify-start"
+        "default" : "justify-center"
+      },
+      {
+        "type" : "select",
+        "id" : "content_alignment",
+        "label" : "Content alignment",
+        "options": [
+          {
+            "value" : "left",
+            "label" : "Left"
+          },
+          {
+            "value" : "center",
+            "label" : "Center"
+          },
+          {
+            "value" : "right",
+            "label" : "Right"
+          }
+        ],
+        "default" : "center"
       },
       {
       "type" : "header",
-      "content" : "Section Padding Settings"
+      "content" : "Section padding settings"
       },
       {
         "type": "range",
