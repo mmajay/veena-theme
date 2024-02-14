@@ -11,10 +11,6 @@
   display: flex;
 }
 
-.custom-rich-text-section__text-alignment{
-  max-width: 45rem;
-}
-
 .custom-rich-text-section__button{
   margin-top: 20px;
 }
