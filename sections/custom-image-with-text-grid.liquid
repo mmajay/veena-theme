@@ -27,9 +27,8 @@
               <div class="custom-image-with-text-grid__image-container">
                 {% render "responsive-image", desktopImage:block.settings.desktop_image, mobileImage: block.settings.mobile_image  %}
               </div>
-              
             {% else %}
-              {{ "image" | placeholder_svg_tag }}
+              {{ "detailed-apparel-1" | placeholder_svg_tag }}
             {% endif %}
           </div>
         {% endfor %}
