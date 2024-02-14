@@ -197,7 +197,9 @@
             "heading": "Heading",
             "description": "<p>Heading<\/p><p><\/p>",
             "button_text": "Shop Now",
-            "button_link": ""
+            "button_link": "",
+            "text_alignment": "center",
+            "alignment_position": "align-center justify-center"
           }
         },
         "image_grid_efFQM8": {
@@ -208,7 +210,9 @@
             "heading": "Heading",
             "description": "<p>Heading<\/p><p><\/p>",
             "button_text": "Shop Now",
-            "button_link": ""
+            "button_link": "",
+            "text_alignment": "center",
+            "alignment_position": "align-center justify-center"
           }
         }
       },
