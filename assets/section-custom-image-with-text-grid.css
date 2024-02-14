@@ -28,6 +28,6 @@
 
 .caption-text::before{
   content: ".ab"
-  position: absolute;
+  /* position: absolute; */
   
 }
