@@ -47,8 +47,8 @@
                   <div class="hero-banner-slider__text-container {{ block.settings.alignment_position }} {{ block.settings.mobile_alignment_position }}">
                     <div class="hero-banner-slider_text hero-banner-slider__text-alignment-{{ block.id }} {{ block.settings.text_alignment }}">                    
                       {% if block.settings.banner_caption != blank %}
-                        <ul class="caption-text">
-                          <li class="h4 custom-caption"> {{ block.settings.banner_caption }} </li>
+                        <ul class="custom-caption">
+                          <li class="h4 custom-caption__text"> {{ block.settings.banner_caption }} </li>
                         </ul>
                       {% endif %}  
                       {% if block.settings.banner_heading != blank %}

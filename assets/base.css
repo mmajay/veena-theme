@@ -3614,14 +3614,14 @@ details-disclosure > details {
   justify-content : end;
 }
 
-.caption-text{
+.custom-caption{
   display: inline-block;
   padding: 0 13px 0 30px;
   border: 1px solid #fff;
   border-radius: 30px;
   backdrop-filter: blur(10px);
 }
-.custom-caption{
+.custom-caption__text{
   list-style : disc;
   padding: 5px 0;
   font-weight: 400;
