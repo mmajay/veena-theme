@@ -143,7 +143,7 @@
   transition: all 0.3s;
   overflow: hidden;
 }
-.custom-button-primary:before {
+.custom-button-primary::before {
   content: "";
   position: absolute;
   left: 0;
@@ -156,7 +156,7 @@
   transition: all 0.3s;
   border-radius: 50px;
 }
-.custom-button-primary:hover:before {
+.custom-button-primary:hover::before {
   transform: translateX(0);
 }
 .custom-button-primary:hover {
