@@ -141,7 +141,7 @@
   padding: 40px 80px;
   position: relative;
   transition: all 0.3s;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 .custom-button-primary::before {
   content: "";
