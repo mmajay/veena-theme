@@ -15,8 +15,14 @@
   height: 100%;
   object-fit : cover;
   object-position : center;
-  
 }
+
+@meida screen and (min-width:750px){
+  .hero-banner-slider__image-container{
+    padding-bottom: 50%;
+  }
+}
+
 
 
 .hero_banner__caption-text{
