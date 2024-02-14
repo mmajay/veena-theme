@@ -11,11 +11,6 @@
   display: flex;
 }
 
-.custom-rich-text-section__button{
-  margin-top: 20px;
-}
-
-
 .custom-richtext {
   display: flex;
   justify-content: center;
