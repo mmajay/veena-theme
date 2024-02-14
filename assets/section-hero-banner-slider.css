@@ -143,26 +143,22 @@
 
 
 
-.custom-button-primary:hover, .custom-button-primary:focus {
-	 box-shadow: inset 10.5rem 0 0 0 gray;
+ .custom-button-primary:hover, .custom-button-primary:focus {
+	 box-shadow: inset 7.5rem 0 0 0 #66c887;
 }
 
-.custom-button-primary {
-	 color: #fff;
-	 transition: 0.25s;
-}
-.custom-button-primary:hover, .custom-button-primary:focus {
-	 color: #fff;
-}
-
-.custom-button-primary {
-	 background: none;
-	 border: 2px solid;
+.custom-button-primary  {
+	 background: #000;
+	 border: none;
 	 font: inherit;
 	 line-height: 1;
 	 margin: 0.5em;
 	 padding: 1em 2em;
+   color: #fff;
+   border-radius: 130px;
+	 transition: 0.25s;
 }
+
 
 
   
