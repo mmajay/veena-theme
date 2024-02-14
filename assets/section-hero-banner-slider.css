@@ -2,6 +2,12 @@
   position:relative;
 }
 
+
+.hero-banner-slider__image-container{
+  position: relative;
+  padding-bottom: 100%;
+}
+
 .hero-banner-slider__image-container img{
   width : 100%;
   height: 100%;
