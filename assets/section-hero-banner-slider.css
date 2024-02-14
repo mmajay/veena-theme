@@ -78,7 +78,7 @@
   transform : unset;
   background: none;
   cursor: pointer;
-  right: 43%;
+  right: 20%;
 }
 
 .slide-section .slider-counter__link--active.slider-counter__link--dots .dot {
@@ -116,6 +116,10 @@
 
   .slide-section .splide__arrows .splide__arrow--next{
     left: 43%;
+  }
+
+  .slide-section .splide__arrows .splide__arrow--next{
+    right: 43%;
   }
 }
 
