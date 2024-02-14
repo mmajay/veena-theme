@@ -19,14 +19,14 @@
 .custom-image-with-text-grid__image-container img{
   position: absolute;
   top: 0;
-  /* width: 100%; */
+  width: 100%;
   object-fit: cover;
   object-position: center;
-  /* height: 100%; */
+  height: 100%;
 
 }
 
-.custom-image-with-text-grid__image-container img:hover{
+.custom-image-with-text-grid__image-container:hover img{
    transform: scale(1.1);
 }
 
