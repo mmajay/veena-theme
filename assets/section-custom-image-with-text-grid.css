@@ -13,6 +13,7 @@
 .custom-image-with-text-grid__image-container{
   position : relative;
   padding-bottom : 45%;
+  transition: transform 0.5s ease
 }
 
 .custom-image-with-text-grid__image-container img{
@@ -22,6 +23,10 @@
   object-fit: cover;
   object-position: center;
   height: 100%
+}
+
+.custom-image-with-text-grid__image-container:hover img{
+  transform: scale(1.2);
 }
 
 .custom-image-with-text-grid__caption{
