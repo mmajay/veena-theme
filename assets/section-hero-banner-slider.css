@@ -144,11 +144,11 @@
 
 
 .custom-button-primary:hover, .custom-button-primary:focus {
-	 box-shadow: inset 6.5rem 0 0 0 #66c887;
+	 box-shadow: inset 10.5rem 0 0 0 #66c887;
 }
 
 .custom-button-primary {
-	 color: #8fc866;
+	 color: #000;
 	 transition: 0.25s;
 }
 .custom-button-primary:hover, .custom-button-primary:focus {
