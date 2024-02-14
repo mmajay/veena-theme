@@ -35,6 +35,8 @@
   text-decoration: none;
   display: inline-block;
   color:inherit;
+  font-size: 14px;
+  font-weight: bold;
 }
 
 .hero-banner-slider_heading a:hover {
