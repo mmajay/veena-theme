@@ -135,7 +135,7 @@
   padding: 8px 20px;
   border-radius: 10rem;
   color: #fff;
-  text-transform: uppercase;
+  text-transform: capitalize;
   transition: all 0.3s;
   position: relative;
   overflow: hidden;
