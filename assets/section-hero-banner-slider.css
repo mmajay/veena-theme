@@ -90,14 +90,14 @@
 .slide-section .splide__pagination__page {
   width: 10px;
   height: 10px;
-  margin: 0px;
+  margin: 0 15px;
   background-color: transparent;
   border-radius: 50%;
   transition: background-color 0.3s ease;
   border: 1px solid white;
 }
 .slide-section .splide__pagination .is-active{
-  width: 10px;
+  width: 30px;
   border-radius: 10px;
   background-color: #fff;
 }
