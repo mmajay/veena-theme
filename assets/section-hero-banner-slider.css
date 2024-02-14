@@ -140,29 +140,35 @@
 
 }
 
+.hero-banner-slider_heading a {
+	color: #18272F;
+  position: relative;
+  text-decoration: none;
+}
 
-.rich-text-wrapper__heading a {
-    position: relative;
-  }
-  .rich-text-wrapper__heading a::before {
-    content: "";
-    position: absolute;
-    background-color: #D03C3F;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 3px;
-    transition: width 0.5s ease-in-out;
-    z-index: -1;
-  }
-  .rich-text-wrapper__heading a:hover::before {
-    width: 100%;
-  }
-  .rich-text-wrapper__heading a:not(:hover)::before {
-    width: 0;
-    right: 0;
-    left: auto;
-  }
+.hero-banner-slider_heading a:hover{
+  color: red;
+}
+
+.hero-banner-slider_heading a::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  border-radius: 4px;
+  background-color: red;
+  bottom: 0;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform .3s ease;
+}
+
+.hero-banner-slider_heading a:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
 
 
 
