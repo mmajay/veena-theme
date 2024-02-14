@@ -112,9 +112,29 @@
         "settings" : [
           {
             "type" : "text",
-            "id" : "pre_heading",
-            "label" : "Pre heading",
+            "id" : "caption",
+            "label" : "Caption",
             "default" : "Enter Caption"
+          },
+          {
+            "type" : "select",
+            "id" : "caption_size",
+            "label" : "Caption size" ,
+            "options" : [
+              {
+                "value" : "h4",
+                "label" : "small"
+              },
+              {
+                "value" : "h3",
+                "label" : "medium"
+              },
+              {
+                "value" : "h2",
+                "label" : "large"
+              }
+            ],
+            "default" : "h2"
           }
         ]
       }
