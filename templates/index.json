@@ -109,8 +109,11 @@
         "heading_rVJJ8E": {
           "type": "heading",
           "settings": {
+            "pre_heading": "",
             "heading": "Talk about your brand",
-            "heading_size": "h1"
+            "description": "",
+            "button_text": "",
+            "button_link": ""
           }
         }
       },
@@ -131,7 +134,7 @@
           "type": "heading",
           "settings": {
             "heading": "Talk about your brand",
-            "heading_size": "h1"
+            "heading_size": "h0"
           }
         },
         "text_fQtkVU": {
