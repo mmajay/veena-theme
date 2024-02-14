@@ -2,7 +2,6 @@
   position:relative;
 }
 
-
 .hero-banner-slider__image-container{
   position: relative;
   padding-bottom: 100%;
@@ -16,8 +15,6 @@
   object-fit : cover;
   object-position : center;
 }
-
-
 
 .hero_banner__caption-text{
   display: inline-block;
