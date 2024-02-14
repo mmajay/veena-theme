@@ -97,7 +97,7 @@
   border: 1px solid white;
 }
 .slide-section .splide__pagination .is-active{
-  width: 30px;
+  width: 10px;
   border-radius: 10px;
   background-color: #fff;
 }
