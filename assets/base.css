@@ -3507,6 +3507,8 @@ details-disclosure > details {
   overflow: hidden;
 }
 
+/* Scroll Line Animation */
+
 .scroll-line-animation a {
   color: inherit;
   position: relative;
@@ -3536,6 +3538,56 @@ details-disclosure > details {
   transform-origin: left;
   transform: scaleX(1);
 }
+
+/* Scroll Line Animation End */
+
+/*  Button Styles */
+
+.custom-button-primary {
+  display: inline-block;
+  padding: 8px 20px;
+  border-radius: 10rem;
+  color: #000;
+  text-transform: capitalize;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  font-size: 16px;
+  text-decoration: none;
+}
+ .custom-button-primary:after {
+	 content: '';
+	 position: absolute;
+	 bottom: 0;
+	 left: 0;
+	 width: 100%;
+	 height: 100%;
+	 background-color: #fff;
+	 border-radius: 10rem;
+	 z-index: -2;
+}
+ .custom-button-primary:before {
+	 content: '';
+	 position: absolute;
+	 bottom: 0;
+	 left: 0;
+	 width: 0%;
+	 height: 100%;
+	 background-color: #F5F5F5;
+	 transition: all 0.3s;
+	 border-radius: 10rem;
+	 z-index: -1;
+}
+ .custom-button-primary:hover {
+	 color: #d03c3f;
+}
+ .custom-button-primary:hover:before {
+	 width: 100%;
+}
+
+/*  Button Styles End */
+
 
 
 .align-start {
