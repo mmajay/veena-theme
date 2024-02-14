@@ -11,7 +11,7 @@
   display: flex;
 }
 
-.custom-rich-text-section__heading scroll{
+.custom-rich-text-section__heading scroll p{
   margin: 0;
 }
 
