@@ -91,6 +91,7 @@
         "banner_FchdrT",
         "banner_G6GNmM"
       ],
+      "disabled": true,
       "settings": {
         "slider_autoplay": true,
         "slide_dots": true,
@@ -108,11 +109,8 @@
         "heading_rVJJ8E": {
           "type": "heading",
           "settings": {
-            "pre_heading": "",
             "heading": "Talk about your brand",
-            "description": "",
-            "button_text": "",
-            "button_link": ""
+            "heading_size": "h2"
           }
         }
       },
