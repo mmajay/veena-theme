@@ -124,13 +124,44 @@
   }
 
   .hero-banner-slider__banner-button{
-  font-size: 16px;
-  padding: 5px;
+    font-size: 16px;
+    padding: 5px;
+  }
 }
 
+
+
+.custom-button-primary {
+  text-decoration: none;
+  color: #351435;
+  border-radius: 50px;
+  font-family: sans-serif;
+  font-size: 40px;
+  border: 1px solid #351435;
+  padding: 40px 80px;
+  position: relative;
+  transition: all 0.3s;
+  overflow: hidden;
 }
-
-
+.custom-button-primary:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 110%;
+  width: 120%;
+  background-color: #351435;
+  z-index: -1;
+  transform: translateX(-100%);
+  transition: all 0.3s;
+  border-radius: 50px;
+}
+.custom-button-primary:hover:before {
+  transform: translateX(0);
+}
+.custom-button-primary:hover {
+  color: #fff;
+}
 
 
   
