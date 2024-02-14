@@ -112,6 +112,13 @@
   padding: 5px;
 }
 
+@media (max-width:749px){
+  .hero-banner-slider__text-container{
+    align-items: center;
+    justify-content: center;
+  }
+}
+
 
 @media (min-width: 750px) {
   .hero-banner-slider__image-container{
