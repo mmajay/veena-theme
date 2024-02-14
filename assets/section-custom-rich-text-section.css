@@ -15,16 +15,6 @@
   margin: 0;
 }
 
-/* .custom-richtext {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-.custom-richtext__text {
-  width: 50%;
-  margin-bottom: 50px;
-} */
 .custom-richtext__heading a {
   opacity: 0;
   text-decoration: none;
