@@ -130,40 +130,49 @@
 }
 
 
-
 .custom-button-primary {
+	 display: inline-block;
+	 padding: 0.75rem 1.25rem;
+	 border-radius: 10rem;
+	 color: #fff;
+	 text-transform: uppercase;
+	 font-size: 1rem;
+	 letter-spacing: 0.15rem;
+	 transition: all 0.3s;
+	 position: relative;
+	 overflow: hidden;
+	 z-index: 1;
   text-decoration: none;
-  color: #351435;
-  border-radius: 50px;
-  font-family: sans-serif;
-  font-size: 40px;
-  border: 1px solid #351435;
-  padding: 40px 80px;
-  position: relative;
-  transition: all 0.3s;
-  overflow: hidden;
-  
 }
-.custom-button-primary::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  background-color: #351435;
-  z-index: -1;
-  transform: translateX(-100%);
-  transition: all 0.3s;
-  border-radius: 50px;
-  
+ .custom-button-primary:after {
+	 content: '';
+	 position: absolute;
+	 bottom: 0;
+	 left: 0;
+	 width: 100%;
+	 height: 100%;
+	 background-color: #0cf;
+	 border-radius: 10rem;
+	 z-index: -2;
 }
-.custom-button-primary:hover::before {
-  transform: translateX(0);
+ .custom-button-primary:before {
+	 content: '';
+	 position: absolute;
+	 bottom: 0;
+	 left: 0;
+	 width: 0%;
+	 height: 100%;
+	 background-color: #008fb3;
+	 transition: all 0.3s;
+	 border-radius: 10rem;
+	 z-index: -1;
 }
-.custom-button-primary:hover {
-  color: #fff;
+ .custom-button-primary:hover {
+	 color: #fff;
 }
-
+ .custom-button-primary:hover:before {
+	 width: 100%;
+}
+ 
 
   
