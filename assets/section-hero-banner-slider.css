@@ -30,6 +30,7 @@
 .hero-banner-slider__caption{
   list-style : disc;
   padding: 5px 0;
+  font-weight: light;
 }
 
 .hero-banner-slider_heading a{
