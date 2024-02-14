@@ -25,3 +25,7 @@
 .custom-image-with-text-grid__caption{
   list-style : disc;
 }
+
+.custom-image-with-text-grid__text-align{
+  max-width: 50px;
+}
