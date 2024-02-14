@@ -7,6 +7,10 @@
   color: #d03c3f;
 }
 
+.custom-rich-text-section__text-position{
+  display: flex;
+}
+
 .custom-rich-text-section__text-alignment{
   max-width: 45rem;
 }
