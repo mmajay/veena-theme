@@ -3621,8 +3621,8 @@ details-disclosure > details {
   border-radius: 30px;
   backdrop-filter: blur(10px);
 }
-.caption{
-    list-style : disc;
+.custom-caption{
+  list-style : disc;
   padding: 5px 0;
   font-weight: 400;
   
