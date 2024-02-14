@@ -2,7 +2,11 @@
   font-weight : 400;
 }
 
-.custom-rich-text-section__caption a {
+.custom-rich-text-section__text-alignment  a{
   text-decoration : none;
   color: inherit;
+  
+}
+
+.custom-rich-text-section__caption a {
 }
