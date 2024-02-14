@@ -54,8 +54,7 @@
             "banner_button_link": "#",
             "banner_color_scheme": "scheme-1",
             "text_alignment": "center",
-            "alignment_position": "align-end justify-center",
-            "mobile_alignment_position": "align-center justify-center"
+            "alignment_position": "align-end justify-center"
           }
         },
         "banner_FchdrT": {
@@ -69,8 +68,7 @@
             "banner_button_link": "",
             "banner_color_scheme": "scheme_1",
             "text_alignment": "left",
-            "alignment_position": "align-end justify-start",
-            "mobile_alignment_position": "align-center justify-center"
+            "alignment_position": "align-end justify-start"
           }
         },
         "banner_G6GNmM": {
@@ -84,8 +82,7 @@
             "banner_button_link": "#",
             "banner_color_scheme": "scheme_1",
             "text_alignment": "center",
-            "alignment_position": "align-center justify-center",
-            "mobile_alignment_position": "align-center justify-center"
+            "alignment_position": "align-center justify-center"
           }
         }
       },
@@ -95,7 +92,7 @@
         "banner_G6GNmM"
       ],
       "settings": {
-        "slider_autoplay": true,
+        "slider_autoplay": false,
         "slide_dots": true,
         "slide_arrows": true,
         "infinite_scroll": true,
