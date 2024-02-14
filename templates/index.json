@@ -1,45 +1,5 @@
 {
   "sections": {
-    "image_banner": {
-      "type": "image-banner",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "Discover Signature Look: Fashion Forward and Fabulous!",
-            "heading_size": "h0"
-          }
-        },
-        "button": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Shop all",
-            "button_link_1": "shopify:\/\/collections\/all",
-            "button_style_secondary_1": true,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "button"
-      ],
-      "disabled": true,
-      "settings": {
-        "image_overlay_opacity": 40,
-        "image_height": "large",
-        "desktop_content_position": "bottom-center",
-        "show_text_box": false,
-        "desktop_content_alignment": "center",
-        "color_scheme": "scheme-5",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": false,
-        "show_text_below": false
-      }
-    },
     "hero_banner_slider_hMhRdj": {
       "type": "hero-banner-slider",
       "blocks": {
@@ -102,89 +62,6 @@
         "padding_bottom": 0
       }
     },
-    "custom_rich_text_UWGyxp": {
-      "type": "custom-rich-text",
-      "blocks": {
-        "heading_LRKwhy": {
-          "type": "heading",
-          "settings": {
-            "heading": "",
-            "heading_size": "h2"
-          }
-        },
-        "caption_GPMQwn": {
-          "type": "caption",
-          "settings": {
-            "caption": "Enter Caption",
-            "caption_text_style": "uppderCase",
-            "caption_size": "h3"
-          }
-        }
-      },
-      "block_order": [
-        "heading_LRKwhy",
-        "caption_GPMQwn"
-      ],
-      "disabled": true,
-      "settings": {
-        "content_position": "justify-start",
-        "content_alignment": "center",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "rich_text_7xnWj8": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_G7yLYh": {
-          "type": "heading",
-          "settings": {
-            "heading": "Talk about your brand",
-            "heading_size": "h0"
-          }
-        },
-        "text_fQtkVU": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
-          }
-        },
-        "button_zV4y9a": {
-          "type": "button",
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        },
-        "caption_tyqYdd": {
-          "type": "caption",
-          "settings": {
-            "caption": "Add a tagline",
-            "text_style": "subtitle",
-            "text_size": "medium"
-          }
-        }
-      },
-      "block_order": [
-        "heading_G7yLYh",
-        "text_fQtkVU",
-        "button_zV4y9a",
-        "caption_tyqYdd"
-      ],
-      "disabled": true,
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
     "custom_image_with_text_grid_cH7kLX": {
       "type": "custom-image-with-text-grid",
       "blocks": {
@@ -228,10 +105,7 @@
     }
   },
   "order": [
-    "image_banner",
     "hero_banner_slider_hMhRdj",
-    "custom_rich_text_UWGyxp",
-    "rich_text_7xnWj8",
     "custom_image_with_text_grid_cH7kLX"
   ]
 }
