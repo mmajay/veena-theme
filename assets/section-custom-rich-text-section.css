@@ -50,7 +50,7 @@
   transition: background-position 0.3s ease-in-out;
 }
 .custom-richtext__heading {
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
 }
 
 .letter {
