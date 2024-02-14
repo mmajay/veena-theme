@@ -144,7 +144,7 @@
 
 
 .custom-button-primary:hover, .custom-button-primary:focus {
-	 box-shadow: inset 10.5rem 0 0 0 #66c887;
+	 box-shadow: inset 10.5rem 0 0 0 gray;
 }
 
 .custom-button-primary {
