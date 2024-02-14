@@ -62,7 +62,7 @@
   transform : unset;
   background: none;
   cursor: pointer;
-  left: 43%;
+  left: 20%;
 
 }
 
@@ -115,7 +115,7 @@
   }
 
   .slide-section .splide__arrows .splide__arrow--next{
-    left: 20%;
+    left: 43%;
   }
 }
 
