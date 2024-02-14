@@ -56,10 +56,10 @@
                       {% endif %}  
                       {% if block.settings.banner_button_text != blank %}
                         <a class="button" 
-                          {% if section.settings.button_link == blank %}
+                          {% if block.settings.banner_button_link == blank %}
                               role="link" aria-disabled="true"
                             {% else %}
-                              href="{{ section.settings.button_link }}"
+                              href="{{ block.settings.banner_button_link }}"
                           {% endif %}>{{ block.settings.banner_button_text }}</a>
                       {% endif %}  
                     </div>
