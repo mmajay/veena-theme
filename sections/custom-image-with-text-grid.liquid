@@ -55,9 +55,11 @@
                   <a class="button" 
                     {% if block.settings.button_link == blank %}
                         role="link" aria-disabled="true"
-                      {% else %}
+                    {% else %}
                         href="{{ block.settings.button_link }}"
-                    {% endif %}>{{ block.settings.button_text }}</a>
+                    {% endif %}>
+                    {{ block.settings.button_text }}
+                  </a>
                 {% endif %}
           
               </div>
