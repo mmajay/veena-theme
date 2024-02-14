@@ -116,6 +116,9 @@
         "caption_GPMQwn": {
           "type": "caption",
           "settings": {
+            "caption": "Enter Caption",
+            "caption_text_style": "uppderCase",
+            "caption_size": "h3"
           }
         }
       },
@@ -123,6 +126,7 @@
         "heading_LRKwhy",
         "caption_GPMQwn"
       ],
+      "disabled": true,
       "settings": {
         "content_position": "justify-start",
         "content_alignment": "center",
@@ -172,6 +176,7 @@
         "button_zV4y9a",
         "caption_tyqYdd"
       ],
+      "disabled": true,
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
@@ -180,12 +185,48 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
+    },
+    "custom_image_with_text_grid_cH7kLX": {
+      "type": "custom-image-with-text-grid",
+      "blocks": {
+        "image_grid_aMM8kN": {
+          "type": "imageGrid",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/Rectangle_4264.png",
+            "caption": "Pre Heading",
+            "heading": "Heading",
+            "description": "<p>Heading<\/p><p><\/p>",
+            "button_text": "Shop Now",
+            "button_link": ""
+          }
+        },
+        "image_grid_efFQM8": {
+          "type": "imageGrid",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/Rectangle_4265.png",
+            "caption": "Pre Heading",
+            "heading": "Heading",
+            "description": "<p>Heading<\/p><p><\/p>",
+            "button_text": "Shop Now",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_grid_aMM8kN",
+        "image_grid_efFQM8"
+      ],
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "image_banner",
     "hero_banner_slider_hMhRdj",
     "custom_rich_text_UWGyxp",
-    "rich_text_7xnWj8"
+    "rich_text_7xnWj8",
+    "custom_image_with_text_grid_cH7kLX"
   ]
 }
