@@ -111,6 +111,7 @@
         "button_text": "Explore More",
         "button_link": "#",
         "color_scheme": "scheme-2",
+        "text_alignment": "center",
         "padding_top": 36,
         "padding_bottom": 36
       }
