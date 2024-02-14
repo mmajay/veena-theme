@@ -1,5 +1,5 @@
 
-  var words = document.querySelectorAll('.rich-text__heading a');
+  var words = document.querySelectorAll('.custom-rich-text-section__heading a');
   var wordArray = [];
   var currentWord = 0;
   words[currentWord].style.opacity = 1;
