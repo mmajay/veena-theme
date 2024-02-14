@@ -3527,3 +3527,16 @@ details-disclosure > details {
 .justify-end{
   justify-content : end;
 }
+
+
+@media (min-width:750px){
+  .l-left{
+    text-align : left;
+  }
+  .l-center{
+    text-align : center;
+  }
+  .l-right{
+    text-align : right;
+  }
+}
