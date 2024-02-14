@@ -27,7 +27,7 @@
 }
 
 .caption-text::before{
-  content: "&middot";
+  content: &middot;
   position: absolute;
   top:0%;
   left: 15%;
