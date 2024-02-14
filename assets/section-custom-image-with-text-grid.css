@@ -42,7 +42,7 @@
 
 .animation-heading__button:hover {
     background-position: -100% 0;
-    background-image: linear-gradient(to right, transparent 50%, black 10%);
+    background-image: linear-gradient(to right, transparent 50%, black 90%);
     background-size: 200% 100%;
     transition: background-position 0.3s ease-in-out;
 }
