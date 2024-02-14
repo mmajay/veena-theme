@@ -26,8 +26,11 @@
 
 }
 
-.custom-image-with-text-grid__image-container:hover img{
-   transform: scale(1.1);
+.custom-image-with-text-grid__position-rel:hover{
+  .custom-image-with-text-grid__image-container img{
+     transform: scale(1.1);
+    
+  }
 }
 
 .custom-image-with-text-grid__caption{
