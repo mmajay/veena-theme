@@ -195,9 +195,10 @@
             "desktop_image": "shopify:\/\/shop_images\/Rectangle_4264.png",
             "caption": "Pre Heading",
             "heading": "Heading",
-            "description": "<p>Heading<\/p><p><\/p>",
+            "description": "",
             "button_text": "Shop Now",
             "button_link": "",
+            "banner_color_scheme": "",
             "text_alignment": "center",
             "alignment_position": "align-center justify-center"
           }
@@ -211,6 +212,7 @@
             "description": "<p>Heading<\/p><p><\/p>",
             "button_text": "Shop Now",
             "button_link": "",
+            "banner_color_scheme": "",
             "text_alignment": "center",
             "alignment_position": "align-center justify-center"
           }
