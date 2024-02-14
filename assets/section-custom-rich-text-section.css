@@ -2,7 +2,7 @@
   font-weight : 400;
 }
 
-.custom-rich-text-section__text-alignment  a{
+.custom-rich-text-section__text-alignment h1 a{
   text-decoration : none;
   color: inherit;
   
