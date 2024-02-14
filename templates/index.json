@@ -102,10 +102,23 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "custom_rich_text_section_jwFHnC": {
+      "type": "custom-rich-text-section",
+      "settings": {
+        "pre_heading": "What You Wear",
+        "heading": "Fashion Emerges As A Universal Language",
+        "button_text": "Explore More",
+        "button_link": "",
+        "color_scheme": "scheme-2",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "hero_banner_slider_hMhRdj",
-    "custom_image_with_text_grid_cH7kLX"
+    "custom_image_with_text_grid_cH7kLX",
+    "custom_rich_text_section_jwFHnC"
   ]
 }
