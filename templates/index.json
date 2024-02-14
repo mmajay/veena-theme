@@ -115,10 +115,21 @@
             "button_text": "",
             "button_link": ""
           }
+        },
+        "heading_jLinpC": {
+          "type": "heading",
+          "settings": {
+            "pre_heading": "",
+            "heading": "",
+            "description": "",
+            "button_text": "",
+            "button_link": ""
+          }
         }
       },
       "block_order": [
-        "heading_rVJJ8E"
+        "heading_rVJJ8E",
+        "heading_jLinpC"
       ],
       "settings": {
         "content_position": "justify-start",
