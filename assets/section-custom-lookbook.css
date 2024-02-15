@@ -25,7 +25,7 @@
 .lookbook__dot-container{
   display: flex;
   column-gap: 15px;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   position: absolute;
   width: 100%;
   z-index: 1;
