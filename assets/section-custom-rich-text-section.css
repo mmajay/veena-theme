@@ -2,6 +2,10 @@
   font-weight : 400;
 }
 
+.custom-rich-text-section__heading{
+  margin: 10px;
+}
+
 .custom-rich-text-section__heading a{
   text-decoration : none;
   color: #d03c3f;
