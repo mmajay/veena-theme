@@ -11,5 +11,5 @@
   transition: transform 0.3s ease;
 }
 .custom-usp__icon:hover{
-  transform: translateX(1);
+  transform: scaleX(-1);
 }
