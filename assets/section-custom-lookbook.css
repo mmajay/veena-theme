@@ -3,10 +3,6 @@
   padding-bottom: 115%;
 }
 
-.grid__item{
-  oaver-flow: hidden;
-}
-
 .lookbook__image img{
   position: absolute;
   top: 0;
