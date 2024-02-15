@@ -21,7 +21,7 @@
       {% if section.blocks.size > 0  %}
         {% for block in section.blocks %}
           <div class="grid__item">
-              <div class="custom-image-with-text-grid__text-align {{ block.settings.text_alignment }} color-{{ block.settings.usp_color_scheme }}">
+              <div class="{{ block.settings.text_alignment }} color-{{ block.settings.usp_color_scheme }}">
                 {% if block.settings.svg_embed != blank %}
                   <div class="">
                     {{ block.settings.svg_embed }}
