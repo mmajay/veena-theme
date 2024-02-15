@@ -29,10 +29,10 @@
 .lookbook__dot-container{
   display: flex;
   position: absolute;
-  width: 100%;
+  /* width: 100%; */
   z-index: 1;
-  height: 100%;
-    overflow: hidden;
+  /* height: 100%; */
+  overflow: hidden;
 }
 
 .lookbook__dots {
