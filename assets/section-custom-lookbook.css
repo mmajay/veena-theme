@@ -86,4 +86,9 @@
   text-decoration: line-through;
 }
 
+.lookbook__dots:hover .lookbook__product-container{
+  visibility: visible;
+  opacity: 1;
+}
+
 
