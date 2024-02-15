@@ -44,6 +44,7 @@
 
 .lookbook__product-container{
   opacity: 0;
+  overflow: hidden;
   margin-left: 10%;
   background: #fff;
   max-width: 40%;
