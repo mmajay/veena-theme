@@ -28,6 +28,7 @@
 
 .lookbook__dot-container{
   display: flex;
+  align-items: center;
   position: absolute;
 }
 
