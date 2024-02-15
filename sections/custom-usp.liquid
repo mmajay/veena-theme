@@ -1,3 +1,4 @@
+{{ "section-custom-usp.css" | asset_url  | stylesheet_tag}}
 
 {% style %}
   .padding-{{ section.id }} {
@@ -16,7 +17,7 @@
 
 
 <div class="custom-usp padding-{{ section.id }}">
-  <div class="full-width">
+  <div class="full-width custom-usp__section">
     <div class="grid grid--1-col grid--4-col-desktop">
       {% if section.blocks.size > 0  %}
         {% for block in section.blocks %}
