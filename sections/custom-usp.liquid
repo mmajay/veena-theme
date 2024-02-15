@@ -22,41 +22,20 @@
         {% for block in section.blocks %}
           <div class="grid__item">
               <div class="custom-image-with-text-grid__text-align {{ block.settings.text_alignment }} color-{{ block.settings.color_scheme }}">
-            {% if block.settings.svg_embed != blank %}
-              <div class="">
-                {{ block.settings.svg_embed }}
-              </div>
-            {% else %}
-              {{ "detailed-apparel-1" | placeholder_svg_tag }}
-            {% endif %}
-
-           
-                
-                {% if block.settings.caption != blank %}
-                  <ul class="custom-caption">
-                    <li class="h4 custom-caption__text">
-                      {{ block.settings.caption }} 
-                    </li>
-                  </ul>
+                {% if block.settings.svg_embed != blank %}
+                  <div class="">
+                    {{ block.settings.svg_embed }}
+                  </div>
+                {% else %}
+                  {{ "detailed-apparel-1" | placeholder_svg_tag }}
                 {% endif %}
-              
+
                 {% if block.settings.heading != blank %}
                   <h2 class="h1"> {{ block.settings.heading }} </h2>
                 {% endif %}
               
                 {% if block.settings.description != blank %}
                   <h2 class="h3"> {{ block.settings.description }} </h2>
-                {% endif %}
-              
-                {% if block.settings.button_text != blank %}
-                  <a class="custom-button-primary" 
-                    {% if block.settings.button_link == blank %}
-                        role="link" aria-disabled="true"
-                    {% else %}
-                        href="{{ block.settings.button_link }}"
-                    {% endif %}>
-                    {{ block.settings.button_text }}
-                  </a>
                 {% endif %}
           
               </div>
