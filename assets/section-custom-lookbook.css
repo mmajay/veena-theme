@@ -34,7 +34,7 @@
 .lookbook__dots {
   height: 3.4rem;
   width: 3.4rem;
-  /* position: absolute; */
+  position: absolute;
   display: flex;
   cursor: pointer;
   align-items: center;
