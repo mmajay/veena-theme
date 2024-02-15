@@ -1,6 +1,13 @@
 .lookbook__image{
   position: relative;
-  padding-bottom: 115%;
+  padding-bottom: 100%;
+}
+
+@media screen and (min-width: 750px){
+  .lookbook__image{
+     padding-bottom: 115%;
+  }
+  
 }
 
 .lookbook__image img{
