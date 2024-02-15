@@ -5,7 +5,7 @@
 .custom-usp__description p{
   opacity: 0.6;
   font-weight: 400;
-  margin: 0;
+  margin: 6px 0 0 0;
 }
 
 .custom-usp__icon svg{
