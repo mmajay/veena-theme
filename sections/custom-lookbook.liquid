@@ -15,13 +15,13 @@
     }
     {% for block in section.blocks %}
       .lookbook__tops-postion-{{ block.id }}{
-        top: {{ block.settings.top_position }}%;
-        left: {{ block.settings.left_position }}%;
+        top: {{ block.settings.tops_top_position }}%;
+        left: {{ block.settings.tops_left_position }}%;
       }
       
       .lookbook__bottoms-postion-{{ block.id }}{
-        top: {{ block.settings.top_position }}%;
-        left: {{ block.settings.left_position }}%;
+        top: {{ block.settings.bottoms_top_position }}%;
+        left: {{ block.settings.bottoms_left_position }}%;
       }
     
   {% endfor %} 
