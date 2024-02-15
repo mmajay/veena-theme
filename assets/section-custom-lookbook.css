@@ -53,6 +53,7 @@
   align-items: center;
   padding: 10px;
   border-radius: 10px;
+  transform: translateX(50px)
 }
 
 .lookbook__product-image img{
