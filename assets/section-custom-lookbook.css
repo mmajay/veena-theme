@@ -37,6 +37,12 @@
 }
 
 
+.lookbook_product{
+  display: flex;
+  column-gap: 15px;
+}
+
+
 /* .lookbook__product-container{
   opacity: 0;
   visibility: hidden;
