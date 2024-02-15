@@ -68,8 +68,8 @@
 }
 
 .lookbook__product-content{
-  max-width: 340px;
-  max-height: 150px;
+  min-width: 340px;
+  min-height: 150px;
   margin-left: 5px;
 }
 
