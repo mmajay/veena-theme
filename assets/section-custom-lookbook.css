@@ -18,6 +18,10 @@
   font-weight: 400;
 }
 
+.lookbook__content{
+  margin-top: 15px;
+}
+
 .lookbook__image-container{
   position: relative;
 }
