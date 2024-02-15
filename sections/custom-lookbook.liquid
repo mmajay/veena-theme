@@ -20,9 +20,9 @@
   <div class="page-width">
     <div class="grid grid--1-col grid--3-col-desktop">
       {% for block in section.blocks %}
-        <div class="grid__item cutom-border-radius">
+        <div class="grid__item">
           <div class="lookbook__image-container">
-            <div class="lookbook__image">
+            <div class="lookbook__image cutom-border-radius">
               {% if block.settings.desktop_image != blank %}
                 {% render "responsive-image" desktopImage:block.settings.desktop_image, mobileImage: block.settings.mobile_image  %}
               {% endif %}  
