@@ -45,6 +45,8 @@
 .lookbook__product-container{
   margin-left: 10%;
   background: #fff;
+  width: 40%;
+  height: 30%
 }
 
 .lookbook__product-image img{
