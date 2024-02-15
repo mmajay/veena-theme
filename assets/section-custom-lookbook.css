@@ -25,14 +25,12 @@
 .lookbook__dot-container{
   display: flex;
   column-gap: 15px;
-  /* border: 1px solid red; */
+  border: 1px solid red;
   position: absolute;
   width: 100%;
   z-index: 1;
   height: 100%;
 }
-
-
 
 .lookbook__dots {
   height: 3.4rem;
@@ -46,33 +44,5 @@
   background-color: white;
 }
 
-
-/* .lookbook__product-image{
-  position: relative;
-  padding-bottom: 20%;
-}
-
-.lookbook__product-image img{
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  object-position: center;
-}
- */
-
-
-/* .lookbook__product-container{
-  opacity: 0;
-  visibility: hidden;
-}
-
-.lookbook_product:hover .lookbook__product-container{
-  opacity: 1;
-  visibility: visible;
-}
- */
 
 
