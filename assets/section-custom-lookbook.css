@@ -44,7 +44,6 @@
 
 .lookbook__product-container{
   opacity: 0;
-  /* visibility: hidden; */
   margin-left: 10%;
   background: #fff;
   max-width: 40%;
@@ -89,7 +88,6 @@
 }
 
 .lookbook__dot-container:hover .lookbook__product-container{
-  visibility: unset;
   opacity: 1;
   transform: translateX(0);
   
