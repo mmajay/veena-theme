@@ -19,3 +19,7 @@
 .lookbook__image-container{
   position: relative;
 }
+
+.look_book__dots{
+  position: absolute;
+}
