@@ -16,6 +16,32 @@
 
 {% endstyle %}
 
+<div class="lookbook">
+  <div class="page-width">
+    <div class="grid grid--1-col grid--3-col-desktop">
+      {% for block in section.blocks %}
+        <div class="grid__item">
+          <div class="lookbook__image-container">
+            <div class="lookbook__image">
+              {% if block.settings.desktop_image != blank %}
+                {% render "responsive-image" desktopImage:block.settings.desktop_image, mobileImage: block.settings.mobile_image  %}
+              {% endif %}  
+            </div>
+            {% for block in section.blocks %}
+              <div class="shop-look__dots shop-look__postion-{{ block.id }}">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none" class="icon-circle">
+                	<circle class="icon-circle" cx="5.5" cy="5.5" r="5.5" fill="#000"></circle>
+                  </svg>
+              </div>
+            {% endfor %}
+          </div>
+          <div class="lookbook__content"></div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
 
 
 
