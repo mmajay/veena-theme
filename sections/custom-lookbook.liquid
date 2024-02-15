@@ -16,9 +16,11 @@
     {% for block in section.blocks %}
       .lookbook__tops-postion-{{ block.id }}{
         top: {{ block.settings.top_position }}%;
+        left: {{ block.settings.left_position }}%;
       }
       
       .lookbook__bottoms-postion-{{ block.id }}{
+        top: {{ block.settings.top_position }}%;
         left: {{ block.settings.left_position }}%;
       }
     
@@ -164,7 +166,7 @@
           },
           {
             "type" : "range",
-            "id" : "left_position",
+            "id" : "tops_left_position",
             "label" : "Distance from left",
             "min" : 10,
             "max" : 100,
@@ -174,7 +176,27 @@
           },
           {
             "type" : "range",
-            "id" : "top_position",
+            "id" : "tops_top_position",
+            "label" : "Distance from Top",
+            "min" : 10,
+            "max" : 100,
+            "step" : 1,
+            "default" : 30,
+            "info" : "The Distance mesured from top %"
+          },
+          {
+            "type" : "range",
+            "id" : "bottoms_left_position",
+            "label" : "Distance from left",
+            "min" : 10,
+            "max" : 100,
+            "step" : 1,
+            "default" : 20,
+            "info" : "The Distance measured from left %"
+          },
+          {
+            "type" : "range",
+            "id" : "bottoms_top_position",
             "label" : "Distance from Top",
             "min" : 10,
             "max" : 100,
