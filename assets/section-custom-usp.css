@@ -2,14 +2,15 @@
   background: #f5f5f5;
 }
 
-.custom-usp__description{
+.custom-usp__description p{
   opacity: 0.6;
   font-weight: 400;
+  margin: 0;
 }
 
-.custom-usp__icon{
+.custom-usp__icon svg{
   transition: transform 0.3s ease;
 }
-.custom-usp__icon:hover{
+.custom-usp__icon:hover svg{
   transform: scaleX(-1);
 }
