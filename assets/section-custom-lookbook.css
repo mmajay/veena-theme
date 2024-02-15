@@ -89,8 +89,6 @@
 
 .lookbook__dots:hover .lookbook__product-container{
   opacity: 1;
-  pointer-events: unset;
-  visibility: unset;
   transform: translateX(0);
   
 }
