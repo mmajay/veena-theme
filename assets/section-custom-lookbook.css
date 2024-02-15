@@ -94,7 +94,7 @@
 .lookbook__dot-container:hover  .lookbook__product-container{
   opacity: 1;
   visibility: unset;
-  transform: translateX(0px);
+  transform: translateX(10px);
   
 }
 
