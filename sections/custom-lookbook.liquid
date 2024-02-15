@@ -60,11 +60,11 @@
                       {% endif %} 
                       
                       {% if topProduct.price != blank %}
-                        <h2 class="h6 lookbook__product-price"> {{ topProduct.price | money_without_trailing_zeros }} </h2>
+                        <h2 class="h6 lookbook__product-price"> {{ topProduct.price | money_with_currency }} </h2>
                       {% endif %}  
                       
                       {% if topProduct.compare_at_price != blank %}
-                        <h2 class="h6 lookbook__product-compare-price"> {{ topProduct.compare_at_price | money_without_trailing_zeros }} </h2>
+                        <h2 class="h6 lookbook__product-compare-price"> {{ topProduct.compare_at_price | money_with_currency }} </h2>
                       {% endif %}  
                     </div>
                 </div>
