@@ -16,20 +16,6 @@
   object-position : center;
 }
 
-/* .hero_banner__caption-text{
-  display: inline-block;
-  padding: 0 13px 0 30px;
-  border: 1px solid #fff;
-  border-radius: 30px;
-  backdrop-filter: blur(10px);
-}
-
-.hero-banner-slider__caption{
-  list-style : disc;
-  padding: 5px 0;
-  font-weight: 400;
-}
- */
 .hero-banner-slider__text-container{
   display : flex;
   position : absolute;
