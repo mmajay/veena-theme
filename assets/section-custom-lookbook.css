@@ -59,10 +59,12 @@
   border-radius: 10px;
 }
 
+.lookbook__product-content{
+  border: 1px solid red
+}
+
 .lookbook__product-title{
-  font-size: 10px;
-  color: #000;
-  margin: 20px;
+
 }
 
 
