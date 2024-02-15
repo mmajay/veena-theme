@@ -87,7 +87,7 @@
 
 .lookbook__dots:hover + .lookbook__product-container{
   opacity: 1;
-  transform: translateX(8px);
+  transform: translateX(10px);
   
 }
 
