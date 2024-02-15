@@ -45,7 +45,7 @@
 .lookbook__product-container{
   margin-left: 10%;
   background: #fff;
-  width: 35%;
+  max-width: 40%;
   max-height: 20%;
   display: flex;
   align-items: center;
