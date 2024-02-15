@@ -51,6 +51,7 @@
         "banner_FchdrT",
         "banner_G6GNmM"
       ],
+      "disabled": true,
       "settings": {
         "slider_autoplay": true,
         "slide_dots": true,
@@ -64,6 +65,7 @@
     },
     "custom_rich_text_section_xnXzEz": {
       "type": "custom-rich-text-section",
+      "disabled": true,
       "settings": {
         "pre_heading": "What You Wear",
         "heading": "<p>Fashion Emerges <br\/>As A Universal <a href=\"#\" title=\"#\">Language<\/a><\/p>",
@@ -89,6 +91,7 @@
             "button_text": "Shop Now",
             "button_link": "#",
             "banner_color_scheme": "",
+            "text_size": "h2",
             "text_alignment": "center",
             "alignment_position": "align-center justify-center"
           }
@@ -103,6 +106,7 @@
             "button_text": "Shop Now",
             "button_link": "#",
             "banner_color_scheme": "",
+            "text_size": "h2",
             "text_alignment": "center",
             "alignment_position": "align-center justify-center"
           }
@@ -112,6 +116,7 @@
         "image_grid_aMM8kN",
         "image_grid_efFQM8"
       ],
+      "disabled": true,
       "settings": {
         "image_padding": "image-landscape",
         "padding_top": 36,
@@ -131,6 +136,7 @@
             "button_text": "Explore",
             "button_link": "#",
             "banner_color_scheme": "scheme_1",
+            "text_size": "h2",
             "text_alignment": "center",
             "alignment_position": "align-end justify-center"
           }
@@ -145,6 +151,7 @@
             "button_text": "Explore",
             "button_link": "#",
             "banner_color_scheme": "scheme_1",
+            "text_size": "h2",
             "text_alignment": "center",
             "alignment_position": "align-end justify-center"
           }
@@ -154,6 +161,7 @@
         "image_grid_6ABiUU",
         "image_grid_T7hghT"
       ],
+      "disabled": true,
       "settings": {
         "image_padding": "image-square",
         "padding_top": 36,
@@ -210,6 +218,7 @@
         "usp_EARe8c",
         "usp_gqYLVH"
       ],
+      "disabled": true,
       "settings": {
         "padding_top": 40,
         "padding_bottom": 40
