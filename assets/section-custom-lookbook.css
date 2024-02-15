@@ -86,7 +86,7 @@
   text-decoration: line-through;
 }
 
-.lookbook__dots:hover .lookbook__product-container{
+.lookbook__dot-container:hover .lookbook__product-container{
   visibility: unset;
   opacity: 1;
 }
