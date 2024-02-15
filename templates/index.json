@@ -272,10 +272,10 @@
             "lookbook_color_scheme": "scheme-2",
             "top_product": "",
             "bottom_product": "",
-            "tops_left_position": 20,
-            "tops_top_position": 30,
-            "bottoms_left_position": 30,
-            "bottoms_top_position": 40
+            "tops_left_position": 30,
+            "tops_top_position": 10,
+            "bottoms_left_position": 33,
+            "bottoms_top_position": 65
           }
         }
       },
