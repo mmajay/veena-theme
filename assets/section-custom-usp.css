@@ -7,7 +7,7 @@
   font-weight: 400;
 }
 
-.custom-usp__icon svg{
+.custom-usp__icon{
   transition: transform 0.3s ease;
 }
 .custom-usp__icon svg:hover{
