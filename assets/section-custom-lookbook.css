@@ -87,7 +87,7 @@
 }
 
 .lookbook__dots:hover .lookbook__product-container{
-  visibility: visible;
+  visibility: unset;
   opacity: 1;
 }
 
