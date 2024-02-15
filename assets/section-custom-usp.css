@@ -1,3 +1,7 @@
 .custom-usp{
   background: #f5f5f5;
 }
+
+.custom-usp__description{
+  opacity: 0.6;
+}
