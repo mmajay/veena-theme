@@ -237,8 +237,10 @@
             "button_link": "#",
             "lookbook_color_scheme": "scheme-2",
             "product": "",
-            "left_position": 20,
-            "top_position": 20
+            "tops_left_position": 24,
+            "tops_top_position": 28,
+            "bottoms_left_position": 30,
+            "bottoms_top_position": 40
           }
         },
         "lookbook_block_W9pkGb": {
@@ -251,8 +253,10 @@
             "button_link": "",
             "lookbook_color_scheme": "scheme-2",
             "product": "",
-            "left_position": 20,
-            "top_position": 20
+            "tops_left_position": 20,
+            "tops_top_position": 30,
+            "bottoms_left_position": 30,
+            "bottoms_top_position": 40
           }
         },
         "lookbook_block_rapciC": {
@@ -265,8 +269,10 @@
             "button_link": "#",
             "lookbook_color_scheme": "scheme-2",
             "product": "",
-            "left_position": 20,
-            "top_position": 20
+            "tops_left_position": 20,
+            "tops_top_position": 30,
+            "bottoms_left_position": 30,
+            "bottoms_top_position": 40
           }
         }
       },
