@@ -155,7 +155,7 @@
         "image_grid_T7hghT"
       ],
       "settings": {
-        "image_padding": "image-potrait",
+        "image_padding": "image-square",
         "padding_top": 36,
         "padding_bottom": 36
       }
