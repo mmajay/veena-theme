@@ -89,6 +89,10 @@
   color: #000;
 }
 
+.lookbook__product-price:hover{
+  color : #d03c3f;
+}
+
 .lookbook__product-compare-price{
   font-size: 13px;
   opacity: 0.6;
