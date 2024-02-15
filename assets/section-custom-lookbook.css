@@ -51,6 +51,10 @@
   object-position: center;
 }
 
+.lookbook__dot-container{
+  position: absolute;
+}
+
 
 .lookbook__product-container{
   opacity: 0;
