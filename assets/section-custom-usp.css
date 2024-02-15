@@ -6,3 +6,10 @@
   opacity: 0.6;
   font-weight: 400;
 }
+
+.custom-usp__icon svg{
+  transition: transform 0.3s ease;
+}
+.custom-usp__icon: svg{
+  transform: translate(-1);
+}
