@@ -45,9 +45,14 @@
               	<circle class="icon-circle" cx="5.5" cy="5.5" r="5.5" fill="#000"></circle>
                 </svg>
                 <div class="lookbook__product-container">
-                  {% assign product=all_products[block.settings.top_product] %}
+                  {% assign topProduct=all_products[block.settings.top_product] %}
                   <div class="lookbook__product-image">
-                    {% render "responsive-image" desktopImage:product.featured_image, mobileImage: product.featured_image  %}
+                    {% render "responsive-image" desktopImage:topProduct.featured_image, mobileImage: topProduct.featured_image  %}
+                    <div class="lookbook__product-content">
+                      {% if topProduct.title != blank %}
+                        <h2 class="h6"> {{ topProduct.title }} </h2>
+                      {% endif %}  
+                    </div>
                   </div>
                 </div>
               </div>
