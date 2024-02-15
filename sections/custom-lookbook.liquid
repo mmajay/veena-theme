@@ -29,7 +29,24 @@
             </div>
             
           </div>
-          <div class="lookbook__content"></div>
+          <div class="lookbook__content">
+            {% if block.settings.heading != blank %}
+              <h2 class="h2"> {{ block.settings.heading }} </h2>
+            {% endif %}  
+            {% if block.settings.description != blank %}
+              <div class="h4"> {{ block.settings.description }} </div>
+            {% endif %}  
+            {% if block.settings.button_text != blank %}
+              <a class="custom-button-secondary" 
+                {% if block.settings.button_link == blank %}
+                    role="link" aria-disabled="true"
+                {% else %}
+                    href="{{ block.settings.button_link }}"
+                {% endif %}>
+                {{ block.settings.button_text }}
+              </a>  
+            {% endif %}  
+          </div>
         </div>
       {% endfor %}
     </div>
