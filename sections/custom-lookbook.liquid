@@ -14,6 +14,17 @@
       }
     }
 
+  {% for block in section.blocks %}
+    .lookbook__tops-postion-{{ block.id }}{
+      top: {{ block.settings.top_position }}
+    }
+    
+    .lookbook__bottoms-postion-{{ block.id }}{
+      top: {{ block.settings.bottom_position }}
+    }
+    
+  {% endfor %}}  
+
 {% endstyle %}
 
 <div class="lookbook">
