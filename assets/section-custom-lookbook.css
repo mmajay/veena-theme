@@ -46,7 +46,7 @@
 }
 
 .lookbook__dots:hover{
-  transform: scale(1.5)
+  transform: scale(1.2)
 }
 
 .lookbook__product-container{
@@ -104,7 +104,6 @@
   opacity: 1;
   visibility: unset;
   transform: translateX(10px);
-  
 }
 
 
