@@ -46,7 +46,8 @@
   margin-left: 10%;
   background: #fff;
   width: 25%;
-  height: 15%
+  height: 15%;
+  display: flex;
 }
 
 .lookbook__product-image img{
