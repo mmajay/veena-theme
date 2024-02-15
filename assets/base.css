@@ -314,19 +314,19 @@ h1,.h1 {
   }
 }
 h2,.h2 {
-  font-size: calc(var(--font-heading-scale) * 2rem);
+  font-size: calc(var(--font-heading-scale) * 1.8rem);
 }
 @media only screen and (min-width: 768px) {
   h2,.h2 {
-    font-size: calc(var(--font-heading-scale) * 2.4rem);
+    font-size: calc(var(--font-heading-scale) * 2.6rem);
   }
 }
 h3,.h3 {
-  font-size: calc(var(--font-heading-scale) * 2rem);
+  font-size: calc(var(--font-heading-scale) * 1.4rem);
 }
 @media only screen and (min-width: 768px) {
   h3, .h3 {
-    font-size: calc(var(--font-heading-scale) * 2rem);
+    font-size: calc(var(--font-heading-scale) * 1.8rem);
   }
 }
 h4, .h4 {
