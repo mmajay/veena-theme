@@ -34,7 +34,7 @@
       {% for block in section.blocks %}
         <div class="grid__item">
           <div class="lookbook__image-container">
-            <div class="lookbook__image cutom-border-radius">
+            <div class="lookbook__image global-media-settings">
               {% if block.settings.desktop_image != blank %}
                 {% render "responsive-image" desktopImage:block.settings.desktop_image, mobileImage: block.settings.mobile_image  %}
               {% endif %}  
