@@ -22,9 +22,9 @@
   position: relative;
 }
 
-.lookbook__dots {
-  /* height: 3.4rem;
-  width: 3.4rem; */
+.lookbook__dots svg {
+  height: 3.4rem;
+  width: 3.4rem;
   position: absolute;
   display: flex;
   cursor: pointer;
