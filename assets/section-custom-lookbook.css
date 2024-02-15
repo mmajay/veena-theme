@@ -46,8 +46,7 @@
 }
 
 .lookbook__dots:hover{
-  height: 25px;
-  width: 25px;
+  transform: scale3d(1.5)
 }
 
 .lookbook__product-container{
