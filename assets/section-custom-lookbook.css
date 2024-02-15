@@ -29,9 +29,9 @@
 .lookbook__dot-container{
   display: flex;
   position: absolute;
-  width: 50%;
+  /* width: 50%; */
   z-index: 1;
-  height: 50%;
+  /* height: 50%; */
   overflow: hidden;
 }
 
