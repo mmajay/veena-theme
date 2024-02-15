@@ -7,9 +7,3 @@
   font-weight: 400;
 }
 
-.custom-usp__icon svg{
-  transition: transform 0.3s ease;
-}
-.custom-usp__icon:hover svg{
-  transform: translateX(1);
-}
