@@ -14,7 +14,7 @@
         "max": 100,
         "step": 1,
         "unit": "px",
-        "label": "Section Padding top",
+        "label": "Section padding top",
         "default": 36
       },
       {
@@ -33,30 +33,31 @@
         "type" : "usp",
         "name" : "usp",
         "settings": [
-           {
-         
-          "type" : "text",
-          "id" : "heading",
-          "label" : "Heading",
-          "default" : "Heading"
-      },
-      {
-        "type" : "richtext",
-        "id" : "description",
-        "label" : "Description",
-        "default" : "<p>Heading<p>"
-      },
-       {
-          "type": "color_scheme",
-          "id": "banner_color_scheme",
-          "label": "Color Scheme",
-          "default": "scheme_2"
+          {
+            "type": "html",
+            "id": "video_embed",
+            "label": "Video embed"
+          },
+          {
+            "type" : "text",
+            "id" : "heading",
+            "label" : "Heading",
+            "default" : "Heading"
+          },
+          {
+            "type" : "richtext",
+            "id" : "description",
+            "label" : "Description",
+            "default" : "<p>Heading<p>"
+          },
+          {
+            "type": "color_scheme",
+            "id": "banner_color_scheme",
+            "label": "Color Scheme",
+            "default": "scheme_2"
           }
-      
-          
         ]
       }
-      
     ]
   }
 {% endschema %}
