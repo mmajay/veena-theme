@@ -44,6 +44,12 @@
                 <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none" class="icon-circle">
               	<circle class="icon-circle" cx="5.5" cy="5.5" r="5.5" fill="#000"></circle>
                 </svg>
+                <div class="lookbook__product-container">
+                  {% assign product=all_products[block.settings.top_product] %}
+                  <div class="lookbook__product-image">
+                    {% render "responsive-image" desktopImage:product.featured_image, mobileImage: product.featured_image  %}
+                  </div>
+                </div>
               </div>
               <div class="lookbook__dots lookbook__bottoms-postion-{{ block.id }}">
                 <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none" class="icon-circle">
