@@ -3549,7 +3549,7 @@ details-disclosure > details {
   border-radius: 10rem;
   color: #000;
   text-transform: capitalize;
-  transition: all 0.3s;
+  transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
   z-index: 1;
@@ -3575,7 +3575,7 @@ details-disclosure > details {
 	 width: 0%;
 	 height: 100%;
 	 background-color: #F5F5F5;
-	 transition: all 0.3s;
+	 transition: all 0.3s ease;
 	 border-radius: 10rem;
 	 z-index: -1;
 }
@@ -3592,7 +3592,7 @@ details-disclosure > details {
   border-radius: 10rem;
   color: #fff;
   text-transform: capitalize;
-  transition: all 0.3s;
+  transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
   z-index: 1;
@@ -3618,7 +3618,7 @@ details-disclosure > details {
 	 width: 0%;
 	 height: 100%;
 	 background-color: #000;
-	 transition: all 0.3s;
+	 transition: all 0.3s ease;
 	 border-radius: 10rem;
 	 z-index: -1;
 }
