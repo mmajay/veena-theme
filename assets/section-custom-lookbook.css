@@ -51,8 +51,8 @@
   opacity: 0;
   margin-left: 10%;
   background: #fff;
-  max-width: 40%;
-  max-height: 20%;
+  max-width: 100%;
+  max-height: 100%;
   display: flex;
   align-items: center;
   padding: 10px;
