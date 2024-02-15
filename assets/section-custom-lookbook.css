@@ -22,6 +22,10 @@
   position: relative;
 }
 
+.lookbook_product{
+  display:relative;
+}
+
 .lookbook__dots {
   height: 3.4rem;
   width: 3.4rem;
