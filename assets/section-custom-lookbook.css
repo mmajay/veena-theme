@@ -38,7 +38,7 @@
 
 
 .lookbook__product-container{
-  /* opacity: 0; */
+  opacity: 0;
   visibility: hidden;
 }
 
