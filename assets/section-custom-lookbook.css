@@ -29,6 +29,7 @@
   width: 3.4rem;
   position: absolute;
   display: flex;
+  cursor: pointer;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
