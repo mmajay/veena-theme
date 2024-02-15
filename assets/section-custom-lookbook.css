@@ -68,9 +68,8 @@
 }
 
 .lookbook__product-content{
-  /* border: 1px solid red; */
-  width: 240px;
-  height: 100%;
+  max-width: 240px;
+  max-height: 200px;
   margin-left: 5px;
 }
 
