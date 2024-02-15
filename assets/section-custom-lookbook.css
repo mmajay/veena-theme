@@ -43,6 +43,10 @@
   background-color: white;
 }
 
+.lookbook__product-container{
+  left: 100px;
+}
+
 .lookbook__product-image img{
   width: 30%;
   height: 30%;
