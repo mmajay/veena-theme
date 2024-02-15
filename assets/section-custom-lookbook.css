@@ -22,6 +22,13 @@
   position: relative;
 }
 
+.lookbook__dot-container{
+  display: flex;
+  column-gap: 15px;
+  position: absolute;
+}
+
+
 
 .lookbook__dots {
   height: 3.4rem;
@@ -51,9 +58,6 @@
   object-position: center;
 }
 
-.lookbook__dot-container{
-  position: absolute;
-}
 
 
 /* .lookbook__product-container{
