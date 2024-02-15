@@ -20,7 +20,7 @@
 <div class="custom-image-with-text-grid padding-{{ section.id }}">
   <div class="page-width">
     <div class="grid grid--1-col grid--2-col-desktop">
-      {% if section.blocks != blank %}
+      {% if section.blocks.size > 0  %}
         {% for block in section.blocks %}
           <div class="grid__item custom-image-with-text-grid__position-rel cutom-border-radius">
             {% if block.settings.desktop_image != blank %}
