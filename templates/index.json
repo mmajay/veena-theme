@@ -125,11 +125,11 @@
           "type": "imageGrid",
           "settings": {
             "desktop_image": "shopify:\/\/shop_images\/Rectangle_55.png",
-            "caption": "Pre Heading",
-            "heading": "Heading",
-            "description": "<p>Heading<\/p><p><\/p>",
-            "button_text": "Shop Now",
-            "button_link": "",
+            "caption": "Men's",
+            "heading": "Introducing Our Distinguished Men's Clothing Collection",
+            "description": "<p><\/p><p><\/p>",
+            "button_text": "Explore",
+            "button_link": "#",
             "banner_color_scheme": "scheme_1",
             "text_alignment": "center",
             "alignment_position": "align-end justify-center"
@@ -139,11 +139,11 @@
           "type": "imageGrid",
           "settings": {
             "desktop_image": "shopify:\/\/shop_images\/Rectangle_56.png",
-            "caption": "Pre Heading",
-            "heading": "Heading",
-            "description": "<p>Heading<\/p><p><\/p>",
-            "button_text": "Shop Now",
-            "button_link": "",
+            "caption": "Women's",
+            "heading": "Elevate Your Wardrobe With Our Women's Clothing Collection",
+            "description": "",
+            "button_text": "Explore",
+            "button_link": "#",
             "banner_color_scheme": "scheme_1",
             "text_alignment": "center",
             "alignment_position": "align-end justify-center"
