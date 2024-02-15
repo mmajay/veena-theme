@@ -60,6 +60,7 @@
   border-radius: 10px;
   transform: translateX(50px);
   transition: transform 0.5s ease;
+  visibility: hidden;
 }
 
 .lookbook__product-image img{
@@ -92,7 +93,8 @@
 
 .lookbook__dots:hover + .lookbook__product-container{
   opacity: 1;
-  transform: translateX(0px);
+  visibility: unset;
+  transform: translateX(10px);
   
 }
 
