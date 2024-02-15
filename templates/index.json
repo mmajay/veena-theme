@@ -223,6 +223,31 @@
         "padding_top": 40,
         "padding_bottom": 40
       }
+    },
+    "custom_lookbook_FWMDRU": {
+      "type": "custom-lookbook",
+      "blocks": {
+        "lookbook_block_PqtAPX": {
+          "type": "lookbook-block",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/Rectangle_55.png",
+            "heading": "",
+            "description": "",
+            "button_text": "",
+            "button_link": "",
+            "product": "",
+            "left_position": 20,
+            "top_position": 20
+          }
+        }
+      },
+      "block_order": [
+        "lookbook_block_PqtAPX"
+      ],
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -230,6 +255,7 @@
     "custom_rich_text_section_xnXzEz",
     "custom_image_with_text_grid_cH7kLX",
     "custom_image_with_text_grid_x8RtKC",
-    "custom_usp_BGXkTw"
+    "custom_usp_BGXkTw",
+    "custom_lookbook_FWMDRU"
   ]
 }
