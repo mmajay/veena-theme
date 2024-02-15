@@ -73,7 +73,6 @@
 .lookbook__product-title{
   font-size: 12px;
   color: #000;
-  font-weight: 500;
 }
 
 .lookbook__product-price{
@@ -95,4 +94,7 @@
   
 }
 
+.lookbook__heading{
+  font-weight: 600;
+}
 
