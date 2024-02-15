@@ -50,11 +50,13 @@
   display: flex;
   align-items: center;
   padding: 10px;
+  border-radius: 10px;
 }
 
 .lookbook__product-image img{
   width: 60px;
   height: 60px;
+  border-radius: 10px;
 }
 
 
