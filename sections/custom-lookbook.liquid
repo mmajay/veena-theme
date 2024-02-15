@@ -76,7 +76,7 @@
                   </svg>
                 </div>
                 <div class="lookbook__product-container">
-                  {% assign topProduct=all_products[block.settings.top_product] %}
+                  {% assign topProduct=all_products[block.settings.bottom_product] %}
                   <div class="lookbook__product-image">
                     {% if topProduct.featured_image != blank %}
                       {% render "responsive-image" desktopImage:topProduct.featured_image, mobileImage: topProduct.featured_image  %}
