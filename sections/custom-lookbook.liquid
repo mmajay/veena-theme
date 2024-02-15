@@ -76,23 +76,23 @@
                   </svg>
                 </div>
                 <div class="lookbook__product-container">
-                  {% assign topProduct=all_products[block.settings.bottom_product] %}
+                  {% assign bottomProduct=all_products[block.settings.bottom_product] %}
                   <div class="lookbook__product-image">
-                    {% if topProduct.featured_image != blank %}
-                      {% render "responsive-image" desktopImage:topProduct.featured_image, mobileImage: topProduct.featured_image  %}
+                    {% if bottomProduct.featured_image != blank %}
+                      {% render "responsive-image" desktopImage:bottomProduct.featured_image, mobileImage: bottomProduct.featured_image  %}
                     {% endif %}  
                   </div>
                     <div class="lookbook__product-content">
-                      {% if topProduct.title != blank %}
-                        <h2 class="h6 lookbook__product-title"> {{ topProduct.title }} </h2>
+                      {% if bottomProduct.title != blank %}
+                        <h2 class="h6 lookbook__product-title"> {{ bottomProduct.title }} </h2>
                       {% endif %} 
                       
-                      {% if topProduct.price != blank %}
-                        <h2 class="h6 lookbook__product-price"> {{ topProduct.price | money_with_currency }} </h2>
+                      {% if bottomProduct.price != blank %}
+                        <h2 class="h6 lookbook__product-price"> {{ bottomProduct.price | money_with_currency }} </h2>
                       {% endif %}  
                       
-                      {% if topProduct.compare_at_price != blank %}
-                        <h2 class="h6 lookbook__product-compare-price"> {{ topProduct.compare_at_price | money_with_currency }} </h2>
+                      {% if bottomProduct.compare_at_price != blank %}
+                        <h2 class="h6 lookbook__product-compare-price"> {{ bottomProduct.compare_at_price | money_with_currency }} </h2>
                       {% endif %}  
                     </div>
                 </div>
