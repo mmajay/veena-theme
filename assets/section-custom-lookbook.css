@@ -42,11 +42,12 @@
   justify-content: center;
   border-radius: 50%;
   background-color: white;
-  transition: transform 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .lookbook__dots:hover{
-  transform: scale(1.5)
+  height: 25px;
+  width: 25px;
 }
 
 .lookbook__product-container{
