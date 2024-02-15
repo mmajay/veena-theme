@@ -56,7 +56,12 @@
                   </div>
                     <div class="lookbook__product-content">
                       {% if topProduct.title != blank %}
-                        <h2 class="h6 lookbook__product-title"> {{ topProduct.title }} </h2>
+                          <a href="{{ topProduct.url }}">
+                        <h2 class="h6 lookbook__product-title">
+                            {{ topProduct.title }} 
+                            
+                        </h2>
+                          </a>
                       {% endif %} 
                       
                       {% if topProduct.price != blank %}
