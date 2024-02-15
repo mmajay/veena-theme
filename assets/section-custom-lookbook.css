@@ -78,6 +78,11 @@
   color: #000;
 }
 
+.lookbook__product-content a{
+  text-decoration: none;
+}
+
+
 .lookbook__product-price{
   font-size: 14px;
   font-weight: 600;
