@@ -239,10 +239,38 @@
             "left_position": 20,
             "top_position": 20
           }
+        },
+        "lookbook_block_gb9ePY": {
+          "type": "lookbook-block",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/Rectangle_56.png",
+            "heading": "",
+            "description": "",
+            "button_text": "",
+            "button_link": "",
+            "product": "",
+            "left_position": 20,
+            "top_position": 20
+          }
+        },
+        "lookbook_block_UdNKCr": {
+          "type": "lookbook-block",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/Rectangle_56.png",
+            "heading": "",
+            "description": "",
+            "button_text": "",
+            "button_link": "",
+            "product": "",
+            "left_position": 20,
+            "top_position": 20
+          }
         }
       },
       "block_order": [
-        "lookbook_block_PqtAPX"
+        "lookbook_block_PqtAPX",
+        "lookbook_block_gb9ePY",
+        "lookbook_block_UdNKCr"
       ],
       "settings": {
         "padding_top": 36,
