@@ -12,6 +12,8 @@
   <div class="product-card__content {{ product_text_alignment }}">
     <h2 class="h5"> {{ product.vendor }} </h2>
     <a class="h3" href="{{ current_varient.url }}"> {{ product.title }} </a> 
-    <span class="h4">{{ current_varient.price_min }}</span>
+    <div class="product-card__prices">
+      <span class="h4">{{ current_varient.price_min }}</span>
+    </div>
   </div>
 </product-card>
