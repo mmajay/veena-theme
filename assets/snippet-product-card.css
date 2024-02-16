@@ -15,7 +15,7 @@
   left: 10px;
 }
 
-.product-card__discount,product-card__badge{
+.product-card__discount,.product-card__badge{
   padding: 5px 10px;
   background-color: #dd1d1d;
   color: #fff;
