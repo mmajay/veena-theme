@@ -37,7 +37,7 @@
           <div class="lookbook__image-container">
             <div class="lookbook__image global-media-settings">
               {% if block.settings.desktop_image != blank %}
-                {% render "responsive-image" desktopImage:block.settings.desktop_image, mobileImage: block.settings.mobile_image  
+                {% render "responsive-image" desktopImage:block.settings.desktop_image, mobileImage: block.settings.mobile_image  %}
               {% else %}
                 {{ "collection-1" | placeholder_svg_tag  }}
               {% endif %}  

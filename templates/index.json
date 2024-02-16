@@ -272,16 +272,33 @@
             "bottoms_left_position": 38,
             "bottoms_top_position": 75
           }
+        },
+        "lookbook_block_mGyhzk": {
+          "type": "lookbook-block",
+          "settings": {
+            "heading": "Women's Winter Clothes",
+            "description": "<p>Welcome the season in style with our Women's Winter Clothes Collection – where warmth meets sophistication.<\/p>",
+            "button_text": "Discover More",
+            "button_link": "",
+            "lookbook_color_scheme": "scheme-2",
+            "top_product": "",
+            "bottom_product": "",
+            "tops_left_position": 20,
+            "tops_top_position": 30,
+            "bottoms_left_position": 30,
+            "bottoms_top_position": 40
+          }
         }
       },
       "block_order": [
         "lookbook_block_KXEDLV",
         "lookbook_block_W9pkGb",
-        "lookbook_block_rapciC"
+        "lookbook_block_rapciC",
+        "lookbook_block_mGyhzk"
       ],
       "settings": {
         "padding_top": 30,
-        "padding_bottom": 36
+        "padding_bottom": 30
       }
     }
   },
