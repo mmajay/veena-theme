@@ -42,13 +42,14 @@
                 {{ "collection-1" | placeholder_svg_tag  }}
               {% endif %}  
             </div>
+            
             {% if block != blank %}       
               <div class="lookbook__dot-container lookbook__tops-postion-{{ block.id }}">
                 <div class="lookbook__dots">
                   <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 11 11" fill="none" class="icon-circle">
                 	<circle class="icon-circle" cx="5.5" cy="5.5" r="5.5" fill="#000"></circle>
                   </svg>
-                </div>
+                </div>              
                 <div class="lookbook__product-container">
                   {% assign topProduct=all_products[block.settings.top_product] %}
                   <div class="lookbook__product-image">
@@ -75,6 +76,8 @@
                     </div>
                 </div>
               </div>
+
+
               <div class="lookbook__dot-container lookbook__bottoms-postion-{{ block.id }}">
                 <div class="lookbook__dots">
                   <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 11 11" fill="none" class="icon-circle">
@@ -105,15 +108,20 @@
                     </div>
                 </div>
               </div>
-            {% endif %}
+            {% endif %}            
           </div>
+
+
+          
           <div class="lookbook__content color-{{ block.settings.lookbook_color_scheme }}">
             {% if block.settings.heading != blank %}
-              <h2 class="h2 lookbook__heading"> {{ block.settings.heading }} </h2>
+              <h2 class="lookbook__heading"> {{ block.settings.heading }} </h2>
             {% endif %}  
+            
             {% if block.settings.description != blank %}
               <div class="h3 lookbook__description"> {{ block.settings.description }} </div>
             {% endif %}  
+        
             {% if block.settings.button_text != blank %}
               <a class="custom-button-secondary_color" 
                 {% if block.settings.button_link == blank %}
@@ -211,17 +219,17 @@
           },
           {
             "type": "header",
-            "content": "Lookbook dots settings"
+            "content": "Lookbook first dot settings"
           },
           {
-            "type" : "product",
-            "id" : "top_product",
-            "label" : "Choose top product"
-          },
-          {
-            "type" : "product",
-            "id" : "bottom_product",
-            "label" : "Choose bottom product"
+            "type" : "range",
+            "id" : "tops_top_position",
+            "label" : "Distance from top",
+            "min" : 10,
+            "max" : 100,
+            "step" : 1,
+            "default" : 30,
+            "info" : "The distance measured in %"
           },
           {
             "type" : "range",
@@ -231,17 +239,26 @@
             "max" : 100,
             "step" : 1,
             "default" : 20,
-            "info" : "The Distance measured from left %"
+            "info" : "The distance measured in %"
+          },          
+          {
+            "type" : "product",
+            "id" : "top_product",
+            "label" : "Choose top product"
+          },
+          {
+            "type": "header",
+            "content": "Lookbook second dot settings"
           },
           {
             "type" : "range",
-            "id" : "tops_top_position",
-            "label" : "Distance from Top",
+            "id" : "bottoms_top_position",
+            "label" : "Distance from top",
             "min" : 10,
             "max" : 100,
             "step" : 1,
-            "default" : 30,
-            "info" : "The Distance mesured from top %"
+            "default" : 40,
+            "info" : "The distance mesured in %"
           },
           {
             "type" : "range",
@@ -251,17 +268,12 @@
             "max" : 100,
             "step" : 1,
             "default" : 30,
-            "info" : "The Distance measured from left %"
-          },
+            "info" : "The distance measured in %"
+          },         
           {
-            "type" : "range",
-            "id" : "bottoms_top_position",
-            "label" : "Distance from Top",
-            "min" : 10,
-            "max" : 100,
-            "step" : 1,
-            "default" : 40,
-            "info" : "The Distance mesured from top %"
+            "type" : "product",
+            "id" : "bottom_product",
+            "label" : "Choose bottom product"
           }
         ]
       }
