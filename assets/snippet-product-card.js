@@ -10,7 +10,7 @@ class ProductCard extends HTMLElement {
   }
 
   onVariantChange (){
-    console.log("")
+    console.log("sjfg dbm")
   }
 
   
