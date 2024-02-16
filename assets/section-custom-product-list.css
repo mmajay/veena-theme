@@ -1,7 +1,6 @@
 .product-list__section-heading-container {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
 }
 
 @media (min-width: 750px) {
