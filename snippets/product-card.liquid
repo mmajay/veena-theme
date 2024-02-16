@@ -41,7 +41,7 @@
   <div class="product-card__content {{ product_text_alignment }}">
     <div class="product-card-varients">
       {% for varient in product.options_with_values %}
-        {{ varient }}
+        {{ varient | json }}
       {% endfor %}  
       
     </div>
