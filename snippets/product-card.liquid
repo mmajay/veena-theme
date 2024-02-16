@@ -14,7 +14,7 @@
     <h2 class="h5"> {{ product.vendor }} </h2>
     <a class="h3" href="{{ current_varient.url }}"> {{ product.title }} </a> 
     <div class="product-card__prices">
-      <span class="h3">{{ product.price_min  }}</span>
+      <span class="h3">{{ product.price_min | money_with_currency }}</span>
       {% if current_varient.compare_at_price > current_varient.price %}
         <span class="h3"> {{ current_varient.compare_at_price | money_with_currency }} </span>
       {% endif %}
