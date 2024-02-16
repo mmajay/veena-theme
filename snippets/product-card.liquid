@@ -26,11 +26,21 @@
   </div>
 
   <div class="product-card__left-tags">
+    {% for tag in product.tags %}
+      {% if tag contains "New" %}
+        {% assign badge_text = tag | split: '_' | last %}
+      {% endif %}  
+    {% endfor %} 
+    {% if badge_text != blank %}
+      <span class="h5 product-card__badge">
+        {{ badge_text }}
+      </span>
+    {% endif %}
     {% if discountPercentage > 0 %}
       <span class="h5 product-card__discount">
         {{ discountPercentage }}%off
       </span>
-    {% endif %}  
+    {% endif %}
   </div>
 
 
