@@ -8,7 +8,7 @@
 %}
 
 
-<product-card class="product-card">
+<product-card class="product-card" data-product-handle="{{ product.handle }}" data-section-id="{{ section_id }}">
   <a href="{{ product.url }}">
     <div class="product-card__image">
       {% render "responsive-image", desktopImage: featured_image, class: "media media--portrait global-media-settings" %}
