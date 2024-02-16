@@ -13,7 +13,7 @@ class ProductCard extends HTMLElement {
   onVariantChange (){
     // console.log("sjfg dbm")
     this.selectedOptions = Array.from(this.querySelectorAll('input[type="radio"]:checked'), input => input.value);
-    cosole.log(this.selectedOptions)
+    console.log(this.selectedOptions)
     this.currentVariant = this.variantData.find(item => JSON.stringify(item.options) == JSON.stringify(this.selectedOptions))
   }
 
