@@ -1,14 +1,12 @@
 {% liquid
   assign current_varient = product.selected_or_first_available_variant
   assign featured_image = current_varient.image | default : product.featured_image
-  assign second_image = product.images[1] | default : product.featured_image
-  
 %}
 
 <product-card>
   <a href="{{ product.url }}">
-    <div class="media media--square media--hover-effect media--transparent">
-      {% render "image", featured_image: featured_image, secondary_image: second_image %}
+    <div class="media media--square">
+      {% render "responsive-image", desktopImage: featured_image %}
       
     </div>
   </a>
