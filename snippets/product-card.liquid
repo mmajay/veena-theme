@@ -19,7 +19,7 @@
         <span class="h3">  {{ product.price | money_with_currency }}</span>   
       {% endif %}  
       {% if current_varient.compare_at_price > current_varient.price %}
-        <span class="h3"> {{ current_varient.compare_at_price | money_with_currency }} </span>
+        <s class="h3"> {{ current_varient.compare_at_price | money_with_currency }} </s>
       {% endif %}
     </div>
   </div>
