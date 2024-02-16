@@ -24,6 +24,7 @@
         "color_scheme": "scheme-1",
         "text_size": "h2",
         "text_alignment": "left",
+        "product_text_alignment": "center",
         "alignment_position": "align-center justify-center",
         "padding_top": 36,
         "padding_bottom": 36
