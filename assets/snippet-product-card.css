@@ -47,3 +47,10 @@
 .product-card__badge{
   background-color: #22570e;
 }
+
+.product-card__inventory-quantity{
+  color: #008a00;
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 6px;
+}
