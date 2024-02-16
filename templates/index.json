@@ -51,6 +51,7 @@
         "banner_FchdrT",
         "banner_G6GNmM"
       ],
+      "disabled": true,
       "settings": {
         "slider_autoplay": true,
         "slide_dots": true,
@@ -64,6 +65,7 @@
     },
     "custom_rich_text_section_xnXzEz": {
       "type": "custom-rich-text-section",
+      "disabled": true,
       "settings": {
         "pre_heading": "What You Wear",
         "heading": "<p>Fashion Emerges <br\/>As A Universal <a href=\"#\" title=\"#\">Language<\/a><\/p>",
@@ -114,6 +116,7 @@
         "image_grid_aMM8kN",
         "image_grid_efFQM8"
       ],
+      "disabled": true,
       "settings": {
         "image_padding": "image-landscape",
         "padding_top": 36,
@@ -158,6 +161,7 @@
         "image_grid_6ABiUU",
         "image_grid_T7hghT"
       ],
+      "disabled": true,
       "settings": {
         "image_padding": "image-square",
         "padding_top": 60,
@@ -214,6 +218,7 @@
         "usp_EARe8c",
         "usp_gqYLVH"
       ],
+      "disabled": true,
       "settings": {
         "padding_top": 40,
         "padding_bottom": 40
@@ -279,6 +284,7 @@
         "lookbook_block_W9pkGb",
         "lookbook_block_rapciC"
       ],
+      "disabled": true,
       "settings": {
         "padding_top": 60,
         "padding_bottom": 60
