@@ -46,7 +46,7 @@
             
             {% for option in varient_option.values %}
               <li>
-                <input type="radio" name="option-{{ varient_option.name }}" value={{ option }} checked>
+                <input type="radio" name="option-{{ current_varient.handle }}" value={{ option }} checked>
               {{ option }}
               </li>
             {% endfor %} 
