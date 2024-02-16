@@ -4,6 +4,7 @@
 
 .product-card__link{
   text-decoration: none;
+  font-weight: 500;
 }
 
 .product-card__link:hover{
