@@ -21,6 +21,7 @@
       {% if current_varient.compare_at_price > current_varient.price %}
         <s class="h4"> {{ current_varient.compare_at_price | money_with_currency }} </s>
       {% endif %}
+      <div class="h4">{{ current_varient.inventory_quantity }}></div>
     </div>
   </div>
 </product-card>
