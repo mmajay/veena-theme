@@ -26,7 +26,9 @@
   </div>
 
   <div class="product-card__discount">
-    {{ discountPercentage }}
+    {% if discountPercentage > 0 %}
+      {{ discountPercentage }}
+    {% endif %}  
   </div>
 
 
