@@ -1,9 +1,11 @@
 class ProductCard extends HTMLElement {
   constructor() {
     super();
-
-    console.log("custom")
+    this.varientHandle = this.dataset.productHandle;
+    this.sectionId = this.dataset.sectionId;
+    this.productDetails = JSON.parse(this.querySelector('script').textContent)
     
+    console.log(this.productDetails)
   }
 }
 
