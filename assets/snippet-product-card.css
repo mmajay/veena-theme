@@ -8,8 +8,15 @@
   top: 10px;
 }
 
-.product-card__discount{
+
+.product-card__left-tags{
   position: absolute;
   top: 10px;
   left: 10px;
+}
+
+..product-card__discount{
+  padding: 5px;
+  background: #dd1d1d;
+  color: #fff;
 }
