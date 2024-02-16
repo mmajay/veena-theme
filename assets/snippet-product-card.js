@@ -10,7 +10,7 @@ class ProductCard extends HTMLElement {
     // console.log(this.productDetails)
   }
 
-  onVariantChange async(){
+  async onVariantChange(){
     // console.log("sjfg dbm")
     this.selectedOptions = Array.from(this.querySelectorAll('input[type="radio"]:checked'), input => input.value);
     // console.log(this.selectedOptions)
