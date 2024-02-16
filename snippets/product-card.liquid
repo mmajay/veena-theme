@@ -42,11 +42,14 @@
     <div class="product-card-varients">
       {% for varient_option in product.options_with_values %}
         {% if varient_option.name == "Color" %}
-          <ul>
           {% for option in varient_option.values %}
-            <li>{{ option }}</li>
+            
+            <input type="radio" name="color">
+            <label>
+            {{ option }}
+              
+            </label>
           {% endfor %}  
-          </ul>
         {% endif %}  
       {% endfor %}  
       
