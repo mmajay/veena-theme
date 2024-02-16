@@ -23,5 +23,26 @@
       {% endif %}
       <div class="h4">{{ current_varient.inventory_quantity }} in stock</div>
     </div>
+              <div class="product-card__options"> 
+            {% for product_option in product.options_with_values %}
+              <div class="product-card__option">
+                <label>{{ product_option.name }}</label>
+  
+                <ul>
+                  {% for option_value in product_option.values %}
+                    <li>
+                      <input 
+                        type="radio" 
+                        name="option-{{ product_option.name | handleize }}" 
+                        value="{{ option_value }}"
+                        {% if product_option.selected_value == option_value %}checked{% endif %}
+                      >
+                      {{ option_value }}
+                    </li>
+                  {% endfor %}
+                </ul>
+              </div>
+            {% endfor %}
+          </div>
   </div>
 </product-card>
