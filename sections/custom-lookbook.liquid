@@ -7,25 +7,25 @@
       padding-bottom: {{ section.settings.padding_bottom | divided_by: 2 }}px;
     }
 
-    @media (min-width: 750px) {
-      .padding-{{ section.id }} {
-        padding-top: {{ section.settings.padding_top }}px;
-        padding-bottom: {{ section.settings.padding_bottom }}px;
-      }
+  @media (min-width: 750px) {
+    .padding-{{ section.id }} {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+
+  {% for block in section.blocks %}
+    .lookbook__tops-postion-{{ block.id }}{
+      top: {{ block.settings.tops_top_position }}%;
+      left: {{ block.settings.tops_left_position }}%;
+    }
+
+    .lookbook__bottoms-postion-{{ block.id }}{
+      top: {{ block.settings.bottoms_top_position }}%;
+      left: {{ block.settings.bottoms_left_position }}%;
     }
   
-    {% for block in section.blocks %}
-      .lookbook__tops-postion-{{ block.id }}{
-        top: {{ block.settings.tops_top_position }}%;
-        left: {{ block.settings.tops_left_position }}%;
-      }
-      
-      .lookbook__bottoms-postion-{{ block.id }}{
-        top: {{ block.settings.bottoms_top_position }}%;
-        left: {{ block.settings.bottoms_left_position }}%;
-      }
-    
-  {% endfor %} 
+{% endfor %} 
 
 {% endstyle %}
 
