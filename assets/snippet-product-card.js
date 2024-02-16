@@ -10,7 +10,7 @@ class ProductCard extends HTMLElement {
 
    onOptionChange() {
     this.selectedOptions = Array.from(this.querySelectorAll('input[type="radio"]:checked'), input => input.value);
-    this.currentVariant = this.variantData.find(item => JSON.stringify(item.options) == JSON.stringify(this.selectedOptions))
+    this.currentVariant = this.productDetails.find(item => JSON.stringify(item.options) == JSON.stringify(this.selectedOptions))
     
     this.getUpdatedCard();
   }
