@@ -42,7 +42,7 @@
     <div class="product-card-varients">
       {% for varient_option in product.options_with_values %}
         {% if varient_option.name == "Color" %}
-          {% for option in varient_option %}
+          {% for option in varient_option.values %}
             {{ option }}
           {% endfor %}  
         {% endif %}  
