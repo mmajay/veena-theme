@@ -7,4 +7,4 @@ class ProductCard extends HTMLElement {
   }
 }
 
-customeElements.define("product-card", ProductCard)
+customElements.define("product-card", ProductCard)
