@@ -45,11 +45,8 @@
           <ul class="product-card__varient-options">
             
             {% for option in varient_option.values %}
-              {% if option == varient_option.selected_value %}
-                {{ option }}
-              {% endif %}  
               <li>
-                <input type="radio" name="color" checked {% if varient_option.selected_value == option %}selected{% endif %}  >
+                <input type="radio" name="color" checked>
               {{ option }}
               </li>
             {% endfor %} 
