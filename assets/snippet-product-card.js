@@ -21,8 +21,8 @@ class ProductCard extends HTMLElement {
     const url = `/products/${this.productHandle}?variant=${this.varientValues.id}&section_id=${this.sectionId}`;
 
     const response = await fetch(url)
-    const data = await response.text()
-    console.log(data)
+    // const data = await response.text()
+    console.log(response)
   }
 
   
