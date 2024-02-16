@@ -18,8 +18,9 @@
 
 .product-card__quick-view{
   position: absolute;
-  right: 20px;
-  top: 10px;
+  top: 0;
+  right: 0;
+  padding:15px;
 }
 
 .product-card__quick-view-button{
@@ -30,8 +31,9 @@
 
 .product-card__left-tags{
   position: absolute;
-  top: 10px;
-  left: 10px;
+  top: 0;
+  left: 0;
+  padding: 15px;
 }
 
 .product-card__discount,.product-card__badge{
