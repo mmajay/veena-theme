@@ -9,6 +9,11 @@
       {% render "responsive-image", desktopImage: featured_image, class: "media media--square global-media-settings" %}
     </div>
   </a>
+
+  
+
+
+  
   <div class="product-card__content {{ product_text_alignment }}">
     <h2 class="h5"> {{ product.vendor }} </h2>
     <a class="h3" href="{{ current_varient.url }}"> {{ product.title }} </a> 
@@ -23,26 +28,5 @@
       {% endif %}
       <div class="h4">{{ current_varient.inventory_quantity }} in stock</div>
     </div>
-              <div class="product-card__options"> 
-            {% for product_option in product.options_with_values %}
-              <div class="product-card__option">
-                <label>{{ product_option.name }}</label>
-  
-                <ul>
-                  {% for option_value in product_option.values %}
-                    <li>
-                      <input 
-                        type="radio" 
-                        name="option-{{ product_option.name | handleize }}" 
-                        value="{{ option_value }}"
-                        {% if product_option.selected_value == option_value %}checked{% endif %}
-                      >
-                      {{ option_value }}
-                    </li>
-                  {% endfor %}
-                </ul>
-              </div>
-            {% endfor %}
-          </div>
   </div>
 </product-card>
