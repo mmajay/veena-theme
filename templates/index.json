@@ -1,5 +1,34 @@
 {
   "sections": {
+    "custom_product_list_4HUB9m": {
+      "type": "custom-product-list",
+      "settings": {
+        "product_list": [
+          "highland-tee-worn-black",
+          "jude-navy-chevron-shirt",
+          "lean-dean-dry-gentle-worn",
+          "lean-dean-plain-stone",
+          "men-black-grey-checked-pure-cotton-casual-shirt",
+          "men-black-slim-fit-casual-shirt",
+          "minimal-gray-pixel-watch",
+          "multi-led-bluetooth-speaker"
+        ],
+        "section_heading": "Featured Collection",
+        "button_text": "See all product",
+        "button_link": "#",
+        "slider_enable": false,
+        "card_caption": "",
+        "card_heading": "",
+        "card_button_text": "",
+        "card_button_link": "",
+        "color_scheme": "scheme-2",
+        "text_size": "h2",
+        "text_alignment": "left",
+        "alignment_position": "align-center justify-center",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "hero_banner_slider_hMhRdj": {
       "type": "hero-banner-slider",
       "blocks": {
@@ -289,37 +318,15 @@
         "padding_top": 60,
         "padding_bottom": 60
       }
-    },
-    "custom_product_list_4HUB9m": {
-      "type": "custom-product-list",
-      "settings": {
-        "product_list": [
-
-        ],
-        "section_heading": "Featured Collection",
-        "button_text": "See all product",
-        "button_link": "#",
-        "slider_enable": false,
-        "card_caption": "",
-        "card_heading": "",
-        "card_button_text": "",
-        "card_button_link": "",
-        "color_scheme": "scheme-2",
-        "text_size": "h2",
-        "text_alignment": "left",
-        "alignment_position": "align-center justify-center",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
     }
   },
   "order": [
+    "custom_product_list_4HUB9m",
     "hero_banner_slider_hMhRdj",
     "custom_rich_text_section_xnXzEz",
     "custom_image_with_text_grid_cH7kLX",
     "custom_image_with_text_grid_x8RtKC",
     "custom_usp_BGXkTw",
-    "custom_lookbook_CAwQWC",
-    "custom_product_list_4HUB9m"
+    "custom_lookbook_CAwQWC"
   ]
 }
