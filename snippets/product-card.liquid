@@ -16,7 +16,7 @@
       {% if product.price_varies %}
         <span class="h3"> From {{ product.price_min | money_with_currency }}</span>
       {% else %}
-        <span class="h3">  {{ product.price | money_with_currency }}</span>   
+        <span class="h3">  {{ current_varient.price | money_with_currency }}</span>   
       {% endif %}  
       {% if current_varient.compare_at_price > current_varient.price %}
         <s class="h4"> {{ current_varient.compare_at_price | money_with_currency }} </s>
