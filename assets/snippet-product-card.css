@@ -15,9 +15,9 @@
   left: 10px;
 }
 
-..product-card__discount{
+.product-card__discount{
   padding: 5px;
-  background: #dd1d1d;
+  background-color: #dd1d1d;
   color: #fff;
   font-size: 11px;
 }
