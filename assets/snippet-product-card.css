@@ -16,7 +16,7 @@
 }
 
 .product-card__discount{
-  padding: 5px;
+  padding: 5px 10px;
   background-color: #dd1d1d;
   color: #fff;
   font-size: 11px;
