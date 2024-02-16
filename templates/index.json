@@ -231,12 +231,12 @@
             "button_text": "Discover More",
             "button_link": "#",
             "lookbook_color_scheme": "scheme-2",
-            "top_product": "men-black-grey-checked-pure-cotton-casual-shirt",
-            "bottom_product": "highland-tee-worn-black",
-            "tops_left_position": 30,
             "tops_top_position": 28,
+            "tops_left_position": 30,
+            "top_product": "men-black-grey-checked-pure-cotton-casual-shirt",
+            "bottoms_top_position": 60,
             "bottoms_left_position": 32,
-            "bottoms_top_position": 60
+            "bottom_product": "highland-tee-worn-black"
           }
         },
         "lookbook_block_W9pkGb": {
@@ -248,12 +248,12 @@
             "button_text": "Discover More",
             "button_link": "#",
             "lookbook_color_scheme": "scheme-2",
-            "top_product": "jude-navy-chevron-shirt",
-            "bottom_product": "lean-dean-plain-stone",
-            "tops_left_position": 30,
             "tops_top_position": 22,
+            "tops_left_position": 30,
+            "top_product": "jude-navy-chevron-shirt",
+            "bottoms_top_position": 60,
             "bottoms_left_position": 18,
-            "bottoms_top_position": 60
+            "bottom_product": "lean-dean-plain-stone"
           }
         },
         "lookbook_block_rapciC": {
@@ -265,12 +265,12 @@
             "button_text": "Discover More",
             "button_link": "#",
             "lookbook_color_scheme": "scheme-2",
-            "top_product": "chore-coat-brown-duck",
-            "bottom_product": "lean-dean-plain-stone",
-            "tops_left_position": 30,
             "tops_top_position": 10,
+            "tops_left_position": 30,
+            "top_product": "chore-coat-brown-duck",
+            "bottoms_top_position": 75,
             "bottoms_left_position": 38,
-            "bottoms_top_position": 75
+            "bottom_product": "lean-dean-plain-stone"
           }
         }
       },
@@ -291,13 +291,14 @@
 
         ],
         "section_heading": "Featured Collection",
-        "button_text": "",
-        "button_link": "",
+        "button_text": "See all product",
+        "button_link": "#",
         "slider_enable": false,
         "card_caption": "",
         "card_heading": "",
         "card_button_text": "",
         "card_button_link": "",
+        "color_scheme": "scheme-2",
         "text_size": "h2",
         "text_alignment": "left",
         "alignment_position": "align-center justify-center",
