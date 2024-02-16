@@ -7,13 +7,6 @@
 %}
 
 
-
-
-
-
-
-
-
 <product-card class="product-card">
   <a href="{{ product.url }}">
     <div class="product-card__image">
@@ -46,6 +39,12 @@
 
   
   <div class="product-card__content {{ product_text_alignment }}">
+    <div class="product-card-varients">
+      {% for varient in product.options_with_values %}
+        {{ varient }}
+      {% endfor %}  
+      
+    </div>
     
     <h2 class="h5 product-card__vendor"> {{ product.vendor }} </h2>
     <a class="h3 product-card__link" href="{{ current_varient.url }}"> {{ product.title }} </a> 
