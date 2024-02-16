@@ -1,0 +1,9 @@
+.product-card{
+  position: relative;
+}
+
+.product-card__quick-view{
+  position: absolute;
+  right: 20px;
+  top: 10px;
+}
