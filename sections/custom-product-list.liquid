@@ -23,6 +23,8 @@
         <h2> {{ section.settings.section_heading }} </h2>
       {% endif %}  
       {% if section.settings.button_text != blank %}
+        <div>
+          
         <a class="custom-button-secondary" 
           {% if section.settings.button_text == blank %}
               role="link" aria-disabled="true"
@@ -31,6 +33,7 @@
           {% endif %}>
           {{ section.settings.button_text }}
         </a>
+        </div>
       {% endif %}  
     </div>
   </div>
