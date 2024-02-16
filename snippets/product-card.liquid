@@ -46,6 +46,7 @@
 
   
   <div class="product-card__content {{ product_text_alignment }}">
+    
     <h2 class="h5 product-card__vendor"> {{ product.vendor }} </h2>
     <a class="h3 product-card__link" href="{{ current_varient.url }}"> {{ product.title }} </a> 
     <div class="product-card__prices">
@@ -57,7 +58,7 @@
       {% if current_varient.compare_at_price > current_varient.price %}
         <s class="h4 product-card__compare-price"> {{ current_varient.compare_at_price | money_with_currency }} </s>
       {% endif %}
-      <div class="h4">{{ current_varient.inventory_quantity }} in stock</div>
+      <div class="h4 product-card__inventory-quantity">{{ current_varient.inventory_quantity }} in stock</div>
     </div>
   </div>
 </product-card>
