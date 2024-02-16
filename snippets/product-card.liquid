@@ -7,8 +7,8 @@
 
 
 
-{% assign discountAmount = current_varient.compare_at_price | minus: current_varient.price %}
-{% assign discountPercentage = discountAmount | times: 100 | divided_by: current_varient.compare_at_price %}
+
+{% assign discountPercentage = current_varient.compare_at_price | minus: current_varient.price | times: 100 | divided_by: current_varient.compare_at_price %}
 
 
 
