@@ -1,0 +1,4 @@
+.product-list__section-heading-container {
+  display: flex;
+  justify-content: space-between;
+}
