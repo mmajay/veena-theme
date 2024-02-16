@@ -15,7 +15,8 @@ class ProductCard extends HTMLElement {
     this.selectedOptions = Array.from(this.querySelectorAll('input[type="radio"]:checked'), input => input.value);
     // console.log(this.selectedOptions)
     console.log(this.productDetails)
-    this.currentVariant = this.productDetails.JSON.stringify(item.options) == JSON.stringify(this.selectedOptions)
+    this.varientValues = JSON.stringify(productDetails.options)
+    this.currentVariant =  this.varientValues == JSON.stringify(this.selectedOptions)
   }
 
   
