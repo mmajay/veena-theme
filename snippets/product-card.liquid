@@ -4,7 +4,7 @@
 %}
 
 <product-card>
-  -->{{ product | json }}
+  <!-- -->{{ product | json }} -->
   <a href="{{ product.url }}">
     <div class="product-card__image">
       {% render "responsive-image", desktopImage: featured_image, class: "media media--square" %}
@@ -14,7 +14,11 @@
     <h2 class="h5"> {{ product.vendor }} </h2>
     <a class="h3" href="{{ current_varient.url }}"> {{ product.title }} </a> 
     <div class="product-card__prices">
-      <span class="h3">{{ product.price_min | money_with_currency }}</span>
+      {% if product.price_varies %}
+        <span class="h3"> From {{ product.price_min | money_with_currency }}</span>
+      {% else %}
+        <span class="h3">  {{ product.price | money_with_currency }}</span>   
+      {% endif %}  
       {% if current_varient.compare_at_price > current_varient.price %}
         <span class="h3"> {{ current_varient.compare_at_price | money_with_currency }} </span>
       {% endif %}
