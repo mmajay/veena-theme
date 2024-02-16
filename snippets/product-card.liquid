@@ -5,6 +5,14 @@
   assign featured_image = current_varient.image | default : product.featured_image
 %}
 
+{% assign mrpPrice = current_varient.compare_at_price %}
+{% assign discountedPrice = current_varient.price %}
+
+{% assign discountAmount = mrpPrice | minus: discountedPrice %}
+{% assign discountPercentage = discountAmount | times: 100 | divided_by: mrpPrice %}
+
+
+
 <product-card class="product-card">
   <a href="{{ product.url }}">
     <div class="product-card__image">
@@ -14,6 +22,10 @@
 
   <div class="product-card__quick-view">
       <a href="#" class="custom-button-secondary_color"> Quick Look</a>    
+  </div>
+
+  <div class="product-card__discount">
+    {{ discountPercentage }}
   </div>
 
 
