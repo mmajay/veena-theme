@@ -1,6 +1,6 @@
 .product-list__section-heading-container {
   display: flex;
-  /* flex-direction: column; */
+  flex-direction: column;
   justify-content: space-between;
 }
 
