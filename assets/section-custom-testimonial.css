@@ -54,7 +54,7 @@
     border-radius: 0 50% 50% 0;
 }
 
-.testimonial .splide__arrow .splide__arrow--prev:disabled, .testimonial .splide__arrow .splide__arrow--next:disabled{
+.testimonial .splide__arrow--prev:disabled, .testimonial .splide__arrow--next:disabled{
   display: none;
 } 
 
