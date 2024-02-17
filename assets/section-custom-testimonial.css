@@ -42,11 +42,11 @@
 }
 
 
-.testimonial .splide__arrow {
+/* .testimonial .splide__arrow {
     background-color: black; 
     color: white;
     transition: background-color 0.3s ease, color 0.3s ease;
-}
+} */
 
 .testimonial .splide__arrows .splide__arrow--prev{
   color: red;
