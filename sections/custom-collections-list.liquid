@@ -37,6 +37,19 @@
   <div class="page-width">
     <div class="testimonial__heading-section">
       <h2 class="h1"> {{ section.settings.section_heading }} </h2>
+      {% if section.settings.section_button_text %}
+         <a class="custom-button-secondary" 
+            {% if section.settings.section_button_link == blank %}
+                role="link" aria-disabled="true"
+              {% else %}
+                href="{{ section.settings.section_button_link }}"
+            {% endif %}>
+          {{ section.settings.section_button_text }}
+        </a>
+      {% endif %}  
+      <div>
+        
+      </div>
     </div>
     <custom-slider>
       <section class="splide" aria-label="Testimonial Splide" data-slider-options='{{ slider-options-data }}'>
