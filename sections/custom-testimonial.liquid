@@ -19,16 +19,17 @@
 
 <div class="testimonial">
   <div class="page-width">
-    
-    <section class="splide" aria-label="Splide Basic HTML Example">
-      <div class="splide__track">
-        <ul class="splide__list">
-          {% for block in section.blocks %}
-            
-          {% endfor %}  
-        </ul>
-      </div>
-    </section>
+    <custom-slider>
+      <section class="splide" aria-label="Testimonial Splide">
+        <div class="splide__track">
+          <ul class="splide__list">
+            {% for block in section.blocks %}
+              
+            {% endfor %}  
+          </ul>
+        </div>
+      </section>
+    </custom-slider>
   </div>
 </div>
 
