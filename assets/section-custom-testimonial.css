@@ -47,7 +47,7 @@
 }
 
 
- .testimonial .splide__arrows .splide__arrow--prev:after svg, .testimonial .splide__arrows .splide__arrow--next:after  {
+ .testimonial .splide__arrows .splide__arrow--prev svg:after, .testimonial .splide__arrows .splide__arrow--next svg:after  {
 	 content: '';
 	 position: absolute;
 	 bottom: 0;
