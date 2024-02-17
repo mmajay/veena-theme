@@ -63,22 +63,21 @@
                   </div>
                 {% endif %}
                 <div class="collections-list__content {{ block.settings.alignment_position }}">
-                  <div class="{{ block.settings.text_alignment }}">
+                  <div class="{{ block.settings.text_alignment }}">      
+                    {% if block.settings.heading != blank %}
+                      <h2 class="h4 collections-list__heading"> {{ block.settings.heading }} </h2>
+                    {% endif %}  
                     
-                  {% if block.settings.heading != blank %}
-                    <h2 class="h4 collections-list__heading"> {{ block.settings.heading }} </h2>
-                  {% endif %}  
-                  
-                  {% if block.settings.section_button_text %}
-                     <a class="custom-button-secondary" 
-                        {% if block.settings.section_button_link == blank %}
-                            role="link" aria-disabled="true"
-                          {% else %}
-                            href="{{ block.settings.section_button_link }}"
-                        {% endif %}>
-                      {{ block.settings.section_button_text }}
-                    </a>
-                  {% endif %}  
+                    {% if block.settings.section_button_text %}
+                       <a class="custom-button-secondary" 
+                          {% if block.settings.section_button_link == blank %}
+                              role="link" aria-disabled="true"
+                            {% else %}
+                              href="{{ block.settings.section_button_link }}"
+                          {% endif %}>
+                        {{ block.settings.section_button_text }}
+                      </a>
+                    {% endif %}  
                   </div>
                 </div>
               </li>
