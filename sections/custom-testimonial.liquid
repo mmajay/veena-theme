@@ -17,10 +17,24 @@
 
 {% endstyle %}
 
+
+{% capture slider-options-data %}
+  {
+    "autoplay" : {{ section.settings.slider_autoplay }},
+    "interval" : {{ section.settings.slider_autoplay_duration }},
+    "type" : "{{ section.settings.slide_animation }}",
+    "pagination" : {{ section.settings.slide_dots }},
+    "arrows" : {{ section.settings.slide_arrows }},
+    "rewind" : {{ section.settings.infinite_scroll }}
+  }
+{% endcapture %} 
+
+
+
 <div class="testimonial">
   <div class="page-width">
     <custom-slider>
-      <section class="splide" aria-label="Testimonial Splide">
+      <section class="splide" aria-label="Testimonial Splide" data-slider-options="{{ slider-options-data }}">
         <div class="splide__track">
           <ul class="splide__list">
             {% for block in section.blocks %}
@@ -51,6 +65,64 @@
         "id": "section_heading",
         "label": "Section heading",
         "default": "Our Customers Review"
+      },
+      {
+        "type" : "header",
+        "content" : "Slider settings"
+      },
+      {
+        "type": "checkbox",
+        "id": "slider_autoplay",
+        "label": "Slide autoplay",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "slide_dots",
+        "label": "Show slide dots",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "slide_arrows",
+        "label": "Show slide arrows",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "infinite_scroll",
+        "label": "Infinite scroll",
+        "default": true
+      },
+      {
+        "type" : "select",
+        "id": "slide_animation",
+        "label" : "Slide animation",
+        "options" : [
+          {
+            "value" : "loop",
+            "label" : "Loop"
+          },
+          {
+            "value" : "fade",
+            "label" : "Fade"
+          },
+          {
+            "value" : "slide",
+            "label" : "Slide"
+          }
+        ]
+      },
+      {
+        "type": "range",
+        "id": "slider_autoplay_duration",
+        "label": "Slider autoplay duration",
+        "min" : 1000,
+        "step":1000,
+        "max" : 8000,
+        "default": 3000,
+        "unit": "ms",
+        "info" : "ms-milliseconds"
       },
       {
         "type" : "header",
