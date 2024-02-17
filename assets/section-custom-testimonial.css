@@ -29,7 +29,7 @@
   margin: 20px 0 0 0;
 }
 
-.splide__arrow splide__arrow--prev{
+.testimonial .splide__arrow splide__arrow--prev{
   top: unset;
   bottom: 0;
 }
