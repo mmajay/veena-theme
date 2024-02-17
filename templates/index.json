@@ -386,8 +386,8 @@
         "slide_animation": "slide",
         "slider_autoplay_duration": 3000,
         "text_alignment": "center",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "padding_top": 60,
+        "padding_bottom": 60
       }
     }
   },
