@@ -1,5 +1,6 @@
 .collections-list{
   position: relative;
+  overflow: hidden;
 }
 
 .collections-list__content{
