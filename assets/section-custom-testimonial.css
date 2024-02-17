@@ -1,3 +1,7 @@
+.testimonial{
+  background: #f5f5f5;
+}
+
 .testimonial__image img{
   border-radius: 100px;
 }
