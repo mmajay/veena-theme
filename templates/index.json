@@ -402,12 +402,89 @@
             "heading": "Person Name",
             "section_button_text": "View All",
             "section_button_link": "",
+            "slide_animation": "loop",
+            "alignment_position": "align-center justify-center"
+          }
+        },
+        "collection_blocks_HTHQih": {
+          "type": "collection-blocks",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/8.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/8.jpg",
+            "heading": "Person Name",
+            "section_button_text": "View All",
+            "section_button_link": "",
+            "slide_animation": "loop",
+            "alignment_position": "align-center justify-center"
+          }
+        },
+        "collection_blocks_hGVUQC": {
+          "type": "collection-blocks",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/4.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/4.jpg",
+            "heading": "Person Name",
+            "section_button_text": "View All",
+            "section_button_link": "",
+            "slide_animation": "loop",
+            "alignment_position": "align-center justify-center"
+          }
+        },
+        "collection_blocks_iHTTjR": {
+          "type": "collection-blocks",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/5.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/5.jpg",
+            "heading": "Person Name",
+            "section_button_text": "View All",
+            "section_button_link": "",
+            "slide_animation": "loop",
+            "alignment_position": "align-center justify-center"
+          }
+        },
+        "collection_blocks_DrTkhF": {
+          "type": "collection-blocks",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/6.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/6.jpg",
+            "heading": "Person Name",
+            "section_button_text": "View All",
+            "section_button_link": "",
+            "slide_animation": "loop",
+            "alignment_position": "align-center justify-center"
+          }
+        },
+        "collection_blocks_pFCjLT": {
+          "type": "collection-blocks",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/2.jpg",
+            "heading": "Person Name",
+            "section_button_text": "View All",
+            "section_button_link": "",
+            "slide_animation": "loop",
+            "alignment_position": "align-center justify-center"
+          }
+        },
+        "collection_blocks_Bax4w6": {
+          "type": "collection-blocks",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/3.jpg",
+            "heading": "Person Name",
+            "section_button_text": "View All",
+            "section_button_link": "",
+            "slide_animation": "loop",
             "alignment_position": "align-center justify-center"
           }
         }
       },
       "block_order": [
-        "collection_blocks_T6b8Aw"
+        "collection_blocks_T6b8Aw",
+        "collection_blocks_HTHQih",
+        "collection_blocks_hGVUQC",
+        "collection_blocks_iHTTjR",
+        "collection_blocks_DrTkhF",
+        "collection_blocks_pFCjLT",
+        "collection_blocks_Bax4w6"
       ],
       "settings": {
         "section_heading": "Our Customers Review",
