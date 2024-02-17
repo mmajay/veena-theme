@@ -393,6 +393,22 @@
     },
     "custom_collections_list_fUaV48": {
       "type": "custom-collections-list",
+      "blocks": {
+        "collection_blocks_T6b8Aw": {
+          "type": "collection-blocks",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/1.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/1.jpg",
+            "heading": "Person Name",
+            "section_button_text": "View All",
+            "section_button_link": "",
+            "alignment_position": "align-center justify-center"
+          }
+        }
+      },
+      "block_order": [
+        "collection_blocks_T6b8Aw"
+      ],
       "settings": {
         "section_heading": "Our Customers Review",
         "section_button_text": "View All",
@@ -401,7 +417,6 @@
         "slide_dots": true,
         "slide_arrows": true,
         "infinite_scroll": true,
-        "slide_animation": "loop",
         "slider_autoplay_duration": 3,
         "text_alignment": "center",
         "padding_top": 36,
