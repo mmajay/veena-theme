@@ -62,7 +62,7 @@
   font-size: 16px;
   text-decoration: none;
 }
- .testimonial .splide__arrows .splide__arrow--prev svg:after, .testimonial .splide__arrows .splide__arrow--next svg:after {
+ .testimonial .splide__arrows .splide__arrow--prev:after svg, .testimonial .splide__arrows .splide__arrow--next:after  {
 	 content: '';
 	 position: absolute;
 	 bottom: 0;
@@ -73,7 +73,7 @@
 	 border-radius: 10rem;
 	 z-index: -2;
 }
- ..testimonial .splide__arrows .splide__arrow--prev svg:before, .testimonial .splide__arrows .splide__arrow--next svg:before {
+ ..testimonial .splide__arrows .splide__arrow--prev:before svg, .testimonial .splide__arrows .splide__arrow--next:before svg {
 	 content: '';
 	 position: absolute;
 	 bottom: 0;
@@ -85,10 +85,10 @@
 	 border-radius: 10rem;
 	 z-index: -1;
 }
- ..testimonial .splide__arrows .splide__arrow--prev svg:hover, .testimonial .splide__arrows .splide__arrow--next svg:hover {
+ ..testimonial .splide__arrows .splide__arrow--prev:hover svg, .testimonial .splide__arrows .splide__arrow--next:hover svg {
 	 color: #fff;
 }
- ..testimonial .splide__arrows .splide__arrow--prev svg:hover:before, .testimonial .splide__arrows .splide__arrow--next svg:hover:before {
+ ..testimonial .splide__arrows .splide__arrow--prev:hover:before svg, .testimonial .splide__arrows .splide__arrow--next:hover:before svg {
 	 width: 100%;
 }
 
