@@ -22,7 +22,7 @@ class ProductCard extends HTMLElement {
      const response = await fetch(url)
      const data = await response.text()
      console.log(data,"data")
-     const html = new DOMParser().parseFromString(responseText, "text/html");
+     const html = new DOMParser().parseFromString(data, "text/html");
     this.innerHTML = html.querySelector(`[data-product-handle="${this.productHandle}"]`).innerHTML;
   }
 
