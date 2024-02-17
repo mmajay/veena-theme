@@ -327,6 +327,7 @@
         "testimonia_blocks_pa4zda": {
           "type": "testimonia-blocks",
           "settings": {
+            "image": "shopify:\/\/shop_images\/2_0b300886-b49e-4ef1-a786-f0b7f7ab2f2d.jpg",
             "heading": "Person Name",
             "designation": "Add designation",
             "comment": "<p>Absolutely love the trendy collection! The quality is unmatched, and each piece tells a unique style story.<\/p>"
@@ -335,6 +336,7 @@
         "testimonia_blocks_xEe9mb": {
           "type": "testimonia-blocks",
           "settings": {
+            "image": "shopify:\/\/shop_images\/3_b85a25e7-eff6-49ab-9fc7-ecdf71bb4ef1.jpg",
             "heading": "Person Name",
             "designation": "Add designation",
             "comment": "<p>Absolutely love the trendy collection! The quality is unmatched, and each piece tells a unique style story.<\/p>"
@@ -343,6 +345,16 @@
         "testimonia_blocks_w8zFNT": {
           "type": "testimonia-blocks",
           "settings": {
+            "image": "shopify:\/\/shop_images\/4_e6c9abf8-cab4-4c51-8b5c-b87f6878ea97.jpg",
+            "heading": "Person Name",
+            "designation": "Add designation",
+            "comment": "<p>Absolutely love the trendy collection! The quality is unmatched, and each piece tells a unique style story.<\/p>"
+          }
+        },
+        "testimonia_blocks_gF79nP": {
+          "type": "testimonia-blocks",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/5_8692d143-4fac-48d0-9ba7-4bf86ec25a15.jpg",
             "heading": "Person Name",
             "designation": "Add designation",
             "comment": "<p>Absolutely love the trendy collection! The quality is unmatched, and each piece tells a unique style story.<\/p>"
@@ -352,7 +364,8 @@
       "block_order": [
         "testimonia_blocks_pa4zda",
         "testimonia_blocks_xEe9mb",
-        "testimonia_blocks_w8zFNT"
+        "testimonia_blocks_w8zFNT",
+        "testimonia_blocks_gF79nP"
       ],
       "settings": {
         "section_heading": "Our Customers Review",
