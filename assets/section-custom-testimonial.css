@@ -48,7 +48,7 @@
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.testimonial .splide__arrows .splide__arrow--prev svg{
+.testimonial .splide__arrows .splide__arrow--prev{
   color: red;
   fill: yellow;
 }
