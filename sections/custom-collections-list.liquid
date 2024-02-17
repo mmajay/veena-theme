@@ -62,7 +62,7 @@
                     {% render "responsive-image", desktopImage: block.settings.desktop_image, mobileImage: block.settings.mobile_image class:"media media--portrait" %}
                   </div>
                 {% endif %}
-                <div class="collections-list__content {{ section.settings.alignment_position }}">
+                <div class="collections-list__content {{ section.settings.alignment_position }} color-{{ section.settings.color_scheme }}">
                   <div class="{{ block.settings.text_alignment }}">      
                     {% if block.settings.heading != blank %}
                       <h2 class="h4 collections-list__heading"> {{ block.settings.heading }} </h2>
