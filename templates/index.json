@@ -323,6 +323,19 @@
     },
     "custom_testimonial_7n4Rd4": {
       "type": "custom-testimonial",
+      "blocks": {
+        "testimonia_blocks_pa4zda": {
+          "type": "testimonia-blocks",
+          "settings": {
+            "heading": "Person Name",
+            "designation": "Add designation",
+            "comment": "<p>Absolutely love the trendy collection! The quality is unmatched, and each piece tells a unique style story.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "testimonia_blocks_pa4zda"
+      ],
       "settings": {
         "section_heading": "Our Customers Review",
         "padding_top": 36,
