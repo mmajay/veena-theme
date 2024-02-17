@@ -47,19 +47,6 @@
 }
 
 
-.testimonial .splide__arrows .splide__arrow--prev {
-  display: inline-block;
-  padding: 8px 20px;
-  border-radius: 10rem;
-  color: #fff;
-  text-transform: capitalize;
-  transition: all 0.3s ease;
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
-  font-size: 16px;
-  text-decoration: none;
-}
  .testimonial .splide__arrows .splide__arrow--prev:after svg, .testimonial .splide__arrows .splide__arrow--next:after  {
 	 content: '';
 	 position: absolute;
