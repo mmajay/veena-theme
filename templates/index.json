@@ -402,8 +402,7 @@
             "heading": "Person Name",
             "section_button_text": "View All",
             "section_button_link": "",
-            "slide_animation": "loop",
-            "alignment_position": "align-center justify-center"
+            "slide_animation": "loop"
           }
         },
         "collection_blocks_HTHQih": {
@@ -414,8 +413,7 @@
             "heading": "Person Name",
             "section_button_text": "View All",
             "section_button_link": "",
-            "slide_animation": "loop",
-            "alignment_position": "align-center justify-center"
+            "slide_animation": "loop"
           }
         },
         "collection_blocks_hGVUQC": {
@@ -426,8 +424,7 @@
             "heading": "Person Name",
             "section_button_text": "View All",
             "section_button_link": "",
-            "slide_animation": "loop",
-            "alignment_position": "align-center justify-center"
+            "slide_animation": "loop"
           }
         },
         "collection_blocks_iHTTjR": {
@@ -438,8 +435,7 @@
             "heading": "Person Name",
             "section_button_text": "View All",
             "section_button_link": "",
-            "slide_animation": "loop",
-            "alignment_position": "align-center justify-center"
+            "slide_animation": "loop"
           }
         },
         "collection_blocks_DrTkhF": {
@@ -450,8 +446,7 @@
             "heading": "Person Name",
             "section_button_text": "View All",
             "section_button_link": "",
-            "slide_animation": "loop",
-            "alignment_position": "align-center justify-center"
+            "slide_animation": "loop"
           }
         },
         "collection_blocks_pFCjLT": {
@@ -461,8 +456,7 @@
             "heading": "Person Name",
             "section_button_text": "View All",
             "section_button_link": "",
-            "slide_animation": "loop",
-            "alignment_position": "align-center justify-center"
+            "slide_animation": "loop"
           }
         },
         "collection_blocks_Bax4w6": {
@@ -472,8 +466,7 @@
             "heading": "Person Name",
             "section_button_text": "View All",
             "section_button_link": "",
-            "slide_animation": "loop",
-            "alignment_position": "align-center justify-center"
+            "slide_animation": "loop"
           }
         }
       },
@@ -490,12 +483,14 @@
         "section_heading": "Our Customers Review",
         "section_button_text": "View All",
         "section_button_link": "",
+        "color_scheme": "scheme-1",
         "slider_autoplay": false,
         "slide_dots": false,
         "slide_arrows": true,
         "infinite_scroll": true,
         "slider_autoplay_duration": 3,
         "text_alignment": "center",
+        "alignment_position": "align-center justify-center",
         "padding_top": 36,
         "padding_bottom": 36
       }
