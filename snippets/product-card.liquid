@@ -50,7 +50,7 @@
                     <li>
                       <input 
                         type="radio" 
-                        name="option-{{ product_option.name | handleize }}" 
+                        name="option-{{ current_varient.id  }}" 
                         value="{{ option_value }}"
                         {% if product_option.selected_value == option_value %}checked{% endif %}
                       >
