@@ -70,10 +70,10 @@
 	 border-radius: 10rem;
 	 z-index: -1;
 }
- .testimonial .splide__arrows .splide__arrow--prev:hover svg, .testimonial .splide__arrows .splide__arrow--next:hover svg {
+ .testimonial .splide__arrows .splide__arrow--prev svg:hover, .testimonial .splide__arrows .splide__arrow--next svg:hover {
 	 color: #fff;
 }
- .testimonial .splide__arrows .splide__arrow--prev:hover:before svg, .testimonial .splide__arrows .splide__arrow--next:hover:before svg {
+ .testimonial .splide__arrows .splide__arrow--prev svg:hover:before, .testimonial .splide__arrows .splide__arrow--next svg:hover:before {
 	 width: 100%;
 }
 
