@@ -36,10 +36,12 @@
 
  */
 .testimonial .splide__arrows .splide__arrow--next{
-  /* transform : unset; */
-  /* background: none;
+  transform : unset;
+  background: none;
   cursor: pointer;
-  right: 0%; */
+  right: 0%;
+  top: 50%;
+  transform: translate(-50%)
 }
 
 
