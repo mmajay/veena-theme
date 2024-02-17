@@ -14,6 +14,7 @@
 
 .testimonial__image img{
   border-radius: 100px;
+  transition: transform 0.5s ease;
 }
 
 .testimonial__heading{
@@ -58,7 +59,9 @@
   display: none;
 } 
 
-
+.testimonial__slide:hover .testimonial__image img{
+  transform: scale(1.1)
+}
 
 
 
