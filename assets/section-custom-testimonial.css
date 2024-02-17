@@ -50,6 +50,7 @@
 
 .testimonial .splide__arrows .splide__arrow--prev svg{
   color: red;
+  fill: yellow;
 }
 
 /* Hover effect */
