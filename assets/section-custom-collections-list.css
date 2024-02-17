@@ -11,7 +11,7 @@
   display: flex;
 }
 
-.collections-list__slide{
+.collections-list__slide img{
   transition: transform 0.3s ease;
 }
 
