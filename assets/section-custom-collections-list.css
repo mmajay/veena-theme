@@ -2,10 +2,7 @@
   position: relative;
 }
 
-.collections-list__slide{
-  overflow: hidden;
-  border: 1px solid red;
-}
+
 
 .collections-list__content{
   position: absolute;
