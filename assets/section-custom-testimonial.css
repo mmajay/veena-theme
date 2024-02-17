@@ -58,7 +58,7 @@
 	 border-radius: 10rem;
 	 z-index: -2;
 }
- .testimonial .splide__arrows .splide__arrow--prev:before svg, .testimonial .splide__arrows .splide__arrow--next:before svg {
+ .testimonial .splide__arrows .splide__arrow--prev svg:before, .testimonial .splide__arrows .splide__arrow--next svg:before {
 	 content: '';
 	 position: absolute;
 	 bottom: 0;
