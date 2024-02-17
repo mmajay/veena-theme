@@ -41,7 +41,7 @@
   
   <div class="product-card__content {{ product_text_alignment }}">
     <div class="product-card-varients">
-      {% for varient_option in product.options_with_values %}
+      {% for product_option in product.options_with_values %}
            <div class="product-card__option">
                 <label>{{ product_option.name }}</label>
   
