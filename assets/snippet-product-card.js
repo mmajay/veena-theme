@@ -23,6 +23,7 @@ class ProductCard extends HTMLElement {
     console.log(data,"data")
     const html = new DOMParser().parseFromString(data, "text/html");
     this.innerHTML = html.querySelector(`[data-product-handle="${this.productHandle}"]`).innerHTML;
+     
   }
 
 
