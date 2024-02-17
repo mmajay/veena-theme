@@ -29,20 +29,6 @@
   margin: 20px 0 0 0;
 }
 
-/* .testimonial .splide__arrow splide__arrow--prev{
-  top: unset;
-  bottom: 0;
-}
-
- */
-.testimonial .splide__arrows .splide__arrow--next{
-  transform : unset;
-  background: none;
-  cursor: pointer;
-  right: 0%;
-  top: 50%;
-  transform: translate(-50%)
-}
 
 
 
