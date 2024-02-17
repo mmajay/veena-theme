@@ -1,4 +1,5 @@
 {{ "section-custom-testimonial.css" | asset_url | stylesheet_tag }}
+<script src="{{ "custom-slider.js" | asset_url }}" defer></script>
 
 
 {% style %}
@@ -16,6 +17,20 @@
 
 {% endstyle %}
 
+<div class="testimonial">
+  <div class="page-width">
+    
+    <section class="splide" aria-label="Splide Basic HTML Example">
+      <div class="splide__track">
+        <ul class="splide__list">
+          {% for block in section.blocks %}
+            
+          {% endfor %}  
+        </ul>
+      </div>
+    </section>
+  </div>
+</div>
 
 
 
