@@ -54,5 +54,8 @@
     color: white; /* Arrow color on hover */
 }
 
+.testimonial .splide__arrows:disabled{
+  display: none;
+}
 
 
