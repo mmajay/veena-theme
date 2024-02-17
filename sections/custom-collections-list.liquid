@@ -21,7 +21,7 @@
 {% capture slider-options-data %}
   {
     "autoplay" : {{ section.settings.slider_autoplay }},
-    "interval" : {{ section.settings.slider_autoplay_duration }},
+    "interval" : {{ section.settings.slider_autoplay_duration | times: 1000 }},
     "type" : "{{ section.settings.slide_animation }}",
     "pagination": {{ section.settings.slide_dots }},
     "gap": "20px",
@@ -84,6 +84,12 @@
         "default": "Our Customers Review"
       },
       {
+        "type": "text",
+        "id": "section_button_text",
+        "label": "Section button text",
+        "default": "View All"
+      },
+      {
         "type" : "header",
         "content" : "Slider settings"
       },
@@ -134,12 +140,11 @@
         "type": "range",
         "id": "slider_autoplay_duration",
         "label": "Slider autoplay duration",
-        "min" : 1000,
-        "step":1000,
-        "max" : 8000,
-        "default": 3000,
-        "unit": "ms",
-        "info" : "ms-milliseconds"
+        "min" : 1,
+        "step":1,
+        "max" : 10,
+        "default": 3,
+        "unit": "sec"
       },
       {
         "type" : "header",
