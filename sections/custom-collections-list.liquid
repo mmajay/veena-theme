@@ -62,7 +62,7 @@
                     {% render "responsive-image", desktopImage: block.settings.desktop_image, mobileImage: block.settings.mobile_image %}
                   </div>
                 {% endif %}
-                <div class="collections-list__content {{ section.settings.text_alignment }}">
+                <div class="collections-list__content {{ block.settings.text_alignment }}">
                   {% if block.settings.heading != blank %}
                     <h2 class="h4 collections-list__heading"> {{ block.settings.heading }} </h2>
                   {% endif %}  
@@ -137,25 +137,6 @@
         "id": "infinite_scroll",
         "label": "Infinite scroll",
         "default": true
-      },
-      {
-        "type" : "select",
-        "id": "slide_animation",
-        "label" : "Slide animation",
-        "options" : [
-          {
-            "value" : "loop",
-            "label" : "Loop"
-          },
-          {
-            "value" : "fade",
-            "label" : "Fade"
-          },
-          {
-            "value" : "slide",
-            "label" : "Slide"
-          }
-        ]
       },
       {
         "type": "range",
@@ -247,6 +228,25 @@
             "type": "url",
             "id": "section_button_link",
             "label": "Section button link"
+          },
+          {
+            "type" : "select",
+            "id": "slide_animation",
+            "label" : "Slide animation",
+            "options" : [
+              {
+                "value" : "loop",
+                "label" : "Loop"
+              },
+              {
+                "value" : "fade",
+                "label" : "Fade"
+              },
+              {
+                "value" : "slide",
+                "label" : "Slide"
+              }
+            ]
           },
           {
           "type" : "select",
