@@ -30,7 +30,7 @@
 }
 
 .testimonial .splide__arrows .splide__arrow--next{
-  background: #000;
+  /* background: #000; */
   padding: 20px;
   color: #fff;
   border-radius: 50% 0% 0% 50%;
@@ -38,10 +38,11 @@
 }
 
 .testimonial .splide__arrows .splide__arrow--prev svg, .testimonial .splide__arrows .splide__arrow--next svg{
-  fill : #fff;
+  fill : red;
   height: 18px;
+  z-index: 1;
   width: 18px;
-  color: #fff;
+  color: red;
 }
 
 
