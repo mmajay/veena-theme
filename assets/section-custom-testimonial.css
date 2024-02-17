@@ -37,7 +37,7 @@
   right: 0%;
 }
 
-.testimonial .splide__arrows .splide__arrow--prev svg,.testimonial .splide__arrows .splide__arrow--next svg{
+.testimonial .splide__arrows .splide__arrow--prev svg, .testimonial .splide__arrows .splide__arrow--next svg{
   fill : #fff;
   height: 18px;
   width: 18px;
