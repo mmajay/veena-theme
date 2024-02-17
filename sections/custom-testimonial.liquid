@@ -43,6 +43,7 @@
         <div class="splide__track">
           <ul class="splide__list">
             {% for block in section.blocks %}
+              
               <li class="splide__slide testimonial__slide global-media-settings {{ section.settings.text_alignment }}">
                 {% if block.settings.image != blank %}
                   <div class="testimonial__image"> 
@@ -60,7 +61,7 @@
                 {% if block.settings.comment != blank %}
                   <div class="testimonial__comment"> {{ block.settings.comment }} </div>
                 {% endif %}  
-                
+  
               </li>
             {% endfor %}  
           </ul>
