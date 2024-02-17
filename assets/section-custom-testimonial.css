@@ -54,10 +54,10 @@
 }
 
 /* Hover effect */
-.testimonial .splide__arrow:hover {
+/* .testimonial .splide__arrow:hover {
     background-color: red; 
     color: white; 
-}
+} */
 
 .testimonial .splide__arrows .splide__arrow--prev:disabled, .testimonial .splide__arrows .splide__arrow--next:disabled{
   display: none;
