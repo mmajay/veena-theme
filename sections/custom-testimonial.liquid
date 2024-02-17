@@ -45,8 +45,8 @@
             {% for block in section.blocks %}
               <li class="splide__slide testimonial__slide global-media-settings {{ section.settings.text_alignment }}">
                 {% if block.settings.image != blank %}
-                  <div class="testimonial__image"> 
-                    {% render "responsive-image", desktopImage: block.settings.image, class:"media media--circle" %}
+                  <div class="testimonial__image media media--circle"> 
+                    {% render "responsive-image", desktopImage: block.settings.image %}
                   </div>
                 {% endif %}
                 {% if block.settings.heading != blank %}
