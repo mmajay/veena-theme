@@ -51,7 +51,7 @@
     height: 50px;
     opacity: 1;
     background: #000;
-    border-radius: 50% 0 0 50%;
+    border-radius: 0 50% 50% 0;
 }
 
 
