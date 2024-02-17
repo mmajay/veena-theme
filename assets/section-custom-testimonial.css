@@ -39,10 +39,6 @@
 
 .testimonial .splide__arrows .splide__arrow--prev svg, .testimonial .splide__arrows .splide__arrow--next svg{
   fill : red;
-  height: 18px;
-  z-index: 1;
-  width: 18px;
-  color: red;
 }
 
 .testimonial .splide__arrows .splide__arrow--prev{
@@ -50,6 +46,7 @@
   color: red;
   border-radius: 0% 50% 50% 0%;
   left: 0%;
+  background: #000;
 }
 
 
