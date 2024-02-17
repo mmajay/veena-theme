@@ -64,3 +64,10 @@
 }
 
  */
+
+.testimonial .splide__arrow svg {
+    fill: #fc0000;
+    height: 1.2em;
+    width: 1.2em;
+}
+
