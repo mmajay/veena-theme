@@ -1,5 +1,8 @@
 .collections-list{
   position: relative;
+}
+
+.collections-list__slide{
   overflow: hidden;
 }
 
