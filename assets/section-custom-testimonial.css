@@ -28,42 +28,6 @@
 .testimonial__comment p{
   margin: 20px 0 0 0;
 }
-/* 
-.testimonial .splide__arrows .splide__arrow--next{
-  padding: 20px;
-  border-radius: 50% 0% 0% 50%;
-  right: 0%;
-}
-
-.testimonial .splide__arrows .splide__arrow--prev{
-  padding: 20px;
-  border-radius: 0% 50% 50% 0%;
-  left: 0%;
-} */
-
-
-/* .testimonial .splide__arrow {
-    background-color: black; 
-    color: white;
-    transition: background-color 0.3s ease, color 0.3s ease;
-} */
-/* 
-.testimonial .splide__arrows .splide__arrow--prev{
-  color: red;
-  fill: yellow;
-} */
-
-/* Hover effect */
-/* .testimonial .splide__arrow:hover {
-    background-color: red; 
-    color: white; 
-} */
-
-/* .testimonial .splide__arrows .splide__arrow--prev:disabled, .testimonial .splide__arrows .splide__arrow--next:disabled{
-  display: none;
-}
-
- */
 
 .testimonial .splide__arrow--next {
     right: 0;
