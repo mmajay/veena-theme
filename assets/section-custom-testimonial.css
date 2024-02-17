@@ -30,7 +30,6 @@
 }
 
 .testimonial .splide__arrows .splide__arrow--next{
-  background: #000;
   padding: 20px;
   border-radius: 50% 0% 0% 50%;
   right: 0%;
@@ -45,7 +44,6 @@
   color: red;
   border-radius: 0% 50% 50% 0%;
   left: 0%;
-  background: #000;
 }
 
 
