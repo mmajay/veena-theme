@@ -10,3 +10,11 @@
   width: 100%;
   display: flex;
 }
+
+.collections-list__image img{
+  transition: transform 0.3s ease;
+}
+
+.collections-list__image:hover img{
+  transform: scale(1.1)
+}
