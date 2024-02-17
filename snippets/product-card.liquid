@@ -42,8 +42,25 @@
   <div class="product-card__content {{ product_text_alignment }}">
     <div class="product-card-varients">
       {% for varient_option in product.options_with_values %}
+           <div class="product-card__option">
+                <label>{{ product_option.name }}</label>
+  
+                <ul>
+                  {% for option_value in product_option.values %}
+                    <li>
+                      <input 
+                        type="radio" 
+                        name="option-{{ product_option.name | handleize }}" 
+                        value="{{ option_value }}"
+                        {% if product_option.selected_value == option_value %}checked{% endif %}
+                      >
+                      {{ option_value }}
+                    </li>
+                  {% endfor %}
+                </ul>
+              </div>
 
-          <ul class="product-card__varient-options">
+          <!-- <ul class="product-card__varient-options">
             
             {% for option in varient_option.values %}
               <li>
@@ -52,7 +69,7 @@
               </li>
             {% endfor %} 
             
-          </ul>
+          </ul> -->
 
       {% endfor %}  
     </div>
