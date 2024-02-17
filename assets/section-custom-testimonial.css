@@ -37,9 +37,9 @@
  */
 .testimonial .splide__arrows .splide__arrow--next{
   /* transform : unset; */
-  background: none;
+  /* background: none;
   cursor: pointer;
-  right: 0%;
+  right: 0%; */
 }
 
 
