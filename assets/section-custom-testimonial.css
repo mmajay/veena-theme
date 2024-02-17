@@ -5,3 +5,7 @@
 .testimonial__heading{
   margin-top: 15px;
 }
+
+.testimonial__designation{
+  font-weight: 500;
+}
