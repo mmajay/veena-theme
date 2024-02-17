@@ -11,10 +11,10 @@
   display: flex;
 }
 
-.collections-list__image img{
+.collections-list__slide{
   transition: transform 0.3s ease;
 }
 
-.collections-list__image:hover img{
+.collections-list__slide:hover img{
   transform: scale(1.1);
 }
