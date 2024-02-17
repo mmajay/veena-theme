@@ -42,7 +42,7 @@
   <div class="product-card__content {{ product_text_alignment }}">
     <div class="product-card-varients">
       {% for varient_option in product.options_with_values %}
-        <!-- {% if varient_option.name == "Color" %} -->
+
           <ul class="product-card__varient-options">
             
             {% for option in varient_option.values %}
@@ -53,7 +53,7 @@
             {% endfor %} 
             
           </ul>
-        <!-- {% endif %}   -->
+
       {% endfor %}  
     </div>
     
