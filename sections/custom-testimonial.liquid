@@ -40,8 +40,21 @@
             {% for block in section.blocks %}
               <li class="splide__slide">
                 {% if block.settings.image != blank %}
-                  <div class="testimonial__image"> {% render "responsive-image", desktopImage: block.settings.image %} </div>
+                  <div class="testimonial__image"> 
+                    {% render "responsive-image", desktopImage: block.settings.image %}
+                  </div>
                 {% endif %}
+                {% if block.settings.heading != blank %}
+                  <h3> {{ block.settings.heading }} </h3>
+                {% endif %}  
+                
+                {% if block.settings.designation != blank %}
+                  <h3> {{ block.settings.designation }} </h3>
+                {% endif %}  
+                
+                {% if block.settings.comment != blank %}
+                  <h3> {{ block.settings.comment }} </h3>
+                {% endif %}  
               
                 
               </li>
