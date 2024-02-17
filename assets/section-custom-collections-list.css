@@ -15,7 +15,7 @@
 
 .collections-list__slide img{
   overflow: hidden;
-  transition: transform 0.5s ease-in-out;
+  transition: transform 0.35s ease-in-out;
 }
 
 .collections-list__slide:hover img{
