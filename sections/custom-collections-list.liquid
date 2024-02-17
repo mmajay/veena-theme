@@ -56,13 +56,13 @@
           <ul class="splide__list">
             {% for block in section.blocks %}
               
-              <li class="splide__slide global-media-settings {{ section.settings.text_alignment }}">
+              <li class="splide__slide global-media-settings">
                 {% if block.settings.image != blank %}
                   <div class="collections-list__image"> 
                     {% render "responsive-image", desktopImage: block.settings.desktop_image, mobileImage: block.settings.mobile_image %}
                   </div>
                 {% endif %}
-                <div class="collections-list__content">
+                <div class="collections-list__content {{ section.settings.text_alignment }}">
                   {% if block.settings.heading != blank %}
                     <h2 class="h4 collections-list__heading"> {{ block.settings.heading }} </h2>
                   {% endif %}  
