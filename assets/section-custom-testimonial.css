@@ -2,6 +2,10 @@
   background: #f5f5f5;
 }
 
+.testimonial__slide{
+  background: #fff;
+}
+
 .testimonial__image img{
   border-radius: 100px;
 }
