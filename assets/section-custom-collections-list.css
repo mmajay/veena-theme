@@ -8,13 +8,11 @@
   left: 0;
   height: 100%;
   width: 100%;
-  /* z-index: 2; */
   display: flex;
 }
 
 .collections-list__slide img{
   overflow: hidden;
-  z-index: 1;
   transition: transform 0.4s ease-in-out;
 }
 
