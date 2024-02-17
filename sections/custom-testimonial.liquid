@@ -43,7 +43,7 @@
         <div class="splide__track">
           <ul class="splide__list">
             {% for block in section.blocks %}
-              <li class="splide__slide {{ section.settings.text_alignment }}">
+              <li class="splide__slide testimonial__slide {{ section.settings.text_alignment }}">
                 {% if block.settings.image != blank %}
                   <div class="testimonial__image"> 
                     {% render "responsive-image", desktopImage: block.settings.image %}
