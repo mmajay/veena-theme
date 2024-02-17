@@ -49,7 +49,48 @@
 }
 
 
-
+.custom-button-secondary_color {
+  display: inline-block;
+  padding: 8px 20px;
+  border-radius: 10rem;
+  color: #fff;
+  text-transform: capitalize;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  font-size: 16px;
+  text-decoration: none;
+}
+ .testimonial .splide__arrows .splide__arrow--prev svg:after, .testimonial .splide__arrows .splide__arrow--next svg:after {
+	 content: '';
+	 position: absolute;
+	 bottom: 0;
+	 left: 0;
+	 width: 100%;
+	 height: 100%;
+	 background-color: #000;
+	 border-radius: 10rem;
+	 z-index: -2;
+}
+ ..testimonial .splide__arrows .splide__arrow--prev svg:before, .testimonial .splide__arrows .splide__arrow--next svg:before {
+	 content: '';
+	 position: absolute;
+	 bottom: 0;
+	 left: 0;
+	 width: 0%;
+	 height: 100%;
+	 background-color: #d03c3f;
+	 transition: all 0.3s ease;
+	 border-radius: 10rem;
+	 z-index: -1;
+}
+ ..testimonial .splide__arrows .splide__arrow--prev svg:hover, .testimonial .splide__arrows .splide__arrow--next svg:hover {
+	 color: #fff;
+}
+ ..testimonial .splide__arrows .splide__arrow--prev svg:hover:before, .testimonial .splide__arrows .splide__arrow--next svg:hover:before {
+	 width: 100%;
+}
 
 
 
