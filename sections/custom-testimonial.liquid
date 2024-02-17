@@ -35,7 +35,7 @@
 <div class="testimonial padding-{{ section.id }}">
   <div class="page-width">
     <div class="testimonial__heading-section">
-      <h1>{{ section.settings.section_heading }}</h1>
+      <h2>{{ section.settings.section_heading }}</h2>
     </div>
     <custom-slider>
       <section class="splide" aria-label="Testimonial Splide" data-slider-options='{{ slider-options-data }}'>
@@ -49,11 +49,11 @@
                   </div>
                 {% endif %}
                 {% if block.settings.heading != blank %}
-                  <h3> {{ block.settings.heading }} </h3>
+                  <h2> {{ block.settings.heading }} </h2>
                 {% endif %}  
                 
                 {% if block.settings.designation != blank %}
-                  <h3> {{ block.settings.designation }} </h3>
+                  <h2> {{ block.settings.designation }} </h2>
                 {% endif %}  
                 
                 {% if block.settings.comment != blank %}
