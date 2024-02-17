@@ -43,15 +43,19 @@
 
 
 .testimonial .splide__arrow {
-    background-color: black; /* Initial background color */
-    color: white; /* Initial arrow color */
-    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition effect */
+    background-color: black; 
+    color: white;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.testimonial .splide__arrows .splide__arrow--prev svg{
+  color: red;
 }
 
 /* Hover effect */
 .testimonial .splide__arrow:hover {
-    background-color: red; /* Background color on hover */
-    color: white; /* Arrow color on hover */
+    background-color: red; 
+    color: white; 
 }
 
 .testimonial .splide__arrows .splide__arrow--prev:disabled, .testimonial .splide__arrows .splide__arrow--next:disabled{
