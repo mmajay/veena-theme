@@ -33,22 +33,21 @@
 
 
 
-<div class="testimonial padding-{{ section.id }}">
+<div class="collections-list padding-{{ section.id }}">
   <div class="page-width">
-    <div class="testimonial__heading-section">
+    <div class="collections-list__heading-section">
       <h2 class="h1"> {{ section.settings.section_heading }} </h2>
-      {% if section.settings.section_button_text %}
-         <a class="custom-button-secondary" 
-            {% if section.settings.section_button_link == blank %}
-                role="link" aria-disabled="true"
-              {% else %}
-                href="{{ section.settings.section_button_link }}"
-            {% endif %}>
-          {{ section.settings.section_button_text }}
-        </a>
-      {% endif %}  
       <div>
-        
+        {% if section.settings.section_button_text %}
+           <a class="custom-button-secondary" 
+              {% if section.settings.section_button_link == blank %}
+                  role="link" aria-disabled="true"
+                {% else %}
+                  href="{{ section.settings.section_button_link }}"
+              {% endif %}>
+            {{ section.settings.section_button_text }}
+          </a>
+        {% endif %}  
       </div>
     </div>
     <custom-slider>
@@ -59,8 +58,8 @@
               
               <li class="splide__slide testimonial__slide global-media-settings {{ section.settings.text_alignment }}">
                 {% if block.settings.image != blank %}
-                  <div class="testimonial__image"> 
-                    {% render "responsive-image", desktopImage: block.settings.image %}
+                  <div class="collections-list__image"> 
+                    {% render "responsive-image", desktopImage: block.settings.desktop_image, mobileImage: block.settings.mobile_image %}
                   </div>
                 {% endif %}
                 {% if block.settings.heading != blank %}
