@@ -42,7 +42,17 @@
 }
 
 
+.testimonial .splide__arrow {
+    background-color: black; /* Initial background color */
+    color: white; /* Initial arrow color */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition effect */
+}
 
+/* Hover effect */
+.testimonial .splide__arrow:hover {
+    background-color: red; /* Background color on hover */
+    color: white; /* Arrow color on hover */
+}
 
 
 
