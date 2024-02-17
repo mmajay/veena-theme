@@ -19,10 +19,9 @@ class ProductCard extends HTMLElement {
     // this.currentVariant =  this.varientValues == JSON.stringify(this.selectedOptions)
     console.log(this.varientValues)
     const url = `/products/${this.productHandle}?variant=${this.varientValues.id}&section_id=${this.sectionId}`;
-     const response = await fetch(url)
-     const data = await response.text()
-     console.log(data,"data")
-     const html = new DOMParser().parseFromString(data, "text/html");
+    const data = await response.text()
+    console.log(data,"data")
+    const html = new DOMParser().parseFromString(data, "text/html");
     this.innerHTML = html.querySelector(`[data-product-handle="${this.productHandle}"]`).innerHTML;
   }
 
