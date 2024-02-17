@@ -56,7 +56,7 @@
           <ul class="splide__list">
             {% for block in section.blocks %}
               
-              <li class="splide__slide collections-list__slide custom-border-radius">
+              <li class="splide__slide collections-list__slide cutom-border-radius">
                 {% if block.settings.desktop_image != blank %}
                   <div class="collections-list__image"> 
                     {% render "responsive-image", desktopImage: block.settings.desktop_image, mobileImage: block.settings.mobile_image class:"media media--portrait" %}
