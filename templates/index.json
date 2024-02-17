@@ -324,10 +324,10 @@
     "custom_testimonial_7n4Rd4": {
       "type": "custom-testimonial",
       "blocks": {
-        "testimonia_blocks_pa4zda": {
+        "testimonia_blocks_EPVUpi": {
           "type": "testimonia-blocks",
           "settings": {
-            "image": "shopify:\/\/shop_images\/2_0b300886-b49e-4ef1-a786-f0b7f7ab2f2d.jpg",
+            "image": "shopify:\/\/shop_images\/1_2db38707-707e-4fd6-ab12-35397e8935de.jpg",
             "heading": "Person Name",
             "designation": "Add designation",
             "comment": "<p>Absolutely love the trendy collection! The quality is unmatched, and each piece tells a unique style story.<\/p>"
@@ -337,6 +337,15 @@
           "type": "testimonia-blocks",
           "settings": {
             "image": "shopify:\/\/shop_images\/3_b85a25e7-eff6-49ab-9fc7-ecdf71bb4ef1.jpg",
+            "heading": "Person Name",
+            "designation": "Add designation",
+            "comment": "<p>Absolutely love the trendy collection! The quality is unmatched, and each piece tells a unique style story.<\/p>"
+          }
+        },
+        "testimonia_blocks_pa4zda": {
+          "type": "testimonia-blocks",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2_0b300886-b49e-4ef1-a786-f0b7f7ab2f2d.jpg",
             "heading": "Person Name",
             "designation": "Add designation",
             "comment": "<p>Absolutely love the trendy collection! The quality is unmatched, and each piece tells a unique style story.<\/p>"
@@ -362,8 +371,9 @@
         }
       },
       "block_order": [
-        "testimonia_blocks_pa4zda",
+        "testimonia_blocks_EPVUpi",
         "testimonia_blocks_xEe9mb",
+        "testimonia_blocks_pa4zda",
         "testimonia_blocks_w8zFNT",
         "testimonia_blocks_gF79nP"
       ],
@@ -373,8 +383,9 @@
         "slide_dots": false,
         "slide_arrows": true,
         "infinite_scroll": false,
-        "slide_animation": "loop",
+        "slide_animation": "slide",
         "slider_autoplay_duration": 3000,
+        "text_alignment": "center",
         "padding_top": 36,
         "padding_bottom": 36
       }
