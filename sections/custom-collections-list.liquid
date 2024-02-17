@@ -56,7 +56,7 @@
           <ul class="splide__list">
             {% for block in section.blocks %}
               
-              <li class="splide__slide testimonial__slide global-media-settings {{ section.settings.text_alignment }}">
+              <li class="splide__slide global-media-settings {{ section.settings.text_alignment }}">
                 {% if block.settings.image != blank %}
                   <div class="collections-list__image"> 
                     {% render "responsive-image", desktopImage: block.settings.desktop_image, mobileImage: block.settings.mobile_image %}
@@ -64,15 +64,18 @@
                 {% endif %}
 
                 {% if block.settings.heading != blank %}
-                  <h2 class="h4 testimonial__heading"> {{ block.settings.heading }} </h2>
+                  <h2 class="h4 collections-list__heading"> {{ block.settings.heading }} </h2>
                 {% endif %}  
                 
-                {% if block.settings.designation != blank %}
-                  <h2 class="h4 testimonial__designation"> {{ block.settings.designation }} </h2>
-                {% endif %}  
-
-                {% if block.settings.comment != blank %}
-                  <div class="testimonial__comment"> {{ block.settings.comment }} </div>
+                {% if block.settings.section_button_text %}
+                   <a class="custom-button-secondary" 
+                      {% if block.settings.section_button_link == blank %}
+                          role="link" aria-disabled="true"
+                        {% else %}
+                          href="{{ block.settings.section_button_link }}"
+                      {% endif %}>
+                    {{ block.settings.section_button_text }}
+                  </a>
                 {% endif %}  
   
               </li>
