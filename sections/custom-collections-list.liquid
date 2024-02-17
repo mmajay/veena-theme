@@ -56,10 +56,10 @@
           <ul class="splide__list">
             {% for block in section.blocks %}
               
-              <li class="splide__slide collections-list__slide global-media-settings">
+              <li class="splide__slide collections-list__slide">
                 {% if block.settings.desktop_image != blank %}
                   <div class="collections-list__image"> 
-                    {% render "responsive-image", desktopImage: block.settings.desktop_image, mobileImage: block.settings.mobile_image class:"media media--square" %}
+                    {% render "responsive-image", desktopImage: block.settings.desktop_image, mobileImage: block.settings.mobile_image class:"media media--potraiat global-media-settings" %}
                   </div>
                 {% endif %}
                 <div class="collections-list__content {{ section.settings.alignment_position }}">
