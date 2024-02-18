@@ -5,13 +5,18 @@
         padding-top:{{section.settings.padding_top}}px;
         padding-bottom:{{section.settings.padding_bottom}}px;
     }
-
+    .faq-section__container{
+        background:{{section.settings.background_color}};
+        padding:30px 0px;
+    }
     @media screen and (min-width:749px){
     .padding-{{ section.id }}{
         padding-top:{{section.settings.padding_top}}px;
         padding-bottom:{{section.settings.padding_bottom}}px;
     }
-
+    .faq-section__container{
+        padding:60px 0px;
+    }
     }
     {%  for block in section.blocks %}
     .plus-and-minus{{ block.id }}::before {
@@ -21,7 +26,9 @@
         display: inline-block;
         text-align: center;
     }
-
+    details[open] .plus-and-minus{{ block.id }}::before {
+        content: "-";
+    }
 {% endfor %}
 {% endstyle %}
 <div class="faq-section padding-{{ section.id }}">
