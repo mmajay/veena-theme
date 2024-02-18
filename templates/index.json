@@ -436,8 +436,8 @@
           "settings": {
             "desktop_image": "shopify:\/\/shop_images\/5.jpg",
             "mobile_image": "shopify:\/\/shop_images\/5.jpg",
-            "heading": "Person Name",
-            "section_button_text": "View All",
+            "heading": "Handbags",
+            "section_button_text": "shop now",
             "section_button_link": "",
             "slide_animation": "loop"
           }
