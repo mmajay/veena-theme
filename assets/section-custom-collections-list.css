@@ -60,6 +60,7 @@
   height:100%;
   background:red;
   transition:all 0.35s ease;
+  position:absolute;
 }
 
 .collections-list .splide__arrow--prev:hover:after,
@@ -74,7 +75,15 @@
     opacity: 1;
     background: #000;
     border-radius: 0 50% 50% 0;  
+  position:relative;
+  top:50%;
 }
+
+.collections-list .splide__arrow--next {
+  position:relative;
+  top:50%;
+}
+
 
 .collections-list .splide__arrow--prev:disabled, .collections-list .splide__arrow--next:disabled{
   display: none;
