@@ -436,8 +436,8 @@
           "settings": {
             "desktop_image": "shopify:\/\/shop_images\/6.jpg",
             "mobile_image": "shopify:\/\/shop_images\/6.jpg",
-            "heading": "Person Name",
-            "section_button_text": "View All",
+            "heading": "Accessories",
+            "section_button_text": "Shop Now",
             "section_button_link": "",
             "slide_animation": "loop"
           }
