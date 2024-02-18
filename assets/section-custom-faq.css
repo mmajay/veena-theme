@@ -40,3 +40,7 @@
 .faq-section__block-container div:last-child{
     border-bottom-width:0px;
 }
+
+details[open] .plus-and-minus{{ block.id }}::before {
+    content: "-";
+}
