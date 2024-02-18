@@ -2,9 +2,6 @@
   margin-bottom: 30px;
 }
 
-.faq-section__container{
-  padding:60px 0px;
-}
 
 
 .faq-section__title p{
@@ -37,10 +34,11 @@
     margin:0px;
     transition: all 0.5s ease;
 }
+
 .faq-section__block-container div:last-child{
     border-bottom-width:0px;
 }
-
+/* 
 details[open] .plus-and-minus{{ block.id }}::before {
     content: "-";
-}
+} */
