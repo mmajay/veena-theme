@@ -44,7 +44,7 @@
           <ul class="splide__list">
             {% for block in section.blocks %}
               
-              <li class="splide__slide testimonial__slide global-media-settings {{ section.settings.text_alignment }}">
+              <li class="splide__slide testimonial__slide global-media-settings {{ section.settings.text_alignment }} color-{{ section.settings.color_scheme }}">
                 {% if block.settings.image != blank %}
                   <div class="testimonial__image"> 
                     {% render "responsive-image", desktopImage: block.settings.image %}
