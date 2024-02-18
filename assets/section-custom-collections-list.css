@@ -53,7 +53,8 @@
   z-index:2;
 }
 
-.collections-list .splide__arrow:after {
+.collections-list .splide__arrow--prev:after,
+.collection-list .splide__arrow-next:after{
   position:relative;
   width:0%;
   height:100%;
@@ -61,7 +62,8 @@
   transition:all 0.35s ease;
 }
 
-.collections-list .splide__arrow:hover:after {
+.collections-list .splide__arrow--prev:hover:after,
+.collection-list .splide__arrow-next:hover:after{
   width:100%;
 }
 
