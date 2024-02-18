@@ -1,36 +1,5 @@
 {
   "sections": {
-    "custom_product_list_4HUB9m": {
-      "type": "custom-product-list",
-      "disabled": true,
-      "settings": {
-        "product_list": [
-          "full-sleeve-high-neck-t-shirt",
-          "full-sleeve-high-neck-t-shirt-1",
-          "mens-half-sleeve-t-shirt",
-          "mens-winter-hooded-jacket",
-          "women-shirt-beige-dress",
-          "women-solid-casual-jacket",
-          "womens-casual-jacket",
-          "womens-casual-sweaters"
-        ],
-        "section_heading": "Featured Collection",
-        "button_text": "See all product",
-        "button_link": "#",
-        "slider_enable": false,
-        "card_caption": "",
-        "card_heading": "",
-        "card_button_text": "",
-        "card_button_link": "",
-        "color_scheme": "scheme-1",
-        "text_size": "h2",
-        "text_alignment": "left",
-        "product_text_alignment": "center",
-        "alignment_position": "align-center justify-center",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "hero_banner_slider_hMhRdj": {
       "type": "hero-banner-slider",
       "blocks": {
@@ -82,7 +51,6 @@
         "banner_FchdrT",
         "banner_G6GNmM"
       ],
-      "disabled": true,
       "settings": {
         "slider_autoplay": true,
         "slide_dots": true,
@@ -96,7 +64,6 @@
     },
     "custom_rich_text_section_xnXzEz": {
       "type": "custom-rich-text-section",
-      "disabled": true,
       "settings": {
         "pre_heading": "What You Wear",
         "heading": "<p>Fashion Emerges <br\/>As A Universal <a href=\"#\" title=\"#\">Language<\/a><\/p>",
@@ -147,9 +114,38 @@
         "image_grid_aMM8kN",
         "image_grid_efFQM8"
       ],
-      "disabled": true,
       "settings": {
         "image_padding": "image-landscape",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "custom_product_list_4HUB9m": {
+      "type": "custom-product-list",
+      "settings": {
+        "product_list": [
+          "full-sleeve-high-neck-t-shirt",
+          "full-sleeve-high-neck-t-shirt-1",
+          "mens-half-sleeve-t-shirt",
+          "mens-winter-hooded-jacket",
+          "women-shirt-beige-dress",
+          "women-solid-casual-jacket",
+          "womens-casual-jacket",
+          "womens-casual-sweaters"
+        ],
+        "section_heading": "Featured Collection",
+        "button_text": "See all product",
+        "button_link": "#",
+        "slider_enable": false,
+        "card_caption": "",
+        "card_heading": "",
+        "card_button_text": "",
+        "card_button_link": "",
+        "color_scheme": "scheme-1",
+        "text_size": "h2",
+        "text_alignment": "left",
+        "product_text_alignment": "center",
+        "alignment_position": "align-center justify-center",
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -192,7 +188,6 @@
         "image_grid_6ABiUU",
         "image_grid_T7hghT"
       ],
-      "disabled": true,
       "settings": {
         "image_padding": "image-square",
         "padding_top": 60,
@@ -249,7 +244,6 @@
         "usp_EARe8c",
         "usp_gqYLVH"
       ],
-      "disabled": true,
       "settings": {
         "padding_top": 40,
         "padding_bottom": 40
@@ -315,7 +309,6 @@
         "lookbook_block_W9pkGb",
         "lookbook_block_rapciC"
       ],
-      "disabled": true,
       "settings": {
         "padding_top": 60,
         "padding_bottom": 60
@@ -496,10 +489,10 @@
     }
   },
   "order": [
-    "custom_product_list_4HUB9m",
     "hero_banner_slider_hMhRdj",
     "custom_rich_text_section_xnXzEz",
     "custom_image_with_text_grid_cH7kLX",
+    "custom_product_list_4HUB9m",
     "custom_image_with_text_grid_x8RtKC",
     "custom_usp_BGXkTw",
     "custom_lookbook_CAwQWC",
