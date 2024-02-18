@@ -48,6 +48,7 @@
               <li>
                 <input type="radio"  value={{ option }} {% if varient_option.selected_value == option %}checked{% endif %} name="color-{{ current_varient.id }}">
                   {{ option }}
+                <label style="background: {{ option }}" class="product-card__color-codes"></label>
               </li>
             {% endfor %}       
           </ul>
