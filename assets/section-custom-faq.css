@@ -6,6 +6,11 @@
   padding:60px 0px;
 }
 
+.faq-section__container{
+    background:{{section.settings.background_color}};
+    padding:30px 0px;
+}
+
 .faq-section__title p{
     margin:0px 0px 8px;
 }
