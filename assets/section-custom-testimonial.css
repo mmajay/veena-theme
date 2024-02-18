@@ -45,6 +45,7 @@
     fill: #fff;
     height: 1.2em;
     width: 1.2em;
+  z-index:2;
 }
 
 .testimonial .splide__arrow--prev {
