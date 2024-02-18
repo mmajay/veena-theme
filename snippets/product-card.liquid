@@ -45,7 +45,7 @@
         {% if varient_option.name == "Color" %}
           <ul class="product-card__varient-options">           
             {% for option in varient_option.values %}
-              <li class="product-card__color-container">
+              <li class="">
                 <input type="radio" class="product-card__color-radio" id="{{ current_varient.id | append: option }}"  value={{ option }} {% if varient_option.selected_value == option %}checked{% endif %} name="color-{{ current_varient.id }}">
                 <label style="background: {{ option }}" class="product-card__color-codes" for="{{ current_varient.id | append: option  }}"></label>
               </li>
