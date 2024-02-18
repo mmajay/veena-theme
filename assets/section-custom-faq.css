@@ -1,6 +1,7 @@
-.faq-section__block-count{
-    color: #000000;
+.faq-section__container{
+  background: #f5f5f5;
 }
+
 .faq-section__title p{
     margin:0px 0px 8px;
 }
