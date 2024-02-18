@@ -19,3 +19,33 @@
 .collections-list__slide:hover img{
   transform: scale(1.08);
 }
+
+
+.collections-list .splide__arrow--next {
+    right: 0;
+    width: 50px;
+    height: 50px;
+    opacity: 1;
+    background: #000;
+    border-radius: 50% 0 0 50%;
+}
+
+
+.collections-list .splide__arrow svg {
+    fill: #fff;
+    height: 1.2em;
+    width: 1.2em;
+}
+
+.collections-list .splide__arrow--prev {
+    left: 0;
+    width: 50px;
+    height: 50px;
+    opacity: 1;
+    background: #000;
+    border-radius: 0 50% 50% 0;
+}
+
+.collections-list .splide__arrow--prev:disabled, .collections-list .splide__arrow--next:disabled{
+  display: none;
+} 
