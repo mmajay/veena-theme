@@ -62,12 +62,18 @@
   align-items: center;
 }
 
+.product-card__color-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .product-card__color-radio{
   display: none;
 }
 
 .product-card__color-codes{
-      display: inline-block;
+    display: inline-block;
     vertical-align: middle;
     cursor: pointer;
     position: relative;
