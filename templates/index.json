@@ -466,13 +466,13 @@
         "section_button_text": "View All",
         "section_button_link": "",
         "color_scheme": "scheme-2",
-        "slider_autoplay": true,
+        "slider_autoplay": false,
         "slide_dots": false,
         "slide_arrows": true,
-        "infinite_scroll": true,
+        "infinite_scroll": false,
         "slider_autoplay_duration": 3,
         "text_alignment": "center",
-        "alignment_position": "align-end justify-center",
+        "alignment_position": "align-center justify-center",
         "padding_top": 36,
         "padding_bottom": 36
       }
