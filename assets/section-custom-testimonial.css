@@ -4,6 +4,7 @@
 
 .testimonial__section-heading{
   background: transaparent;
+  border: 1px solid red;
 }
 
 .testimonial{
