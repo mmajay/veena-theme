@@ -55,7 +55,6 @@
 
 .collections-list .splide__arrow--prev:after,
 .collection-list .splide__arrow-next:after{
-  position:relative;
   width:0%;
   height:100%;
   background:red;
