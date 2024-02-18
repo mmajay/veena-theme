@@ -47,7 +47,7 @@
                         {% if block.settings.block_heading != blank and block.settings.block_description !=blank %}
                             <details id="block{{ block.id }}">
                                 <summary class="faq-section__block-question-and-symbol color-{{ section.settings.color_scheme }}">
-                                    <div class="faq-section__block-count-and-question">
+                                    <div class="faq-section__block-count-and-question color-{{ section.settings.color_scheme }}">
                                         <h2 class="h4 faq-section__block-count">{{ forloop.index }}.</h2>
                                         <h2 class='h2 faq-section__block-question'>{{block.settings.block_heading }}</h2>
                                     </div>
