@@ -65,3 +65,28 @@
   display: none;
 } 
 
+.collections-list .splide__arrow--prev:before, .collections-list .splide__arrow--next:before{
+  content: "",
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  transition: transform 0.35s ease;
+  border-radius: 0 50% 50% 0;
+  background: red;
+  
+}
+
+.collections-list .splide__arrow--prev:hover:before, .collections-list .splide__arrow--next:hover:before{
+  content: "",
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  transition: transform 0.35s ease;
+  border-radius: 0 50% 50% 0;
+  background: red;
+  
+}
+
+
