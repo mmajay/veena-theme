@@ -1,29 +1,26 @@
-.custom-color-hovering-button {
-  position: relative;
-  overflow: hidden;
-}
+{{'snippet-custom-color-hovering-button.css' |  asset_url |  stylesheet_tag}}
 
-.custom-color-hovering-button span {
-  z-index: 2;
-  text-transform: capitalize;
-}
+{%  style  %}
 
-.custom-color-hovering-button::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 100%;
-  transition: width 0.4s ease-in-out;
-  z-index: 1;
-}
+    .custom-color-hovering-button-{{sectionId}} {
+        background-color: {{backgroundColor}}
+    }
 
-.custom-color-hovering-button:hover::before {
-  width: 100%;
-}
+    .custom-color-hovering-button-{{sectionId}}::before {
+        background-color: {{hoverColor}}
+    }
 
-.custom-color-hovering-button:not(:hover)::before {
-  width: 0;
-  right: 0;
-}
+    .custom-color-hovering-button-{{sectionId}} {
+        color: {{textColor}}
+    }
+
+    .custom-color-hovering-button-{{sectionId}}:hover {
+        color: {{hoverTextColor}}
+    }
+
+{% endstyle %}
+
+
+<a class="custom-color-hovering-button {{class}} custom-color-hovering-button-{{sectionId}} button" href={{buttonLink}}>
+    <span>{{buttonText}}</span>
+</a>
