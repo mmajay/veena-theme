@@ -53,6 +53,7 @@
   margin: 0;
   line-height: normal;
   text-wrap: nowrap;
+  color: #000;
 }
 
 .display-as-button {
