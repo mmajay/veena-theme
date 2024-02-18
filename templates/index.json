@@ -387,6 +387,17 @@
     "custom_collections_list_fUaV48": {
       "type": "custom-collections-list",
       "blocks": {
+        "collection_blocks_DrTkhF": {
+          "type": "collection-blocks",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/6.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/6.jpg",
+            "heading": "Accessories",
+            "section_button_text": "Shop Now",
+            "section_button_link": "",
+            "slide_animation": "loop"
+          }
+        },
         "collection_blocks_T6b8Aw": {
           "type": "collection-blocks",
           "settings": {
@@ -414,9 +425,9 @@
           "settings": {
             "desktop_image": "shopify:\/\/shop_images\/4.jpg",
             "mobile_image": "shopify:\/\/shop_images\/4.jpg",
-            "heading": "Person Name",
-            "section_button_text": "View All",
-            "section_button_link": "",
+            "heading": "Men's Jacket",
+            "section_button_text": "Shop now",
+            "section_button_link": "shopify:\/\/collections\/shirts",
             "slide_animation": "loop"
           }
         },
@@ -427,17 +438,6 @@
             "mobile_image": "shopify:\/\/shop_images\/5.jpg",
             "heading": "Person Name",
             "section_button_text": "View All",
-            "section_button_link": "",
-            "slide_animation": "loop"
-          }
-        },
-        "collection_blocks_DrTkhF": {
-          "type": "collection-blocks",
-          "settings": {
-            "desktop_image": "shopify:\/\/shop_images\/6.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/6.jpg",
-            "heading": "Accessories",
-            "section_button_text": "Shop Now",
             "section_button_link": "",
             "slide_animation": "loop"
           }
@@ -464,11 +464,11 @@
         }
       },
       "block_order": [
+        "collection_blocks_DrTkhF",
         "collection_blocks_T6b8Aw",
         "collection_blocks_HTHQih",
         "collection_blocks_hGVUQC",
         "collection_blocks_iHTTjR",
-        "collection_blocks_DrTkhF",
         "collection_blocks_pFCjLT",
         "collection_blocks_Bax4w6"
       ],
