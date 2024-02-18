@@ -6,12 +6,14 @@
   display: flex;
     flex-direction: column;
   justify-content: space-between;
+  margin-bottom: 20px; 
 }
 
 @media screen and (min-width: 750px){
   .collections-list__heading-section{
     flex-direction: row;
     background: none;
+    margin-bottom: 30px;
   }
 }
 
@@ -62,3 +64,4 @@
 .collections-list .splide__arrow--prev:disabled, .collections-list .splide__arrow--next:disabled{
   display: none;
 } 
+
