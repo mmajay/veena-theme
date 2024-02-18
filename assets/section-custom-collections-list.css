@@ -2,6 +2,17 @@
   position: relative;
 }
 
+.collections-list__heading-section{
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 750px){
+  .collections-list__heading-section{
+    flex-direction: column;
+  }
+}
+
 .collections-list__content{
   position: absolute;
   top: 0;
