@@ -43,7 +43,6 @@
     opacity: 1;
     background: #000;
     border-radius: 50% 0 0 50%;
-  position: relative;
 }
 
 
@@ -51,7 +50,6 @@
     fill: #fff;
     height: 1.2em;
     width: 1.2em;
-  z-index: 2;
 }
 
 .collections-list .splide__arrow--prev {
@@ -61,28 +59,9 @@
     opacity: 1;
     background: #000;
     border-radius: 0 50% 50% 0;
-  position: relative;
 }
 
 .collections-list .splide__arrow--prev:disabled, .collections-list .splide__arrow--next:disabled{
   display: none;
 } 
-
-.collections-list .splide__arrow--prev:before, .collections-list .splide__arrow--next:before{
-  content: "",
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 0;
-  transition: all 0.35s ease;
-  border-radius: 0 50% 50% 0;
-  background: red;
-  position: absolute;
-}
-
-.collections-list .splide__arrow--prev:hover:before, .collections-list .splide__arrow--next:hover:before{
-  width: 100%;
-  
-}
-
 
