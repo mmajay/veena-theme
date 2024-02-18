@@ -420,17 +420,6 @@
             "slide_animation": "loop"
           }
         },
-        "collection_blocks_HTHQih": {
-          "type": "collection-blocks",
-          "settings": {
-            "desktop_image": "shopify:\/\/shop_images\/8.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/8.jpg",
-            "heading": "Person Name",
-            "section_button_text": "View All",
-            "section_button_link": "",
-            "slide_animation": "loop"
-          }
-        },
         "collection_blocks_iHTTjR": {
           "type": "collection-blocks",
           "settings": {
@@ -445,20 +434,21 @@
         "collection_blocks_pFCjLT": {
           "type": "collection-blocks",
           "settings": {
-            "desktop_image": "shopify:\/\/shop_images\/2.jpg",
-            "heading": "Person Name",
-            "section_button_text": "View All",
+            "desktop_image": "shopify:\/\/shop_images\/5.jpg",
+            "heading": "Best Selling",
+            "section_button_text": "shop now",
             "section_button_link": "",
             "slide_animation": "loop"
           }
         },
-        "collection_blocks_Bax4w6": {
+        "collection_blocks_HTHQih": {
           "type": "collection-blocks",
           "settings": {
-            "desktop_image": "shopify:\/\/shop_images\/3.jpg",
-            "heading": "Person Name",
-            "section_button_text": "View All",
-            "section_button_link": "",
+            "desktop_image": "shopify:\/\/shop_images\/8.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/8.jpg",
+            "heading": "T shirt",
+            "section_button_text": "shop now",
+            "section_button_link": "shopify:\/\/collections\/bottoms",
             "slide_animation": "loop"
           }
         }
@@ -467,10 +457,9 @@
         "collection_blocks_DrTkhF",
         "collection_blocks_hGVUQC",
         "collection_blocks_T6b8Aw",
-        "collection_blocks_HTHQih",
         "collection_blocks_iHTTjR",
         "collection_blocks_pFCjLT",
-        "collection_blocks_Bax4w6"
+        "collection_blocks_HTHQih"
       ],
       "settings": {
         "section_heading": "Our Customers Review",
