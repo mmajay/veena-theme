@@ -50,6 +50,19 @@
     fill: #fff;
     height: 1.2em;
     width: 1.2em;
+  z-index:2;
+}
+
+.collections-list .splide__arrow:after {
+  position:relative;
+  width:0%;
+  height:100%;
+  background:red;
+  transition:all 0.35s ease;
+}
+
+.collections-list .splide__arrow:hover:after {
+  width:100%;
 }
 
 .collections-list .splide__arrow--prev {
