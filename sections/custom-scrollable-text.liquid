@@ -30,7 +30,7 @@
                                 {% render 'icon-unavailable' %}
                             {% endif %}
                         </div>
-                        <div class="scrolling-banner__scrolling-text">
+                        <div class="scrolling-banner__scrolling-text {{ section.settings.color_scheme }}">
                             {{block.settings.scrolling_text}}
                         </div>
                         {% if block.settings.button_link !=blank %}
