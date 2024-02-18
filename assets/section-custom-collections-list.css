@@ -10,6 +10,7 @@
 @media screen and (min-width: 750px){
   .collections-list__heading-section{
     flex-direction: column;
+    background: none;
   }
 }
 
