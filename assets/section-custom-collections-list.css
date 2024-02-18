@@ -61,6 +61,8 @@
   background:red;
   transition:all 0.35s ease;
   position:absolute;
+  top:0;
+  left:0;
 }
 
 .collections-list .splide__arrow--prev:hover:after,
