@@ -1,7 +1,5 @@
 {{ 'section-custom-faq.css' | asset_url |stylesheet_tag }}
-{% liquid
-    assign count=0
-%}
+
 {% style %}
     .padding-{{ section.id }}{
         padding-top:{{section.settings.padding_top}}px;
@@ -44,13 +42,13 @@
             </div>
             <div class="faq-section__block-container">
                 {% for block in section.blocks %}
-                    {% assign count = count | plus: 1 %}
+                    
                     <div class="faq-section__block">
                         {% if block.settings.block_heading != blank and block.settings.block_description !=blank %}
                             <details id="block{{ block.id }}">
                                 <summary class="faq-section__block-question-and-symbol">
                                     <div class="faq-section__block-count-and-question">
-                                        <h2 class="h4 faq-section__block-count">{{ count }}.</h2>
+                                        <h2 class="h4 faq-section__block-count">{{ forloop.index }}.</h2>
                                         <h2 class='h4 faq-section__block-question'>{{block.settings.block_heading }}</h2>
                                     </div>
                                     <p class="plus-and-minus{{ block.id }}"> </p>
