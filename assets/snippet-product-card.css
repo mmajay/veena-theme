@@ -62,6 +62,10 @@
   align-items: center;
 }
 
+.product-card__color-radio{
+  display: none;
+}
+
 .product-card__color-codes{
       display: inline-block;
     vertical-align: middle;
