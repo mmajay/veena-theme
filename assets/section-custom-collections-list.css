@@ -4,12 +4,13 @@
 
 .collections-list__heading-section{
   display: flex;
+    flex-direction: column;
   justify-content: space-between;
 }
 
 @media screen and (min-width: 750px){
   .collections-list__heading-section{
-    flex-direction: column;
+    flex-direction: row;
     background: none;
   }
 }
