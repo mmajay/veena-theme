@@ -504,14 +504,14 @@
         "faq_with_ans_dwjPXw": {
           "type": "faq-with-ans",
           "settings": {
-            "block_heading": "<h3>How do I determine my size?<\/h3>",
+            "block_heading": "<h3> How do I determine my size?<\/h3>",
             "block_description": "To find the right size, please refer to our detailed size guide available on each product page. Measurements may vary by product, so it's essential to check the specific sizing information provided. If you have further questions or need assistance, our customer support team is here to help."
           }
         },
         "faq_with_ans_Cad6yX": {
           "type": "faq-with-ans",
           "settings": {
-            "block_heading": "<h3>What payment methods do you accept?<\/h3>",
+            "block_heading": "<h3> What payment methods do you accept?<\/h3>",
             "block_description": "We accept a variety of payment methods, including major credit cards (Visa, MasterCard, American Express), PayPal, and other secure payment options. During the checkout process, you can choose the payment method that suits you best."
           }
         }
