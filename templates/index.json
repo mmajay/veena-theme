@@ -476,6 +476,52 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "custom_faq_section_DeEbDk": {
+      "type": "custom-faq-section",
+      "blocks": {
+        "faq_with_ans_XNx7E6": {
+          "type": "faq-with-ans",
+          "settings": {
+            "block_heading": "<p> How can I track my order ?<\/p>",
+            "block_description": "Once your order has been processed and shipped, you will receive a confirmation email with a tracking number. You can use this tracking number to monitor the status and location of your package through our shipping carrier's website."
+          }
+        },
+        "faq_with_ans_ewNGwJ": {
+          "type": "faq-with-ans",
+          "settings": {
+            "block_heading": "<p> How can I track my order ?<\/p>",
+            "block_description": "Once your order has been processed and shipped, you will receive a confirmation email with a tracking number. You can use this tracking number to monitor the status and location of your package through our shipping carrier's website."
+          }
+        },
+        "faq_with_ans_8pfbHE": {
+          "type": "faq-with-ans",
+          "settings": {
+            "block_heading": "<p> How can I track my order ?<\/p>",
+            "block_description": "Once your order has been processed and shipped, you will receive a confirmation email with a tracking number. You can use this tracking number to monitor the status and location of your package through our shipping carrier's website."
+          }
+        },
+        "faq_with_ans_dwjPXw": {
+          "type": "faq-with-ans",
+          "settings": {
+            "block_heading": "<p> How can I track my order ?<\/p>",
+            "block_description": "Once your order has been processed and shipped, you will receive a confirmation email with a tracking number. You can use this tracking number to monitor the status and location of your package through our shipping carrier's website."
+          }
+        }
+      },
+      "block_order": [
+        "faq_with_ans_XNx7E6",
+        "faq_with_ans_ewNGwJ",
+        "faq_with_ans_8pfbHE",
+        "faq_with_ans_dwjPXw"
+      ],
+      "settings": {
+        "background_color": "#F5F5F5",
+        "section_title": "<p>FAQ<\/p>",
+        "section_description": "Ensure that your FAQs are regularly updated based on common customer queries and changes in your business operations.",
+        "padding_top": 16,
+        "padding_bottom": 16
+      }
     }
   },
   "order": [
@@ -487,6 +533,7 @@
     "custom_usp_BGXkTw",
     "custom_lookbook_CAwQWC",
     "custom_testimonial_7n4Rd4",
-    "custom_collections_list_fUaV48"
+    "custom_collections_list_fUaV48",
+    "custom_faq_section_DeEbDk"
   ]
 }
