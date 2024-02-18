@@ -497,7 +497,7 @@
         "faq_with_ans_8pfbHE": {
           "type": "faq-with-ans",
           "settings": {
-            "block_heading": "<h3>Are the product images accurate representations of the items?<\/h3>",
+            "block_heading": "<h3> Are the product images accurate representations of the items?<\/h3>",
             "block_description": "Yes, we strive to provide accurate and high-quality images of our products. However, please note that colors may vary slightly due to differences in monitor settings. If you have any specific questions about a product, feel free to contact our customer support team."
           }
         },
