@@ -27,7 +27,12 @@
     "gap": "20px",
     "perPage": 5,
     "arrows" : {{ section.settings.slide_arrows }},
-    "rewind" : {{ section.settings.infinite_scroll }}
+    "rewind" : {{ section.settings.infinite_scroll }},
+    "breakpoints": "{
+    "750": {
+      "perPage": 2
+    }
+    }"
   }
 {% endcapture %} 
 
