@@ -46,9 +46,8 @@
   color: #000;
 }
 
-.custom-blogs__image img{
+.custom-blogs__image img, custom-blogs__slide{
   border-radius: 16px;
-  border: 1px solid red;
 }
 
 
