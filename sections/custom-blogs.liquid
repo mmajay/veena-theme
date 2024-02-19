@@ -14,6 +14,24 @@
   }
 {% endstyle %}
 
+{% capture slider-options-data %}
+  {
+    "autoplay" : {{ section.settings.slider_autoplay }},
+    "interval" : {{ section.settings.slider_autoplay_duration | times: 1000 }},
+    "type" : "{{ section.settings.slide_animation }}",
+    "pagination": {{ section.settings.slide_dots }},
+    "gap": "20px",
+    "perPage": 5,
+    "arrows" : {{ section.settings.slide_arrows }},
+    "rewind" : {{ section.settings.infinite_scroll }},
+    "breakpoints": {
+    "750": {
+      "perPage": 2
+    }
+    }
+  }
+{% endcapture %} 
+
 
 <div class="custom-blogs">
   <div class="page-width">
@@ -24,7 +42,7 @@
       
       {% if section.settings.section_button_text != blank %}
         <div class="">
-          <a class="custom-button-primary-transparent" 
+          <a class="custom-button-secondary_color" 
             {% if section.settings.section_button_link == blank %}
                 role="link" aria-disabled="true"
               {% else %}
@@ -35,6 +53,20 @@
         </div>    
       {% endif %}  
     </div>
+     <custom-slider>
+      <section class="splide" aria-label="Blogs Splide" data-slider-options='{{ slider-options-data }}'>
+        <div class="splide__track">
+          <ul class="splide__list">
+            {% for blog in section.settings.blog.articles %}
+              
+              <li class="splide__slide cutom-border-radius">
+               
+              </li>
+            {% endfor %}  
+          </ul>
+        </div>
+      </section>
+    </custom-slider>
     
   </div>
 </div>
