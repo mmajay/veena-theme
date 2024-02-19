@@ -1,6 +1,33 @@
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "Countdown Timer",
+    "tag": "section",
+    "settings": [
+      {
+        "type": "text",
+        "id": "section_heading",
+        "label": "Section heading"
+      },
+      {
+        "type": "richtext",
+        "id": "section_description",
+        "label": "Section description"
+      },
+      {
+        "type": "text",
+        "id": "section_button_text",
+        "label": "Section button text"
+      },
+      {
+        "type": "url",
+        "id": "section_button_link",
+        "label": "Section button link"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Countdown Timer"
+      }
+    ]
   }
 {% endschema %}
