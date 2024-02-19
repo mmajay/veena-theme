@@ -10,10 +10,6 @@
   
 }
 
-.custom-blogs__image img{
-  width: 50%;
-}
-
 .custom-blogs__slide{
   display: flex;
   border-radius: 16px;
