@@ -170,9 +170,9 @@
     background-position: -100% 0;
 }
 
-@media screen and (min-width: 749px){
+@media screen and (max-width: 749px){
   .custom-blogs__image .media--square{
-    padding-bottom: 180%;
+    padding-bottom: 120%;
   }
 }
 
