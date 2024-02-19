@@ -6,9 +6,9 @@
 
 .custom-blogs__splide-wrapper{
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column;
   row-gap: 10px;
-  border: 1px solid red;
+  border: 1px solid red; */
 }
 
 
