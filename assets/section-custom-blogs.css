@@ -46,6 +46,9 @@
   color: #000;
 }
 
+.custom-blogs__image img{
+  height: 200px;
+}
 
 
 .custom-blogs__title:hover{
