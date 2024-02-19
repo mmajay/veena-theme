@@ -18,7 +18,12 @@
 
 .custom-blogs__image{
   width: 100%;
+  position: relative;
 
+}
+
+.custom-blogs__image img{
+  padding-bottom: 120%;
 }
 
 .custom-blogs__blog-content{
