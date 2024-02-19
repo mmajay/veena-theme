@@ -1,4 +1,4 @@
-.custom-blogs__image{
+/* .custom-blogs__image{
   position: relative;
   padding-bottom: 50%;
 }
@@ -11,7 +11,7 @@
   width: 100%;
   object-fit: cover;
   object-position: center;
-}
+} */
 
 .custom-blogs__slide{
   display: flex;
