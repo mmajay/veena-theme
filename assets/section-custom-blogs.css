@@ -34,11 +34,11 @@
 
 
 .custom-blogs__tag{
-  color: #000;
+  color: #d03c3f;
 }
 
 .custom-blogs__tag:hover{
-  color: #d03c3f;
+  color: #000;
 }
 
 
