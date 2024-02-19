@@ -25,6 +25,10 @@
 
 }
 
+.custom-blogs__image img{
+  transition: transform 0.3s ease;
+}
+
 
 .custom-blogs__image:hover img{
   transform: scale(1.06);
