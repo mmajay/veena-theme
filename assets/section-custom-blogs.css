@@ -20,23 +20,11 @@
 .custom-blogs__image{
   width: 100%;
   position: relative;
-  /* padding-bottom: 40%; */
   overflow: hidden;
    border-radius: 16px;
 
 }
 
-/* .custom-blogs__image img{
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  object-position: center;
-  transition: transform 0.35s ease 
-  
-} */
 
 .custom-blogs__image:hover img{
   transform: scale(1.06);
