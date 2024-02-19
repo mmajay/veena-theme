@@ -14,7 +14,11 @@
   display: flex;
   border-radius: 16px;
   border: 1px solid rgba(0,0,0,0.1);
-  
+}
+
+.custom-blogs__image{
+  width: 100%;
+
 }
 
 .custom-blogs__blog-content{
