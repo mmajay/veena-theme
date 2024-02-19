@@ -57,10 +57,10 @@
       <section class="splide" aria-label="Blogs Splide" data-slider-options='{{ slider-options-data }}'>
         <div class="splide__track">
           <ul class="splide__list">
-            {% for blog in section.settings.blog.articles %}
+            {% for blogPost in section.settings.blog.articles %}
               
               <li class="splide__slide cutom-border-radius color-{{ section.settings.color_scheme }}">
-               {{ blog | json }}
+               {{ blogPost | json }}
               </li>
             {% endfor %}  
           </ul>
