@@ -60,7 +60,12 @@
                 <ul>
                   {% for option_value in product_option.values %}
                     <label>
-                      <input type="radio" name="{{ product_option.name | handleize }}" value="{{ option_value }}">
+                      <input 
+                        type="radio" 
+                        name="{{ product_option.name | handleize }}" 
+                        value="{{ option_value }}"
+                        {% if product_option.selected_value == option_value %}checked{% endif %}
+                      >
                     </label>
                   {% endfor %}
                 </ul>
