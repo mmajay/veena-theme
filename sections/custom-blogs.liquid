@@ -60,7 +60,7 @@
             {% for blog in section.settings.blog.articles %}
               
               <li class="splide__slide cutom-border-radius">
-               
+               {{ blog | json }}
               </li>
             {% endfor %}  
           </ul>
