@@ -66,16 +66,24 @@
                </div>
                 <div class="custom-blogs__blog-content">
                   
+                  <div>
                   {% if blogPost.tags != blank %}
                     <div class="custom-blogs__tags color-{{ section.settings.color_scheme }}">
                       {% for tag in blogPost.tags %}
                         <span class="custom-blogs__tag"> {{ tag }} </span>
                       {% endfor %}  
-                    </div>
-                    
+                    </div>            
                   {% endif %}  
                   <h2 class="h3"> {{ blogPost.title }}</h2>
+                  <h2 class="h4">Publish by: {{ blogPost.author }}</h2>
                   <div class="h4"> {{ blogPost.excerpt }} </div>
+                  </div>
+                  <div>
+                    <a href="{{ blogPost.url }}">Read more</a>
+                    <div class="">{{ blogPost.created_at }}</div>
+                  </div>
+                    
+                    
                 </div>
               </li>
             {% endfor %}  
