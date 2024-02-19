@@ -15,6 +15,14 @@
 {% endstyle %}
 
 
+<div class="custom-blogs">
+  <div class="page-width">
+    
+  </div>
+</div>
+
+
+
 
 {% schema %}
   {
@@ -26,10 +34,27 @@
         "id": "blog",
         "label": "Blogs"
       },
-            {
+      {
+        "type": "text",
+        "id": "section_heading",
+        "label": "Section heading",
+        "default": "Our Customers Review"
+      },
+      {
+        "type": "text",
+        "id": "section_button_text",
+        "label": "Section button text",
+        "default": "View All"
+      },
+      {
+        "type": "url",
+        "id": "section_button_link",
+        "label": "Section button link"
+      },
+      {
         "type": "color_scheme",
         "id": "color_scheme",
-        "label": "Color Scheme"
+        "label": "Color scheme"
       },
       {
           "type": "header",
