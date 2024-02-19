@@ -581,6 +581,7 @@
         "faq_with_ans_dwjPXw",
         "faq_with_ans_Cad6yX"
       ],
+      "disabled": true,
       "settings": {
         "background_color": "#f5f5f5",
         "section_title": "<p>FAQ<\/p>",
