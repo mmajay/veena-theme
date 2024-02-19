@@ -22,7 +22,7 @@
   <div class="product-card__left-tags">
     {% for tag in product.tags %}
       {% if tag contains "New" %}
-        {% assign badge_text = tag | split: '_' | first %}
+        {% assign badge_text = tag | split: '_' | last %}
       {% endif %}  
     {% endfor %} 
     {% if badge_text != blank %}
