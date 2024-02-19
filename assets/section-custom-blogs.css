@@ -7,7 +7,7 @@
 .custom-blogs__splide-wrapper{
   display: flex;
   flex-direction: column;
-  row-gap: 20px;
+  row-gap: 10px;
 }
 
 @media screen and (min-width: 750px){
