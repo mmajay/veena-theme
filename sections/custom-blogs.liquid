@@ -17,6 +17,24 @@
 
 <div class="custom-blogs">
   <div class="page-width">
+    <div class="custom-blogs__heading-section color-{{ section.settings.color_scheme }}">
+      {% if section.settings.section_heading != blank %}
+        <h2> {{ section.settings.section_heading }} </h2>   
+      {% endif %}  
+      
+      {% if section.settings.section_button_text != blank %}
+        <div class="">
+          <a class="custom-button-primary-transparent" 
+            {% if section.settings.section_button_link == blank %}
+                role="link" aria-disabled="true"
+              {% else %}
+                href="{{ section.settings.section_button_link }}"
+            {% endif %}>
+            {{ section.settings.section_button_text }}
+          </a>
+        </div>    
+      {% endif %}  
+    </div>
     
   </div>
 </div>
