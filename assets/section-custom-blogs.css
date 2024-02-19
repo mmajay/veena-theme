@@ -20,6 +20,7 @@
   width: 100%;
   position: relative;
   padding-bottom: 45%;
+  transition: transform 0.35s ease 
 
 }
 
@@ -31,6 +32,11 @@
   width: 100%;
   object-fit: cover;
   object-position: center;
+  
+}
+
+.custom-blogs__image:hover img{
+  transform: scale(1.06);
 }
 
 .custom-blogs__blog-content{
