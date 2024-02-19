@@ -18,12 +18,12 @@
 
 .custom-blogs__image{
   width: 100%;
-  position: relative;
-  padding-bottom: 40%;
+  /* position: relative; */
+  /* padding-bottom: 40%; */
 
 }
 
-.custom-blogs__image img{
+/* .custom-blogs__image img{
   position: absolute;
   top: 0;
   height: 100%;
@@ -31,7 +31,7 @@
   z-index: 1;
   object-fit: cover;
   object-position: center;
-}
+} */
 
 .custom-blogs__blog-content{
   padding: 15px;
