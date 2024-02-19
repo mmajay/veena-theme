@@ -69,11 +69,13 @@
                   {% if blogPost.tags != blank %}
                     <div class="custom-blogs__tags color-{{ section.settings.color_scheme }}">
                       {% for tag in blogPost.tags %}
-                        <span> {{ tag }} </span>
+                        <span class="custom-blogs__tag"> {{ tag }} </span>
                       {% endfor %}  
                     </div>
                     
                   {% endif %}  
+                  <h2 class="h3"> {{ blogPost.title }}</h2>
+                  <div class="h4"> {{ blogPost.excerpt }} </div>
                 </div>
               </li>
             {% endfor %}  
