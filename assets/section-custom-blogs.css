@@ -22,11 +22,13 @@
   position: relative;
   overflow: hidden;
    border-radius: 16px;
+  align-self: center;
 
 }
 
 .custom-blogs__image img{
   transition: transform 0.3s ease;
+
 }
 
 
