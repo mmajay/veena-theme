@@ -12,3 +12,9 @@
 .custom-blogs__hr-line{
   margin: 0;
 }
+
+.custom-blogs__link-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
