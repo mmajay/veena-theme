@@ -65,7 +65,7 @@
 
 .custom-blogs__info span{
   font-weight: 400;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 3;
   overflow: hidden;
 }
 
