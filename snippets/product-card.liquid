@@ -52,14 +52,14 @@
         <input type="hidden" name="id" value="{{ current_varient.id }}">
 
         {% unless product.has_only_default_variant %}
-          <ul>
+          <ul class="product-card__options">
             {% for product_option in product.options_with_values %}
               {% assign downcased_option_name = product_option.name | handleize %}
               
               <li>
                 <label>{{ product_option.name }}</label>
 
-                <ul>
+                <ul class="product-card__option">
                   {% for option_value in product_option.values %}
                     <li>
                       {% assign downcased_option_value = option_value | handleize %}
