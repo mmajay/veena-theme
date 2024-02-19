@@ -45,6 +45,8 @@
   color: #000;
 }
 
+
+
 .custom-blogs__title:hover{
   color: #d03c3f;
 }
@@ -56,6 +58,7 @@
 
 .custom-blogs__info{
   font-weight: 400;
+  -webkit-line-clamp: 2;
 }
 
 .custom-blogs .splide__arrow--next {
