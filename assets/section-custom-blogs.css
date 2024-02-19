@@ -31,6 +31,10 @@
 }
 
 .custom-blogs__blog-content{
+  width: 100%;
+}
+
+.custom-blogs__blog-content{
   padding: 15px;
   display: flex;
   flex-direction: column;
