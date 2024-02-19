@@ -62,33 +62,31 @@
               
               <li class="splide__slide  ">
                 <div class="custom-blogs__slide color-{{ section.settings.color_scheme }}">
-               <div class="custom-blogs__image">
-                 {% render "responsive-image", desktopImage: blogPost.image %}
-               </div>
-                <div class="custom-blogs__blog-content">
-                  
-                  <div>
-                  {% if blogPost.tags != blank %}
-                    <div class="custom-blogs__tags color-{{ section.settings.color_scheme }}">
-                      {% for tag in blogPost.tags %}
-                        <span class="custom-blogs__tag"> {{ tag }} </span>
-                      {% endfor %}  
-                    </div>            
-                  {% endif %}  
-                  <h2 class="h3 custom-blogs__title"> {{ blogPost.title }}</h2>
-                  <h2 class="h4 custom-blogs__author">Publish by: {{ blogPost.author }}</h2>
-                  <div class="h4 custom-blogs__info"> {{ blogPost.excerpt }} </div>
+                  <div class="custom-blogs__image">
+                    {% render "responsive-image", desktopImage: blogPost.image %}
                   </div>
-                  <div>
-                    <hr class="custom-blogs__hr-line"/>
-                    <div class="custom-blogs__read-more">
-                      
-                    <a href="{{ blogPost.url }}">Read more</a>
-                    <div class="">{{ blogPost.created_at | date: '%B %d, %Y'}}</div>
+                  <div class="custom-blogs__blog-content">
+                    <div>
+                      {% if blogPost.tags != blank %}
+                        <div class="custom-blogs__tags color-{{ section.settings.color_scheme }}">
+                          {% for tag in blogPost.tags %}
+                            <span class="custom-blogs__tag"> {{ tag }} </span>
+                          {% endfor %}  
+                        </div>            
+                      {% endif %}  
+                      <h2 class="h3 custom-blogs__title"> {{ blogPost.title }}</h2>
+                      <h2 class="h4 custom-blogs__author">Publish by: {{ blogPost.author }}</h2>
+                      <div class="h4 custom-blogs__info"> {{ blogPost.excerpt }} </div>
                     </div>
-                  </div>            
-                </div>
-               </div>   
+                    <div>
+                      <hr class="custom-blogs__hr-line"/>
+                      <div class="custom-blogs__read-more">    
+                        <a href="{{ blogPost.url }}">Read more</a>
+                        <div class="">{{ blogPost.created_at | date: '%B %d, %Y'}}</div>
+                      </div>
+                    </div>            
+                  </div>
+                </div>   
               </li>
             {% endfor %}  
           </ul>
