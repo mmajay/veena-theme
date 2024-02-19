@@ -49,6 +49,10 @@
   color: #d03c3f;
 }
 
+.custom-blogs__author{
+  margin: 10px 0;
+}
+
 .custom-blogs .splide__arrow--next {
     right: 0;
     width: 50px;
