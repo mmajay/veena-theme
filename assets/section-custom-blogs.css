@@ -13,7 +13,7 @@
 .custom-blogs__slide{
   display: flex;
   border-radius: 16px;
-  border: var(--border-width) solid rgba(var(--color-foreground),var(--border-opacity));
+  border: 1px solid #000 0.1;
 }
 
 .custom-blogs__blog-content{
