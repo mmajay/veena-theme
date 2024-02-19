@@ -1,3 +1,7 @@
 .custom-blogs__slide{
   display: flex;
 }
+
+.custom-blogs__blog-content{
+  padding: 15px;
+}
