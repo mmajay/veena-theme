@@ -54,11 +54,16 @@
         {% unless product.has_only_default_variant %}
           <ul>
             {% for product_option in product.options_with_values %}
+              {% assign downcased_option_name = product_option.name | handleize %}
+              
               <li>
                 <label>{{ product_option.name }}</label>
 
                 <ul>
                   {% for option_value in product_option.values %}
+                    {% assign downcased_option_value = option_value | handleize %}
+
+                  
                     <label>
                       <input 
                         type="radio" 
@@ -66,6 +71,15 @@
                         value="{{ option_value }}"
                         {% if product_option.selected_value == option_value %}checked{% endif %}
                       >
+
+                      {% if downcased_option_name == 'color' %}
+                        <span
+                          class="product-card__swatch product-card__colorswatch"
+                          style="background-color: {{ downcased_option_value }};"
+                        ></span>
+                      {% else %}
+                        <span class="product-card__swatch">{{ option_value }}</span>
+                      {% endif %}
                     </label>
                   {% endfor %}
                 </ul>
