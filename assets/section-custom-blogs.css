@@ -170,6 +170,12 @@
     background-position: -100% 0;
 }
 
+@media screen and (min-width: 749px){
+  .custom-blogs__slide .media--square{
+    padding-bottom: 120%;
+  }
+}
+
 @media screen and (min-width: 750px){
   .custom-blogs__heading-section{
     margin-bottom: 30px;  
