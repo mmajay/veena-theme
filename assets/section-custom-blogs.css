@@ -178,3 +178,9 @@
     background-position: -100% 0;
 }
 
+@media screen and (max-width: 749px){
+  .custom-blogs .splide__arrow{
+    display: none
+  }
+}
+
