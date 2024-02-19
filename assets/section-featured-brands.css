@@ -1,0 +1,22 @@
+.featured-brands__section{
+  background-color: #f5f5f5;
+  padding: 20px;
+}
+
+@media screen and (min-width: 750px){
+  .featured-brands__section{
+    padding: 40px;
+  }
+}
+
+.featured-brands__grid{
+  display: flex;
+  overflow-x: auto;
+  justify-content: space-between;
+}
+
+.featured-brands__image img{
+  width: 85px; 
+  height: 50px;
+  /* border: 1px solid red; */
+}
