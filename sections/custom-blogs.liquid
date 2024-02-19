@@ -70,7 +70,7 @@
                       {% if blogPost.tags != blank %}
                         <div class="custom-blogs__tags color-{{ section.settings.color_scheme }}">
                           {% for tag in blogPost.tags %}
-                            <span class="custom-blogs__tag"> {{ tag }} </span>
+                            <a class="custom-blogs__tag" href="/blogs/news/tagged/{{ tag }}"> {{ tag }} </a>
                           {% endfor %}  
                         </div>            
                       {% endif %}  
