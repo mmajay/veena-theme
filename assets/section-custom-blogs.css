@@ -10,16 +10,6 @@
   row-gap: 10px;
 }
 
-@media screen and (min-width: 750px){
-  .custom-blogs__heading-section{
-    margin-bottom: 30px;  
-  }
-
-  .custom-blogs__splide-wrapper{
-    flex-direction: row;
-  }
-  
-}
 
 .custom-blogs__slide{
   display: flex;
@@ -175,6 +165,21 @@
 
 .custom-blogs  .splide__arrow--next:hover::before {
     background-position: -100% 0;
+}
+
+@media screen and (min-width: 750px){
+  .custom-blogs__heading-section{
+    margin-bottom: 30px;  
+  }
+
+  .custom-blogs__splide-wrapper{
+    flex-direction: row;
+  }
+
+  .custom-blogs__image{
+    width: 50%;
+  }
+  
 }
 
 
