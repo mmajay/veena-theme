@@ -58,10 +58,10 @@
      <custom-slider>
       <section class="splide" aria-label="Blogs Splide" data-slider-options='{{ slider-options-data }}'>
         <div class="splide__track">
-          <ul class="splide__list grid grid--1-col grid--2-col-desktop">
+          <ul class="splide__list ">
             {% for blogPost in section.settings.blog.articles %}
               
-              <li class="splide__slide grid__item custom-blogs__slide color-{{ section.settings.color_scheme }}">  
+              <li class="splide__slide custom-blogs__slide color-{{ section.settings.color_scheme }}">  
                   <div class="custom-blogs__image">  
                     {% render "responsive-image", desktopImage: blogPost.image, class: "media media--square" %}
                   </div>
