@@ -588,6 +588,66 @@
         "padding_top": 20,
         "padding_bottom": 20
       }
+    },
+    "custom_featured_brands_CWDDgM": {
+      "type": "custom-featured-brands",
+      "blocks": {
+        "featured_brands_HqgpXQ": {
+          "type": "featured-brands",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1_cd395017-1471-444b-a792-aee354390d67.png"
+          }
+        },
+        "featured_brands_pB8DBD": {
+          "type": "featured-brands",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/8.png"
+          }
+        },
+        "featured_brands_VUNd7U": {
+          "type": "featured-brands",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/4_97056f97-b5a0-46f5-aa2e-d315f39f0bde.png"
+          }
+        },
+        "featured_brands_GVyCyU": {
+          "type": "featured-brands",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/5.png"
+          }
+        },
+        "featured_brands_pehwNP": {
+          "type": "featured-brands",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/3_526ac6af-9bcf-4f5a-a1f0-3b004c6d93b3.png"
+          }
+        },
+        "featured_brands_H7tcbd": {
+          "type": "featured-brands",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/6.png"
+          }
+        },
+        "featured_brands_iRTBU4": {
+          "type": "featured-brands",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2_26caca81-ef1b-413a-b2e8-dacb4042a47f.png"
+          }
+        }
+      },
+      "block_order": [
+        "featured_brands_HqgpXQ",
+        "featured_brands_pB8DBD",
+        "featured_brands_VUNd7U",
+        "featured_brands_GVyCyU",
+        "featured_brands_pehwNP",
+        "featured_brands_H7tcbd",
+        "featured_brands_iRTBU4"
+      ],
+      "settings": {
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
     }
   },
   "order": [
@@ -601,6 +661,7 @@
     "custom_testimonial_7n4Rd4",
     "custom_collections_list_fUaV48",
     "custom_faq_section_DeEbDk",
-    "custom_scrollable_text_FncbEM"
+    "custom_scrollable_text_FncbEM",
+    "custom_featured_brands_CWDDgM"
   ]
 }
