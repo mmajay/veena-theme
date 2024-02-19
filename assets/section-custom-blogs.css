@@ -63,6 +63,10 @@
   display: inline-block;
 }
 
+.custom-blogs__read-more a{
+  color: #000;
+}
+
 .custom-blogs .splide__arrow--next {
     right: 0;
     width: 50px;
