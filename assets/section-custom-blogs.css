@@ -46,7 +46,9 @@
   color: #000;
 }
 
-
+.responsive-image img{
+  border-radius: 16px;
+}
 
 
 .custom-blogs__title:hover{
