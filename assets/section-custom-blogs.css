@@ -1,3 +1,9 @@
+.custom-blogs__heading-section{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .custom-blogs__slide{
   display: flex;
 }
