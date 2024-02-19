@@ -60,7 +60,7 @@
           <ul class="splide__list">
             {% for blogPost in section.settings.blog.articles %}
               
-              <li class="splide__slide cutom-border-radius color-{{ section.settings.color_scheme }}">
+              <li class="splide__slide custom-blogs__slide cutom-border-radius color-{{ section.settings.color_scheme }}">
                <div class="custom-blogs__image">
                  {% render "responsive-image", desktopImage: blogPost.image class: "media media--square" %}
                </div>
