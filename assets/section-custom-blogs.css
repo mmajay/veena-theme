@@ -46,7 +46,7 @@
   color: #000;
 }
 
-.responsive-image img{
+.custom-blogs__image img{
   border-radius: 16px;
   border: 1px solid red;
 }
