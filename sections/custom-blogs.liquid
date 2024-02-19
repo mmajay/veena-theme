@@ -67,7 +67,7 @@
                 <div class="custom-blogs__blog-content">
                   
                   {% if blogPost.tags > 0 %}
-                    <div class="custom-blogs__tags">
+                    <div class="custom-blogs__tags color-{{ section.settings.color_scheme }}">
                       {% for tag in blogPost.tags %}
                         <span> {{ tag }} </span>
                       {% endfor %}  
