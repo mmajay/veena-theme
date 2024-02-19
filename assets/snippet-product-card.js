@@ -5,8 +5,8 @@ class ProductCard extends HTMLElement {
     this.sectionId = this.dataset.sectionId;
 
     this.variantData = JSON.parse(this.querySelector('script').textContent)
-    this.myEl = this.querySelector(".product-card__varient-options")
-    this.myEl.addEventListener('onmouseover',this.onVariantChange)
+
+    this.addEventListener('change',this.onVariantChange)
 
   }
 
