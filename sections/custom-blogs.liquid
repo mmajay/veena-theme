@@ -62,8 +62,9 @@
               
               <li class="splide__slide  ">
                 <div class="custom-blogs__slide color-{{ section.settings.color_scheme }}">
-                  <div class="custom-blogs__image">
-                    {% render "responsive-image", desktopImage: blogPost.image %}
+                  <div class="custom-blogs__image media">
+                    <img src="{{ blogPost.image  | image_url }}"/>
+                    <!-- {% render "responsive-image", desktopImage: blogPost.image %} -->
                   </div>
                   <div class="custom-blogs__blog-content">
                     <div>
