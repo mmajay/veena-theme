@@ -67,6 +67,7 @@
   color: #d03c3f;
   text-decoration: none;
   font-weight: 600;
+  font-size: 12px;
 }
 
 .custom-blogs__tag:hover{
@@ -114,7 +115,7 @@
     fill: #fff;
     height: 1.2em;
     width: 1.2em;
-  z-index:2;
+    z-index:2;
 }
 
 .custom-blogs .splide__arrow--prev {
@@ -178,6 +179,10 @@
 
   .custom-blogs__image{
     width: 60%;
+  }
+
+  .custom-blogs__tag{
+    font-size: 14px;
   }
   
 }
