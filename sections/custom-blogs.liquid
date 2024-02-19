@@ -60,11 +60,11 @@
           <ul class="splide__list">
             {% for blogPost in section.settings.blog.articles %}
               
-              <li class="splide__slide">
-                <div class="custom-blogs__slide color-{{ section.settings.color_scheme }}">
+              <li class="splide__slide custom-blogs__slide color-{{ section.settings.color_scheme }}">
+             
                   <div class="custom-blogs__image">
                     
-                    {% render "responsive-image", desktopImage: blogPost.image, class:"media media--landscape" %}
+                    {% render "responsive-image", desktopImage: blogPost.image%}
                   </div>
                   <div class="custom-blogs__blog-content">
                     <div>
@@ -87,7 +87,7 @@
                       </div>
                     </div>            
                   </div>
-                </div>   
+
               </li>
             {% endfor %}  
           </ul>
