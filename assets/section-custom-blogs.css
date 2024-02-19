@@ -12,6 +12,8 @@
 
 .custom-blogs__slide{
   display: flex;
+  border-radius: 16px;
+  border: var(--border-width) solid rgba(var(--color-foreground),var(--border-opacity));
 }
 
 .custom-blogs__blog-content{
@@ -46,7 +48,7 @@
   color: #000;
 }
 
-.custom-blogs__image img, custom-blogs__slide{
+.custom-blogs__image img{
   border-radius: 16px;
 }
 
