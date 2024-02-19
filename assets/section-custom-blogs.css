@@ -4,6 +4,9 @@
 
 .custom-blogs__blog-content{
   padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .custom-blogs__hr-line{
