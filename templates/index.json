@@ -648,6 +648,15 @@
         "padding_top": 20,
         "padding_bottom": 20
       }
+    },
+    "custom_blogs_KxDWtg": {
+      "type": "custom-blogs",
+      "settings": {
+        "blog": "news",
+        "color_scheme": "scheme-2",
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
     }
   },
   "order": [
@@ -662,6 +671,7 @@
     "custom_collections_list_fUaV48",
     "custom_faq_section_DeEbDk",
     "custom_scrollable_text_FncbEM",
-    "custom_featured_brands_CWDDgM"
+    "custom_featured_brands_CWDDgM",
+    "custom_blogs_KxDWtg"
   ]
 }
