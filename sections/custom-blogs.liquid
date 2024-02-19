@@ -64,6 +64,17 @@
                <div class="custom-blogs__image">
                  {% render "responsive-image", desktopImage: blogPost.image class: "media media--square" %}
                </div>
+                <div class="custom-blogs__blog-content">
+                  
+                  {% if blogPost.tags > 0 %}
+                    <div class="custom-blogs__tags">
+                      {% for tag in blogPost.tags %}
+                        <span> {{ tag }} </span>
+                      {% endfor %}  
+                    </div>
+                    
+                  {% endif %}  
+                </div>
               </li>
             {% endfor %}  
           </ul>
