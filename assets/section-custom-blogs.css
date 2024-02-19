@@ -56,7 +56,7 @@
   font-weight: 400;
 }
 
-.custom-blogs__info p{
+.custom-blogs__info{
   font-weight: 400;
   -webkit-line-clamp: 2;
 }
