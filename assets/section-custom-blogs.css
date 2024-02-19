@@ -14,25 +14,6 @@
   display: flex;
 }
 
-.custom-blogs__image{
-  position: relative;
-  padding-bottom: 100%;
-}
-
-.custom-blogs__image img{
-  position: absolute;
-  top: 0;
-  width: 100%;
-  object-fit: cover;
-  object-position: center;
-  height: 100%;
-  transition: transform 0.3s ease;
-}
-
-.custom-blogs__image:hover img{
-  transform: scale(1.1);
-}
-
 .custom-blogs__blog-content{
   padding: 15px;
   display: flex;
