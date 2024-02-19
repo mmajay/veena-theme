@@ -58,7 +58,7 @@
 
 .custom-blogs__info span{
   font-weight: 400;
-  line-clamp: 2;
+  -webkit-line-clamp: 2;
   display: inline-block;
 }
 
