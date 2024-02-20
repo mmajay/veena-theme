@@ -59,7 +59,6 @@ class ProductCard extends HTMLElement {
   }
 
    onVariantChange(){
-     console.log("hover")
     // this.selectedOptions = Array.from(this.querySelectorAll('input[type=radio]:checked'), input => input.value)
     // this.currentVariant = this.variantData.find(item => JSON.stringify(item.options) == JSON.stringify(this.selectedOptions))
       
@@ -75,6 +74,8 @@ class ProductCard extends HTMLElement {
           const html = new DOMParser().parseFromString(responseText, "text/html");
           this.innerHTML = html.querySelector(`[data-product-handle="${this.productHandle}"]`).innerHTML;
         });
+      
+     console.log("fetc")
     }
 
 }
