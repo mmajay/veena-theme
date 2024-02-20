@@ -29,7 +29,7 @@
 <div class="section-{{ section.id }}-padding gradient color-{{ section.settings.color_scheme }}">
   <nav role="navigation">
     <ul>
-      {%- for link in linklists['sidebar-menu'].links -%}
+      {%- for link in linklists[section.settings.menu].links -%}
         <li>
           <a
             href="{{ link.url }}"
