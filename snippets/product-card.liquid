@@ -62,7 +62,7 @@
                     <li>
                       {% assign downcased_option_value = option_value | handleize %}
 
-                      <label>
+                      <label id="mylabel"  data-option-value = "{{ option_value }}">
                         <input
                           type="radio"
                           name="{{ product_option.name | handleize }}"
