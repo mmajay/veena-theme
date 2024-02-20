@@ -27,64 +27,63 @@
 {%- endstyle -%}
 
 <div class="section-{{ section.id }}-padding gradient color-{{ section.settings.color_scheme }}">
-  
+  <nav role="navigation">
+    <ul>
+      {%- for link in linklists['sidebar-menu'].links -%}
+        <li>
+          <a
+            href="{{ link.url }}"
+            {% if link.active %}
+              aria-current="page"
+            {% endif %}
+          >
+            {{ link.title }}
+          </a>
+
+          {%- if link.links != blank -%}
+            <ul>
+              {%- for child_link in link.links -%}
+                <li>
+                  <a
+                    href="{{ child_link.url }}"
+                    {% if child_link.active %}
+                      aria-current="page"
+                    {% endif %}
+                  >
+                    {{ child_link.title }}
+                  </a>
+
+                  {%- if child_link.links != blank -%}
+                    <ul>
+                      {%- for grandchild_link in child_link.links -%}
+                        <li>
+                          <a
+                            href="{{ grandchild_link.url }}"
+                            {% if grandchild_link.active %}
+                              aria-current="page"
+                            {% endif %}
+                          >
+                            {{ grandchild_link.title }}
+                          </a>
+                        </li>
+                      {%- endfor -%}
+                    </ul>
+                  {%- endif -%}
+                </li>
+              {%- endfor -%}
+            </ul>
+          {%- endif -%}
+        </li>
+      {%- endfor -%}
+    </ul>
+  </nav>
+
   {%- paginate collection.products by section.settings.products_per_page -%}
     {% comment %} Sort is the first tabbable element when filter type is vertical {% endcomment %}
     {%- if section.settings.enable_sorting and section.settings.filter_type == 'vertical' -%}
       <facet-filters-form class="facets facets-vertical-sort page-width small-hide no-js-hidden">
-      <nav role="navigation">
-          <ul>
-            {%- for link in linklists['sidebar-menu'].links -%}
-              <li>
-                <a
-                  href="{{ link.url }}"
-                  {% if link.active %}
-                    aria-current="page"
-                  {% endif %}
-                >
-                  {{ link.title }}
-                </a>
-
-                {%- if link.links != blank -%}
-                  <ul>
-                    {%- for child_link in link.links -%}
-                      <li>
-                        <a
-                          href="{{ child_link.url }}"
-                          {% if child_link.active %}
-                            aria-current="page"
-                          {% endif %}
-                        >
-                          {{ child_link.title }}
-                        </a>
-
-                        {%- if child_link.links != blank -%}
-                          <ul>
-                            {%- for grandchild_link in child_link.links -%}
-                              <li>
-                                <a
-                                  href="{{ grandchild_link.url }}"
-                                  {% if grandchild_link.active %}
-                                    aria-current="page"
-                                  {% endif %}
-                                >
-                                  {{ grandchild_link.title }}
-                                </a>
-                              </li>
-                            {%- endfor -%}
-                          </ul>
-                        {%- endif -%}
-                      </li>
-                    {%- endfor -%}
-                  </ul>
-                {%- endif -%}
-              </li>
-            {%- endfor -%}
-          </ul>
-        </nav>
         <form class="facets-vertical-form" id="FacetSortForm">
           <div class="facet-filters sorting caption">
-            
             <div class="facet-filters__field">
               <h2 class="facet-filters__label caption-large text-body">
                 <label for="SortBy">{{ 'products.facets.sort_by_label' | t }}</label>
