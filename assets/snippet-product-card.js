@@ -41,31 +41,30 @@ class ProductCard extends HTMLElement {
 
     this.variantData = JSON.parse(this.querySelector('script').textContent)
 
-    this.labelEl = this.querySelector("#mylabel")
-    
-      this.labelEl.addEventListener('mouseover', ()=>{
-        console.log(this.labelEl.dataset.optionValue)
-        console.log(this.labelEl.dataset.productCard)
+    this.labelEl = this.querySelectorAll(".product-card__swatch")
+    this.labelEl.forEach(each => {
+      each.addEventListener('mouseover', ()=>{
+        console.log(each.dataset.optionValue)
+        console.log(each.dataset.productCard)
         console.log(this.variantData)
         
-        this.currentVariant = this.variantData.find(item => item.title === this.labelEl.dataset.optionValue)
+        this.currentVariant = this.variantData.find(item => item.title === each.dataset.optionValue)
         console.log(this.currentVariant)
         // this.getUpdatedCard();
-            // const url = `/products/${this.productHandle}?variant=${this.currentVariant.id}&section_id=${this.sectionId}`;
+            const url = `/products/${this.productHandle}?variant=${this.currentVariant.id}&section_id=${this.sectionId}`;
   
-      // fetch(url)
-      //   .then((response) => response.text())
-      //   .then((responseText) => {
-      //     const html = new DOMParser().parseFromString(responseText, "text/html");
-      //     this.innerHTML = html.querySelector(`[data-product-handle="${this.productHandle}"]`).innerHTML;
-      //   });
+      fetch(url)
+        .then((response) => response.text())
+        .then((responseText) => {
+          const html = new DOMParser().parseFromString(responseText, "text/html");
+          this.innerHTML = html.querySelector(`[data-product-handle="${this.productHandle}"]`).innerHTML;
+        });
         
       })
       
- 
+    } )
 
   }
-
 
 }
 
