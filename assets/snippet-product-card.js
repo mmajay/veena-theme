@@ -64,6 +64,7 @@ class ProductCard extends HTMLElement {
   .then((response) => response.text())
   .then((responseText) => {
     const html = new DOMParser().parseFromString(responseText, "text/html");
+    console.log(html)
 
     // Update product image section
     const productImageSection = html.querySelector('.product-card__image');
