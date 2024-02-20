@@ -41,9 +41,9 @@ class ProductCard extends HTMLElement {
 
     this.variantData = JSON.parse(this.querySelector('script').textContent)
 
-    this.labelEl = this.querySelectorAll(".product-card__swatch")
-    this.labelEl.forEach(each => {
-      each.addEventListener('mouseover', ()=>{
+    this.labelEl = this.querySelector("#mylabel")
+    
+      this.labelEl.addEventListener('mouseover', ()=>{
         console.log(each.dataset.optionValue)
         console.log(each.dataset.productCard)
         console.log(this.variantData)
@@ -62,7 +62,7 @@ class ProductCard extends HTMLElement {
         
       })
       
-    } )
+ 
 
   }
 
