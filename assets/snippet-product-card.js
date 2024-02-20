@@ -44,10 +44,9 @@ class ProductCard extends HTMLElement {
     this.labelEl = this.querySelectorAll(".product-card__swatch")
     this.labelEl.forEach(each => {
       each.addEventListener('mouseover', ()=>{
-        each.setAttribute("checked",true)
         console.log(each.dataset.optionValue)
         console.log(each.dataset.productCard)
-        this.currentVariant = this.variantData.find(item => console.log(item))
+        this.currentVariant = this.variantData.find(item => console.log(item.title===each.dataset.optionValue))
         
       })
       
