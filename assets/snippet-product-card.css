@@ -75,34 +75,13 @@
   display: none;
 }
 
-.product-card__color-codes{
-    display: inline-block;
-    vertical-align: middle;
-    cursor: pointer;
-    position: relative;
-    padding: 0;
-    border-radius: var(--variant-pills-radius);
-    width: calc(14px + (var(--variant-pills-border-width) * 2));
-    height: calc(14px + (var(--variant-pills-border-width) * 2));
-    min-width: calc(14px + (var(--variant-pills-border-width) * 2));
-    min-height: calc(14px + (var(--variant-pills-border-width) * 2));
-    box-shadow: 0 0 0 1px rgba(var(--color-foreground),.1);
-    font-size: 0;
-    background-repeat: no-repeat;
-    background-position: 50%;
-    background-size: 17px;
-    margin: 2px;
-    line-height: 1;
-    border: var(--variant-pills-border-width) solid rgba(var(--color-foreground),var(--variant-pills-border-opacity));
-}
-
-
-
 
 ul.product-card__options {
     margin: 0;
     padding: 0;
     list-style: none;
+    justify-content: center;
+    align-items: center;
 }
 
 ul.product-card__option {
