@@ -71,7 +71,7 @@
                             checked
                           {% endif %}
                         >
-
+       
                         {% if downcased_option_name == 'color' %}
                           {% assign swatch_image = downcased_option_value | append: '.jpg' | file_url %}
                           <span
@@ -85,6 +85,7 @@
                             data-option-value = "{{ option_value }}"
                             >{{ option_value }}</span>
                         {% endif %}
+
                       </label>
                     </li>
                   {% endfor %}
