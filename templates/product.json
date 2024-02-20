@@ -39,6 +39,11 @@
             "show_gift_card_recipient": true
           }
         },
+        "judge_me_reviews_preview_badge_fJeBFJ": {
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/preview_badge\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+          }
+        },
         "description": {
           "type": "description",
           "settings": {
@@ -49,11 +54,6 @@
           "settings": {
             "share_label": "Share"
           }
-        },
-        "judge_me_reviews_preview_badge_fJeBFJ": {
-          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/preview_badge\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {
-          }
         }
       },
       "block_order": [
@@ -63,9 +63,9 @@
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
+        "judge_me_reviews_preview_badge_fJeBFJ",
         "description",
-        "share",
-        "judge_me_reviews_preview_badge_fJeBFJ"
+        "share"
       ],
       "settings": {
         "enable_sticky_info": true,
