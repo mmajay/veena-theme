@@ -41,7 +41,7 @@ class ProductCard extends HTMLElement {
 
     this.variantData = JSON.parse(this.querySelector('script').textContent)
 
-    this.addEventListener('onmouseover',this.onVariantChange)
+    this.addEventListener('mouseover',this.onVariantChange)
 
   }
 
