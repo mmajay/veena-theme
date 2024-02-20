@@ -44,6 +44,7 @@ class ProductCard extends HTMLElement {
     this.labelEl = this.querySelectorAll(".product-card__swatch")
     this.labelEl.forEach(each => {
       each.addEventListener('mouseover', ()=>{
+        each.setAttribute = "checked"
         console.log(each.dataset.abcd)
         console.log(each.dataset.productCard)
       })
