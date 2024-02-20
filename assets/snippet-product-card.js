@@ -59,6 +59,33 @@ class ProductCard extends HTMLElement {
       //     const html = new DOMParser().parseFromString(responseText, "text/html");
       //     this.innerHTML = html.querySelector(`[data-product-handle="${this.productHandle}"]`).innerHTML;
       //   });
+
+        fetch(url)
+  .then((response) => response.text())
+  .then((responseText) => {
+    const html = new DOMParser().parseFromString(responseText, "text/html");
+
+    // Update product image section
+    const productImageSection = html.querySelector('.product-card__image');
+    const currentProductImageSection = this.querySelector('.product-card__image');
+    currentProductImageSection.innerHTML = productImageSection.innerHTML;
+
+    // Update product title section
+    const productTitleSection = html.querySelector('.product-card__link');
+    const currentProductTitleSection = this.querySelector('.product-card__link');
+    currentProductTitleSection.innerHTML = productTitleSection.innerHTML;
+
+    // Update product price section
+    const productPriceSection = html.querySelector('.product-card__prices');
+    const currentProductPriceSection = this.querySelector('.product-card__prices');
+    currentProductPriceSection.innerHTML = productPriceSection.innerHTML;
+
+    // Other sections can be updated similarly
+
+    // Ensure any necessary event listeners are still attached after updating content
+    // You might need to reattach event listeners if they were removed during the update
+  });
+
         
       })
       
