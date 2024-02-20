@@ -242,7 +242,7 @@
 <script>
   var productGrid = document.querySelector('#product-grid');
   var productBt = document.querySelector('#custom-bt');
-  console.log(productBt)
+  console.log(productBt.addEventListener("click",()=>{console.log(productBt.dataset.colNumber)}))
 
   // Iterate over the classList and replace the class ending with "desktop"
   productGrid.classList.forEach(function(className) {
