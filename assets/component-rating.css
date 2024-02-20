@@ -31,13 +31,14 @@
 
 .rating-star::before {
   content: '★★★★★';
-  background: linear-gradient(
+  /* background: linear-gradient(
     90deg,
     var(--color-rating-star) var(--percent),
     rgba(var(--color-foreground), 0.15) var(--percent)
-  );
+  ); */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  background: #fff;
 }
 
 .rating-text {
