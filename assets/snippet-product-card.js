@@ -66,25 +66,6 @@ class ProductCard extends HTMLElement {
 
   }
 
-   onVariantChange(){
-    // this.selectedOptions = Array.from(this.querySelectorAll('input[type=radio]:checked'), input => input.value)
-    // this.currentVariant = this.variantData.find(item => JSON.stringify(item.options) == JSON.stringify(this.selectedOptions))
-      
-    //   this.getUpdatedCard();
-    }
-  
-    getUpdatedCard() {
-      const url = `/products/${this.productHandle}?variant=${this.currentVariant.id}&section_id=${this.sectionId}`;
-  
-      fetch(url)
-        .then((response) => response.text())
-        .then((responseText) => {
-          const html = new DOMParser().parseFromString(responseText, "text/html");
-          this.innerHTML = html.querySelector(`[data-product-handle="${this.productHandle}"]`).innerHTML;
-        });
-      
-     console.log("fetc")
-    }
 
 }
 
