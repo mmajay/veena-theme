@@ -14,7 +14,7 @@
 }
 
 .rating-star {
-  --color-rating-star: rgb(0,0,0);
+  --color-rating-star: yellow;
   --percent: calc(
     (
         var(--rating) / var(--rating-max) + var(--rating-decimal) * var(--font-size) /
@@ -38,7 +38,7 @@
   ); */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background: #000;
+  background: yellow;
   
 }
 
