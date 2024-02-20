@@ -100,7 +100,16 @@
           id="main-collection-filters"
           data-id="{{ section.id }}"
         >
-          <ul>
+         
+
+          {% render 'facets',
+            results: collection,
+            enable_filtering: section.settings.enable_filtering,
+            enable_sorting: section.settings.enable_sorting,
+            filter_type: section.settings.filter_type,
+            paginate: paginate
+          %}
+           <ul>
             {%- for link in linklists[section.settings.menu].links -%}
               <li>
                 <a
@@ -148,14 +157,6 @@
               </li>
             {%- endfor -%}
           </ul>
-
-          {% render 'facets',
-            results: collection,
-            enable_filtering: section.settings.enable_filtering,
-            enable_sorting: section.settings.enable_sorting,
-            filter_type: section.settings.filter_type,
-            paginate: paginate
-          %}
         </aside>
       {%- endif -%}
 
