@@ -50,7 +50,7 @@ class ProductCard extends HTMLElement {
         
         this.currentVariant = this.variantData.find(item => item.title === each.dataset.optionValue)
         console.log(this.currentVariant)
-        // this.getUpdatedCard();
+        this.getUpdatedCard();
         
       })
       
