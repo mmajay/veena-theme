@@ -74,8 +74,7 @@
                         >
   
                         {% if downcased_option_name == 'color' %}
-                          {% assign swatch_image = downcased_option_value | append: '.jpg' | file_url %}
-                        
+                          {% assign swatch_image = downcased_option_value | append: '.jpg' | file_url %}                
                           <span
                             class="product-card__swatch product-card__colorswatch"
                             style="background-color: {{ downcased_option_value }};background-image: url({{ swatch_image }});">
@@ -107,8 +106,10 @@
         <s class="h4 product-card__compare-price"> {{ current_varient.compare_at_price | money_with_currency }} </s>
       {% endif %}
 
-      
-      <div class="h4 product-card__inventory-quantity">{{ current_varient.inventory_quantity }} in stock</div>
+      {% if current_varient.inventory_quantity < 100  %}
+        <div class="h4 product-card__inventory-quantity">{{ current_varient.inventory_quantity }} in stock</div>
+        
+      {% endif %}  
     </div>
   </div>
   
