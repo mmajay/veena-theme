@@ -42,37 +42,31 @@ class ProductCard extends HTMLElement {
     this.sectionId = this.dataset.sectionId;
 
     this.variantData = JSON.parse(this.querySelector("script").textContent);
-    // Add event listener to handle label hover
     this.addEventListener("mouseover", this.onLabelHover.bind(this));
   }
 
   onLabelHover(event) {
-    // Check if the hovered element is a label
     if (event.target.tagName.toLowerCase() !== 'label') return;
 
-    // Get the value associated with the hovered label
     const hoveredInput = event.target.querySelector('input[type="radio"]');
     if (!hoveredInput) return;
     const hoveredValue = hoveredInput.value;
-    console.log('Hovered value:', hoveredValue);
 
-    // Get values of all selected options
     const selectedInputs = this.querySelectorAll('input[type="radio"]:checked');
     this.selectedOptions = Array.from(selectedInputs, (input) => input.value);
-    console.log('Selected options:', this.selectedOptions);
 
-    // Update the hovered input value in selectedOptions array
     const index = this.selectedOptions.findIndex(value => value === hoveredValue);
     if (index !== -1) {
       this.selectedOptions[index] = hoveredValue;
     }
-    console.log('Updated selected options:', this.selectedOptions);
 
-    // Find the corresponding variant based on selected options
     this.currentVariant = this.variantData.find(
       (item) =>
         JSON.stringify(item.options) === JSON.stringify(this.selectedOptions)
     );
+
+    console.log('Hovered value:', hoveredValue);
+    console.log('Selected options:', this.selectedOptions);
     console.log('Current variant:', this.currentVariant);
 
     this.getUpdatedCard();
@@ -94,7 +88,6 @@ class ProductCard extends HTMLElement {
         this.innerHTML = updatedContent;
       })
       .catch(error => console.error('Fetch error:', error));
-    console.log("Fetched");
   }
 }
 
