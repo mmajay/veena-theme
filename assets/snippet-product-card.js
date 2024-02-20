@@ -50,7 +50,15 @@ class ProductCard extends HTMLElement {
         
         this.currentVariant = this.variantData.find(item => item.title === each.dataset.optionValue)
         console.log(this.currentVariant)
-        this.getUpdatedCard();
+        // this.getUpdatedCard();
+            const url = `/products/${this.productHandle}?variant=${this.currentVariant.id}&section_id=${this.sectionId}`;
+  
+      fetch(url)
+        .then((response) => response.text())
+        .then((responseText) => {
+          const html = new DOMParser().parseFromString(responseText, "text/html");
+          this.innerHTML = html.querySelector(`[data-product-handle="${this.productHandle}"]`).innerHTML;
+        });
         
       })
       
