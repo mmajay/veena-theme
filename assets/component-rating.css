@@ -14,7 +14,7 @@
 }
 
 .rating-star {
-  --color-rating-star: yellow;
+  --color-rating-star: #000;
   --percent: calc(
     (
         var(--rating) / var(--rating-max) + var(--rating-decimal) * var(--font-size) /
