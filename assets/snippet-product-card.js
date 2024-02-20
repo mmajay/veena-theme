@@ -47,6 +47,8 @@ class ProductCard extends HTMLElement {
         each.setAttribute("checked",true)
         console.log(each.dataset.optionValue)
         console.log(each.dataset.productCard)
+        // this.currentVariant = this.variantData.find(item => JSON.stringify(item.options) == JSON.stringify(this.selectedOptions))
+        
       })
       
     } )
