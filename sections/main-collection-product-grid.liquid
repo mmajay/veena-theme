@@ -100,7 +100,7 @@
           id="main-collection-filters"
           data-id="{{ section.id }}"
         >
-         <nav role="navigation">
+      
           <ul>
             {%- for link in linklists[section.settings.menu].links -%}
               <li>
@@ -149,7 +149,7 @@
               </li>
             {%- endfor -%}
           </ul>
-        </nav>
+
           {% render 'facets',
             results: collection,
             enable_filtering: section.settings.enable_filtering,
