@@ -83,7 +83,9 @@
                           >
                           </span>
                         {% else %}
-                          <span class="product-card__swatch">{{ option_value }}</span>
+                          <span class="product-card__swatch"
+                            data-option-value = "{{ option_value }}"
+                            >{{ option_value }}</span>
                         {% endif %}
                       </label>
                     </li>
