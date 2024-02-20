@@ -33,7 +33,7 @@
       <facet-filters-form class="facets facets-vertical-sort page-width small-hide no-js-hidden">
       <nav role="navigation">
   <ul>
-    {%- for link in linklists.main-menu.links -%}
+    {%- for link in linklists.sidebar-menu.links -%}
       <li>
         <a href="{{ link.url }}" {% if link.active %}aria-current="page"{% endif %}>
           {{ link.title }}
