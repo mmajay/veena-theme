@@ -238,6 +238,18 @@
     {% render 'mask-arch' %}
   {%- endif -%}
 </div>
+            
+<script>
+  var productGrid = document.querySelector('#product-grid');
+
+  // Iterate over the classList and replace the class ending with "desktop"
+  productGrid.classList.forEach(function(className) {
+    if (className.endsWith('desktop')) {
+      // Replace the class name
+      productGrid.classList.replace(className, 'grid--3-col-desktop');
+    }
+  });
+</script>
 
 {% schema %}
 {
