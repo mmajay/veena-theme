@@ -35,11 +35,7 @@
       
       
         <form class="facets-vertical-form" id="FacetSortForm">
-      <div>
-      <button class="button"> 1 </button>
-      <button class="button"> 2 </button>
-      <button class="button"> 3 </button>
-      </div>
+      
           <div class="facet-filters sorting caption">
             <div class="facet-filters__field">
               <h2 class="facet-filters__label caption-large text-body">
@@ -175,6 +171,11 @@
           data-cascade
         {% endif %}
       >
+    <div>
+      <button class="button"> 1 </button>
+      <button class="button"> 2 </button>
+      <button class="button"> 3 </button>
+      </div>
         {%- if collection.products.size == 0 -%}
           <div class="collection collection--empty page-width" id="product-grid" data-id="{{ section.id }}">
             <div class="loading-overlay gradient"></div>
