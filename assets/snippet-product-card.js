@@ -51,22 +51,19 @@ class ProductCard extends HTMLElement {
     // Check if the hovered element is a label
     if (event.target.tagName.toLowerCase() !== 'label') return;
 
-    console.log("started");
     // Get the value associated with the hovered label
-    const hoveredValue = event.target.querySelector('input[type="radio"]').value;
+    const hoveredInput = event.target.querySelector('input[type="radio"]');
+    if (!hoveredInput) return;
+    const hoveredValue = hoveredInput.value;
 
     // Get values of all selected options
-    this.selectedOptions = Array.from(
-      this.querySelectorAll('input[type="radio"]:checked'),
-      (input) => input.value
-    );
+    const selectedInputs = this.querySelectorAll('input[type="radio"]:checked');
+    this.selectedOptions = Array.from(selectedInputs, (input) => input.value);
 
     // Update the hovered input value in selectedOptions array
-    const indexOfHoveredValue = this.selectedOptions.indexOf(hoveredValue);
-    if (indexOfHoveredValue !== -1) {
-      this.selectedOptions[indexOfHoveredValue] = hoveredValue;
-    } else {
-      this.selectedOptions.push(hoveredValue);
+    const index = this.selectedOptions.findIndex(value => value === hoveredValue);
+    if (index !== -1) {
+      this.selectedOptions[index] = hoveredValue;
     }
 
     // Find the corresponding variant based on selected options
