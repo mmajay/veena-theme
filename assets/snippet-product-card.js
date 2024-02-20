@@ -34,7 +34,6 @@
 
 
 
-
 class ProductCard extends HTMLElement {
   constructor() {
     super();
@@ -55,39 +54,47 @@ class ProductCard extends HTMLElement {
     const hoveredInput = event.target.querySelector('input[type="radio"]');
     if (!hoveredInput) return;
     const hoveredValue = hoveredInput.value;
+    console.log('Hovered value:', hoveredValue);
 
     // Get values of all selected options
     const selectedInputs = this.querySelectorAll('input[type="radio"]:checked');
     this.selectedOptions = Array.from(selectedInputs, (input) => input.value);
+    console.log('Selected options:', this.selectedOptions);
 
     // Update the hovered input value in selectedOptions array
     const index = this.selectedOptions.findIndex(value => value === hoveredValue);
     if (index !== -1) {
       this.selectedOptions[index] = hoveredValue;
     }
+    console.log('Updated selected options:', this.selectedOptions);
 
     // Find the corresponding variant based on selected options
     this.currentVariant = this.variantData.find(
       (item) =>
         JSON.stringify(item.options) === JSON.stringify(this.selectedOptions)
     );
+    console.log('Current variant:', this.currentVariant);
 
     this.getUpdatedCard();
   }
 
   getUpdatedCard() {
-    console.log(this.sectionId);
+    console.log('Section ID:', this.sectionId);
     const url = `/products/${this.productHandle}?variant=${this.currentVariant.id}&section_id=${this.sectionId}`;
+    console.log('Fetch URL:', url);
 
     fetch(url)
       .then((response) => response.text())
       .then((responseText) => {
         const html = new DOMParser().parseFromString(responseText, "text/html");
-        this.innerHTML = html.querySelector(
+        const updatedContent = html.querySelector(
           `[data-product-handle="${this.productHandle}"]`
         ).innerHTML;
-      });
-    console.log("fetched");
+        console.log('Updated content:', updatedContent);
+        this.innerHTML = updatedContent;
+      })
+      .catch(error => console.error('Fetch error:', error));
+    console.log("Fetched");
   }
 }
 
