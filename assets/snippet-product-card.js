@@ -45,7 +45,7 @@ class ProductCard extends HTMLElement {
     this.labelEl.forEach(each => {
       each.addEventListener('mouseover', ()=>{
         console.log(each.dataset.abcd)
-        console.log(this)
+        console.log(each.dataset.productCard)
       })
       
     } )
