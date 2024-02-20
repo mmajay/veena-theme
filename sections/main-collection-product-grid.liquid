@@ -248,7 +248,7 @@
   productGrid.classList.forEach(function(className) {
     if (className.endsWith('desktop')) {
       // Replace the class name
-      productGrid.classList.replace(className, `grid--${this.dataset.colNumber}-col-desktop`);
+      productGrid.classList.replace(className, `grid--${productBt.dataset.colNumber}-col-desktop`);
     }
   });
   }))
