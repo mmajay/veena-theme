@@ -48,7 +48,7 @@ class ProductCard extends HTMLElement {
         console.log(each.dataset.productCard)
         console.log(this.variantData)
         
-        this.currentVariant = this.variantData.find(item => item.title === each.dataset.optionValue)
+        this.currentVariant = this.variantData.find(item => item.title === this.labelEl.dataset.optionValue)
         console.log(this.currentVariant)
         // this.getUpdatedCard();
             const url = `/products/${this.productHandle}?variant=${this.currentVariant.id}&section_id=${this.sectionId}`;
