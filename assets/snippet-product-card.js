@@ -46,7 +46,7 @@ class ProductCard extends HTMLElement {
       each.addEventListener('mouseover', ()=>{
         console.log(each.dataset.optionValue)
         console.log(each.dataset.productCard)
-        this.currentVariant = this.variantData.find(item => console.log(item.title===each.dataset.optionValue))
+        this.currentVariant = this.variantData.find(item => (item.title===each.dataset.optionValue))
         console.log(this.currentVariant)
         
       })
