@@ -48,6 +48,7 @@ class ProductCard extends HTMLElement {
         console.log(each.dataset.productCard)
         this.currentVariant = this.variantData.find(item => (item.title===each.dataset.optionValue))
         console.log(this.currentVariant)
+        this.getUpdatedCard();
         
       })
       
@@ -63,16 +64,16 @@ class ProductCard extends HTMLElement {
     //   this.getUpdatedCard();
     }
   
-    // getUpdatedCard() {
-    //   const url = `/products/${this.productHandle}?variant=${this.currentVariant.id}&section_id=${this.sectionId}`;
+    getUpdatedCard() {
+      const url = `/products/${this.productHandle}?variant=${this.currentVariant.id}&section_id=${this.sectionId}`;
   
-    //   fetch(url)
-    //     .then((response) => response.text())
-    //     .then((responseText) => {
-    //       const html = new DOMParser().parseFromString(responseText, "text/html");
-    //       this.innerHTML = html.querySelector(`[data-product-handle="${this.productHandle}"]`).innerHTML;
-    //     });
-    // }
+      fetch(url)
+        .then((response) => response.text())
+        .then((responseText) => {
+          const html = new DOMParser().parseFromString(responseText, "text/html");
+          this.innerHTML = html.querySelector(`[data-product-handle="${this.productHandle}"]`).innerHTML;
+        });
+    }
 
 }
 
