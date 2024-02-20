@@ -32,7 +32,7 @@
 
 .rating-star::before {
   content: "★★★★★";
-  background: yellow;
+  background: #000;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
