@@ -242,15 +242,17 @@
 <script>
   var productGrid = document.querySelector('#product-grid');
   var productBt = document.querySelector('#custom-bt');
-  console.log(productBt.addEventListener("click",()=>{console.log(productBt.dataset.colNumber)}))
-
+  console.log(productBt.addEventListener("click",()=>{
+    
   // Iterate over the classList and replace the class ending with "desktop"
   productGrid.classList.forEach(function(className) {
     if (className.endsWith('desktop')) {
       // Replace the class name
-      productGrid.classList.replace(className, 'grid--3-col-desktop');
+      productGrid.classList.replace(className, `grid--${this.dataset.colNumber}-col-desktop`);
     }
   });
+  }))
+
 </script>
 
 {% schema %}
