@@ -100,6 +100,56 @@
           id="main-collection-filters"
           data-id="{{ section.id }}"
         >
+         <nav role="navigation">
+          <ul>
+            {%- for link in linklists[section.settings.menu].links -%}
+              <li>
+                <a
+                  href="{{ link.url }}"
+                  {% if link.active %}
+                    aria-current="page"
+                  {% endif %}
+                >
+                  {{ link.title }}
+                </a>
+
+                {%- if link.links != blank -%}
+                  <ul>
+                    {%- for child_link in link.links -%}
+                      <li>
+                        <a
+                          href="{{ child_link.url }}"
+                          {% if child_link.active %}
+                            aria-current="page"
+                          {% endif %}
+                        >
+                          {{ child_link.title }}
+                        </a>
+
+                        {%- if child_link.links != blank -%}
+                          <ul>
+                            {%- for grandchild_link in child_link.links -%}
+                              <li>
+                                <a
+                                  href="{{ grandchild_link.url }}"
+                                  {% if grandchild_link.active %}
+                                    aria-current="page"
+                                  {% endif %}
+                                >
+                                  {{ grandchild_link.title }}
+                                </a>
+                              </li>
+                            {%- endfor -%}
+                          </ul>
+                        {%- endif -%}
+                      </li>
+                    {%- endfor -%}
+                  </ul>
+                {%- endif -%}
+              </li>
+            {%- endfor -%}
+          </ul>
+        </nav>
           {% render 'facets',
             results: collection,
             enable_filtering: section.settings.enable_filtering,
@@ -108,56 +158,7 @@
             paginate: paginate
           %}
         </aside>
-          <nav role="navigation">
-    <ul>
-      {%- for link in linklists[section.settings.menu].links -%}
-        <li>
-          <a
-            href="{{ link.url }}"
-            {% if link.active %}
-              aria-current="page"
-            {% endif %}
-          >
-            {{ link.title }}
-          </a>
-
-          {%- if link.links != blank -%}
-            <ul>
-              {%- for child_link in link.links -%}
-                <li>
-                  <a
-                    href="{{ child_link.url }}"
-                    {% if child_link.active %}
-                      aria-current="page"
-                    {% endif %}
-                  >
-                    {{ child_link.title }}
-                  </a>
-
-                  {%- if child_link.links != blank -%}
-                    <ul>
-                      {%- for grandchild_link in child_link.links -%}
-                        <li>
-                          <a
-                            href="{{ grandchild_link.url }}"
-                            {% if grandchild_link.active %}
-                              aria-current="page"
-                            {% endif %}
-                          >
-                            {{ grandchild_link.title }}
-                          </a>
-                        </li>
-                      {%- endfor -%}
-                    </ul>
-                  {%- endif -%}
-                </li>
-              {%- endfor -%}
-            </ul>
-          {%- endif -%}
-        </li>
-      {%- endfor -%}
-    </ul>
-  </nav>
+       
       {%- endif -%}
 
       <div
