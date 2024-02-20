@@ -44,8 +44,8 @@ class ProductCard extends HTMLElement {
     this.labelEl = this.querySelector("#mylabel")
     
       this.labelEl.addEventListener('mouseover', ()=>{
-        console.log(each.dataset.optionValue)
-        console.log(each.dataset.productCard)
+        console.log(this.labelEl.dataset.optionValue)
+        console.log(this.labelEl.dataset.productCard)
         console.log(this.variantData)
         
         this.currentVariant = this.variantData.find(item => item.title === this.labelEl.dataset.optionValue)
