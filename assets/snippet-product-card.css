@@ -77,9 +77,10 @@
 
 
 ul.product-card__options {
-    margin: 0;
+    margin: 0 0 10px; 0;
     padding: 0;
     list-style: none;
+  
 }
 
 ul.product-card__option {
