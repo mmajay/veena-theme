@@ -30,7 +30,33 @@
 
   {%- if filter_type == 'vertical' or filter_type == 'horizontal' -%}
     <facet-filters-form class="facets small-hide">
-         <ul>
+      
+      <form
+        id="FacetFiltersForm"
+        class="{% if filter_type == 'horizontal' %}facets__form{% else %}facets__form-vertical{% endif %}"
+      >
+        {%- if results.terms -%}
+          <input type="hidden" name="q" value="{{ results.terms | escape }}">
+          <input name="options[prefix]" type="hidden" value="last">
+        {%- endif -%}
+
+        {% if enable_filtering %}
+          {% comment %} Heading is the first tabbable element on filter type horizontal {% endcomment %}
+          <div
+            id="FacetsWrapperDesktop"
+            {% if filter_type == 'horizontal' %}
+              class="facets__wrapper"
+            {% endif %}
+          >
+            {%- if filter_type == 'horizontal' and results.filters != empty -%}
+              <h2 class="facets__heading caption-large text-body" id="verticalTitle" tabindex="-1">
+                {{ 'products.facets.filter_by_label' | t }}
+              </h2>
+            {%- endif -%}
+            {% comment %} Pills are right below the title for filter type vertical {% endcomment %}
+            {%- if filter_type == 'vertical' -%}
+              <div class="active-facets active-facets-desktop">
+                   <ul>
             {%- for link in linklists["sidebar-menu"].links -%}
               <li>
                 <a
@@ -78,31 +104,6 @@
               </li>
             {%- endfor -%}
           </ul>
-      <form
-        id="FacetFiltersForm"
-        class="{% if filter_type == 'horizontal' %}facets__form{% else %}facets__form-vertical{% endif %}"
-      >
-        {%- if results.terms -%}
-          <input type="hidden" name="q" value="{{ results.terms | escape }}">
-          <input name="options[prefix]" type="hidden" value="last">
-        {%- endif -%}
-
-        {% if enable_filtering %}
-          {% comment %} Heading is the first tabbable element on filter type horizontal {% endcomment %}
-          <div
-            id="FacetsWrapperDesktop"
-            {% if filter_type == 'horizontal' %}
-              class="facets__wrapper"
-            {% endif %}
-          >
-            {%- if filter_type == 'horizontal' and results.filters != empty -%}
-              <h2 class="facets__heading caption-large text-body" id="verticalTitle" tabindex="-1">
-                {{ 'products.facets.filter_by_label' | t }}
-              </h2>
-            {%- endif -%}
-            {% comment %} Pills are right below the title for filter type vertical {% endcomment %}
-            {%- if filter_type == 'vertical' -%}
-              <div class="active-facets active-facets-desktop">
                 <div class="active-facets-vertical-filter">
                   {%- unless results.filters == empty -%}
                     <h2
