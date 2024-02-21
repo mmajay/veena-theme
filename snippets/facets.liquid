@@ -183,7 +183,6 @@
                       <fieldset class="facets-wrap parent-wrap {% if filter_type == 'vertical' %} facets-wrap-vertical{% endif %}">
                         <legend class="visually-hidden">{{ filter.label | escape }}</legend>
                         <ul
-                          style= "column-count: 2"
                           class="{{ visual_layout_class }}{% if filter_type == 'vertical' %} facets__list--vertical{% else %} facets__list{% endif %} list-unstyled no-js-hidden"
                           role="list"
                         >
@@ -207,7 +206,7 @@
                             <li class="list-menu__item facets__item{% if forloop.index > show_more_number and filter_type == 'vertical' %} show-more-item hidden{% endif %}">
                               <label
                                 for="Filter-{{ filter.param_name | escape }}-{{ forloop.index }}"
-                                class="facets__label item-swatch facet-checkbox{% if is_disabled %} facet-checkbox--disabled disabled{% endif %}{% if has_visual_display %} visual-display-parent visual-display-parent--{{ filter.presentation }}{% endif %}{% if value.active %} active{% endif %}"
+                                class="facets__label facet-checkbox{% if is_disabled %} facet-checkbox--disabled disabled{% endif %}{% if has_visual_display %} visual-display-parent visual-display-parent--{{ filter.presentation }}{% endif %}{% if value.active %} active{% endif %}"
                               >
                                 <input
                                   type="checkbox"
@@ -231,14 +230,12 @@
                                     %}
                                   </div>
                                 {% else %}
-                                  {% assign filter-label-name = filter.label | handleize %}
                                   <svg
                                     width="1.6rem"
                                     height="1.6rem"
                                     viewBox="0 0 16 16"
                                     aria-hidden="true"
                                     focusable="false"
-                                  style="{% if filter-label-name == "color" %} display:none; {% endif %}"
                                   >
                                     <rect width="16" height="16" stroke="currentColor" fill="none" stroke-width="1"></rect>
                                   </svg>
@@ -251,7 +248,6 @@
                                     viewBox="0 0 11 7"
                                     fill="none"
                                     xmlns="http://www.w3.org/2000/svg"
-                                  style="{% if filter-label-name == "color" %} display:none; {% endif %}"
                                   
                                   >
                                     <path d="M1.5 3.5L2.83333 4.75L4.16667 6L9.5 1"
@@ -262,10 +258,9 @@
                                   </svg>
                                 {% endif %}
 
-                                {% if filter-label-name  == 'color' %}                       
-                                  <span class="custom-swatch-color" style="background-color: {{ value.label }}" ></span>
+                                {% if filter.label  == 'Color' %}
+                                  <span class="custom-swatch-color" style="background-color: {{ value.label }};"></span>
                                 {% endif %}
-                            
                                 <span class="facet-checkbox__text" aria-hidden="true">
                                   {{- value.label | escape }} ({{ value.count }})</span
                                 >
