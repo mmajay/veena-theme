@@ -27,10 +27,8 @@
 -%}
 
 <div class="facets-container{% if filter_type == 'drawer' %} facets-container-drawer{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
-
   {%- if filter_type == 'vertical' or filter_type == 'horizontal' -%}
     <facet-filters-form class="facets small-hide">
-      
       <form
         id="FacetFiltersForm"
         class="{% if filter_type == 'horizontal' %}facets__form{% else %}facets__form-vertical{% endif %}"
@@ -56,54 +54,55 @@
             {% comment %} Pills are right below the title for filter type vertical {% endcomment %}
             {%- if filter_type == 'vertical' -%}
               <div class="active-facets active-facets-desktop">
-                   <ul>
-            {%- for link in linklists["sidebar-menu"].links -%}
-              <li>
-                <a
-                  href="{{ link.url }}"
-                  {% if link.active %}
-                    aria-current="page"
-                  {% endif %}
-                >
-                  {{ link.title }}
-                </a>
+                <ul>
+                  {%- for link in linklists['sidebar-menu'].links -%}
+                    <li>
+                      <a
+                        href="{{ link.url }}"
+                        {% if link.active %}
+                          aria-current="page"
+                        {% endif %}
+                      >
+                        {{ link.title }}
+                      </a>
 
-                {%- if link.links != blank -%}
-                  <ul>
-                    {%- for child_link in link.links -%}
-                      <li>
-                        <a
-                          href="{{ child_link.url }}"
-                          {% if child_link.active %}
-                            aria-current="page"
-                          {% endif %}
-                        >
-                          {{ child_link.title }}
-                        </a>
+                      {%- if link.links != blank -%}
+                        <ul>
+                          {%- for child_link in link.links -%}
+                            <li>
+                              <a
+                                href="{{ child_link.url }}"
+                                {% if child_link.active %}
+                                  aria-current="page"
+                                {% endif %}
+                              >
+                                {{ child_link.title }}
+                              </a>
 
-                        {%- if child_link.links != blank -%}
-                          <ul>
-                            {%- for grandchild_link in child_link.links -%}
-                              <li>
-                                <a
-                                  href="{{ grandchild_link.url }}"
-                                  {% if grandchild_link.active %}
-                                    aria-current="page"
-                                  {% endif %}
-                                >
-                                  {{ grandchild_link.title }}
-                                </a>
-                              </li>
-                            {%- endfor -%}
-                          </ul>
-                        {%- endif -%}
-                      </li>
-                    {%- endfor -%}
-                  </ul>
-                {%- endif -%}
-              </li>
-            {%- endfor -%}
-          </ul>
+                              {%- if child_link.links != blank -%}
+                                <ul>
+                                  {%- for grandchild_link in child_link.links -%}
+                                    <li>
+                                      <a
+                                        href="{{ grandchild_link.url }}"
+                                        {% if grandchild_link.active %}
+                                          aria-current="page"
+                                        {% endif %}
+                                      >
+                                        {{ grandchild_link.title }}
+                                      </a>
+                                    </li>
+                                  {%- endfor -%}
+                                </ul>
+                              {%- endif -%}
+                            </li>
+                          {%- endfor -%}
+                        </ul>
+                      {%- endif -%}
+                    </li>
+                  {%- endfor -%}
+                </ul>
+
                 <div class="active-facets-vertical-filter">
                   {%- unless results.filters == empty -%}
                     <h2
@@ -132,7 +131,7 @@
                       </a>
                     </facet-remove>
                   {%- endfor -%}
-               
+
                   {% if filter.type == 'price_range' %}
                     {%- if filter.min_value.value != null or filter.max_value.value != null -%}
                       <facet-remove>
@@ -271,7 +270,7 @@
                                     disabled
                                   {% endif %}
                                 >
-                            {% assign swatch-color = filter.label | handleize %}
+                                {% assign swatch-color = filter.label | handleize %}
 
                                 {% if has_visual_display %}
                                   <div class="facets__visual-display-wrapper">
@@ -287,31 +286,29 @@
                                     aria-hidden="true"
                                     focusable="false"
                                     class="facets__custom-checkbox"
-                                  {% if swatch-color == "color" %}
-                                    width="3rem"
-                                    height="3rem"
+                                    {% if swatch-color == 'color' %}
+                                      width="3rem"
+                                      height="3rem"
                                     {% else %}
-                                   style="border: 1px solid gray;"
-                                    width="1.6rem"
-                                    height="1.6rem"
-                                  
-                                  {% endif %}
-                                  
+                                      style="border: 1px solid gray;"
+                                      width="1.6rem"
+                                      height="1.6rem"
+                                    {% endif %}
                                   >
-                                    <rect 
-                                  width="16" 
-                                  height="16"
-                                  stroke="currentColor" 
-                                  {% if swatch-color == "color" %}
-                                    fill="{{ value.value }}"
-                                    stroke-width="0"
-                                    {% else %}
-                                    fill ="none"
-                                    
-                                    stroke-width="0"
-                                  {% endif %}
-                                  >
-                                  </rect>
+                                      <rect
+                                    width="16"
+                                    height="16"
+                                    stroke="currentColor"
+                                    {% if swatch-color == "color" %}
+                                      fill="{{ value.value }}"
+                                      stroke-width="0"
+                                      {% else %}
+                                      fill ="none"
+
+                                      stroke-width="0"
+                                    {% endif %}
+                                    >
+                                    </rect>
                                   </svg>
 
                                   <svg
@@ -322,9 +319,9 @@
                                     viewBox="0 0 11 7"
                                     fill="none"
                                     xmlns="http://www.w3.org/2000/svg"
-                                   {% if swatch-color == "color" %}
+                                    {% if swatch-color == 'color' %}
                                       style="display: none;"
-                                    {% endif %} 
+                                    {% endif %}
                                   >
                                     <path d="M1.5 3.5L2.83333 4.75L4.16667 6L9.5 1"
                                       stroke="currentColor"
@@ -334,7 +331,6 @@
                                   </svg>
                                 {% endif %}
 
-                                
                                 <span class="facet-checkbox__text" aria-hidden="true">
                                   {{- value.label | escape }} ({{ value.count }})</span
                                 >
@@ -363,7 +359,6 @@
                                 class="facet-checkbox{% if value.count == 0 and value.active == false %} facet-checkbox--disabled{% endif %}"
                               >
                                 <input
-                                  
                                   type="checkbox"
                                   name="{{ value.param_name }}"
                                   value="{{ value.value }}"
@@ -382,7 +377,6 @@
                                   viewBox="0 0 16 16"
                                   aria-hidden="true"
                                   focusable="false"
-                                  
                                 >
                                   <rect width="16" height="16" stroke="currentColor" fill="none" stroke-width="1"></rect>
                                 </svg>
