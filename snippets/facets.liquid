@@ -144,10 +144,7 @@
                         <span class="facets__summary-label">
                           {{- filter.label | escape }}
                           {%- if filter_type == 'vertical' -%}
-                            <span
-                              style="color: red;"
-                              class="facets__selected no-js-hidden{% if filter.active_values.size == 0 %} hidden{% endif %}"
-                            >
+                            <span class="facets__selected no-js-hidden{% if filter.active_values.size == 0 %} hidden{% endif %}">
                               ({{ filter.active_values.size }})</span
                             >
                           {%- endif -%}
@@ -212,7 +209,7 @@
                                 class="facets__label facet-checkbox{% if is_disabled %} facet-checkbox--disabled disabled{% endif %}{% if has_visual_display %} visual-display-parent visual-display-parent--{{ filter.presentation }}{% endif %}{% if value.active %} active{% endif %}"
                               >
                                 <input
-                                  type="radio"
+                                  type="checkbox"
                                   name="{{ value.param_name }}"
                                   value="{{ value.value }}"
                                   id="Filter-{{ filter.param_name | escape }}-{{ forloop.index }}"
@@ -263,7 +260,6 @@
                                 <span class="facet-checkbox__text" aria-hidden="true">
                                   {{- value.label | escape }} ({{ value.count }})</span
                                 >
-                            
                                 <span class="visually-hidden">
                                   {{- value.label | escape }} (
                                   {%- if value.count == 1 -%}
