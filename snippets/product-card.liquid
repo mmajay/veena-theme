@@ -55,7 +55,9 @@
               {% assign downcased_option_name = product_option.name | handleize %}
 
               <li>
-                <label>{{ product_option.name }}</label>
+                {% comment %}
+                  <label>{{ product_option.name }}</label>
+                {% endcomment %}
 
                 <ul class="product-card__option">
                   {% for option_value in product_option.values %}
