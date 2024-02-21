@@ -108,6 +108,7 @@ span.product-card__swatch {
     justify-content: center;
     padding: 10px;
     border: 1px solid lightgray;
+  cursor: pointer;
 }
 
 .product-card__option input[type="radio"] {
