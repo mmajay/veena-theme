@@ -237,7 +237,7 @@
                                     aria-hidden="true"
                                     focusable="false"
                                   >
-                                    <rect width="16" height="16" stroke="red" fill="none" stroke-width="1"></rect>
+                                    <rect width="16" height="16" stroke="currentColor" fill="none" stroke-width="1"></rect>
                                   </svg>
 
                                   <svg
@@ -257,7 +257,7 @@
                                   </svg>
                                 {% endif %}
 
-                                <span class="facet-checkbox__text" aria-hidden="true">
+                                <span style="color: red;" class="facet-checkbox__text" aria-hidden="true">
                                   {{- value.label | escape }} ({{ value.count }})</span
                                 >
                                 <span class="visually-hidden">
