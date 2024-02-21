@@ -483,8 +483,14 @@
   }
 }
 
-.custom-grid-change-container{
-  display:flex;
-  align-items: center;
-  border: 1px solid red;
+.custom-grid-change-container button{
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    transition: .3s ease;
+    margin-right: 10px;
+    vertical-align: middle;
+    min-width: 45px;
+    min-height: 45px;
+    text-align: center;
 }
