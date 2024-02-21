@@ -144,7 +144,10 @@
                         <span class="facets__summary-label">
                           {{- filter.label | escape }}
                           {%- if filter_type == 'vertical' -%}
-                            <span style="color: red;" class="facets__selected no-js-hidden{% if filter.active_values.size == 0 %} hidden{% endif %}">
+                            <span
+                              style="color: red;"
+                              class="facets__selected no-js-hidden{% if filter.active_values.size == 0 %} hidden{% endif %}"
+                            >
                               ({{ filter.active_values.size }})</span
                             >
                           {%- endif -%}
@@ -258,7 +261,7 @@
                                 {% endif %}
 
                                 <span class="facet-checkbox__text" aria-hidden="true">
-                                  {{- value.label | escape }} </span
+                                  {{- value.label | escape }} ({{ value.count }})</span
                                 >
                                 <span class="visually-hidden">
                                   {{- value.label | escape }} (
