@@ -164,8 +164,13 @@
   box-shadow: none;
 }
 
-.facets {
-  /* display: block; */
+.facets{
+  display: block;
+  grid-column-start: span 2;
+  
+}
+
+#ProductGridContainer .facets {
   display: flex;
   justify-content: space-between;
   margin: 0;
@@ -174,7 +179,6 @@
   align-items: center;
   padding: 15px 10px;
   border-radius: 16px;
-  /* grid-column-start: span 2; */
 }
 
 .facets__form {
