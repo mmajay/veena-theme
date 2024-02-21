@@ -7,14 +7,14 @@
 
   assign new_badge = ''
   for tag in product.tags
-    if tag contains 'New'
+    if tag contains 'New_'
       assign new_badge = tag | split: '_' | last
       break
     endif
   endfor
 %}
 
-<product-card class="product-card" data-product-handle="{{ product.url | within: collection }}" data-section-id="{{ section_id }}">
+<product-card class="product-card" data-product-handle="{{ product.handle }}" data-section-id="{{ section_id }}">
   <a href="{{ product.url }}">
     <div class="product-card__image">
       {% render 'responsive-image',
@@ -71,21 +71,17 @@
                             checked
                           {% endif %}
                         >
-       
+
                         {% if downcased_option_name == 'color' %}
                           {% assign swatch_image = downcased_option_value | append: '.jpg' | file_url %}
                           <span
-                            data-option-value = "{{ option_value }}"
                             class="product-card__swatch product-card__colorswatch"
                             style="background-color: {{ downcased_option_value }};background-image: url({{ swatch_image }});"
                           >
                           </span>
-                        <!-- {% else %}
-                          <span class="product-card__swatch"
-                            data-option-value = "{{ option_value }}"
-                            >{{ option_value }}</span> -->
+                        {% else %}
+                          <span class="product-card__swatch">{{ option_value }}</span>
                         {% endif %}
-
                       </label>
                     </li>
                   {% endfor %}
@@ -115,43 +111,6 @@
       {% endif %}
     </div>
   </div>
-
-  <!-- {%- if product.metafields.reviews.rating.value != blank -%}
-    {% liquid
-      assign rating_decimal = 0
-      assign decimal = product.metafields.reviews.rating.value.rating | modulo: 1
-      if decimal >= 0.3 and decimal <= 0.7
-        assign rating_decimal = 0.5
-      elsif decimal > 0.7
-        assign rating_decimal = 1
-      endif
-    %}
-    <div
-      class="rating"
-      role="img"
-      aria-label="{{ 'accessibility.star_reviews_info' | t: rating_value: product.metafields.reviews.rating.value, rating_max: product.metafields.reviews.rating.value.scale_max }}"
-    >
-      <span
-        aria-hidden="true"
-        class="rating-star"
-        style="--rating: {{ product.metafields.reviews.rating.value.rating | floor }}; --rating-max: {{ product.metafields.reviews.rating.value.scale_max }}; --rating-decimal: {{ rating_decimal }};"
-      ></span>
-    </div>
-    <p class="rating-text caption">
-      <span aria-hidden="true">
-        {{- product.metafields.reviews.rating.value -}}
-        /
-        {{- product.metafields.reviews.rating.value.scale_max -}}
-      </span>
-    </p>
-    <p class="rating-count caption">
-      <span aria-hidden="true">({{ product.metafields.reviews.rating_count }})</span>
-      <span class="visually-hidden">
-        {{- product.metafields.reviews.rating_count }}
-        {{ 'accessibility.total_reviews' | t -}}
-      </span>
-    </p>
-  {%- endif -%} -->
 
   <script>
     {{ product.variants | json }}
