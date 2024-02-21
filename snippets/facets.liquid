@@ -725,7 +725,11 @@
         <span tabindex="0" class="mobile-facets__close mobile-facets__close--no-js">{%- render 'icon-close' -%}</span>
       </summary>
       <facet-filters-form>
-          <ul>
+        
+        <form id="FacetFiltersFormMobile" class="mobile-facets">
+          <div class="mobile-facets__inner gradient">
+            <div class="mobile-facets__header">
+                <ul>
                   {%- for link in linklists['sidebar-menu'].links -%}
                     <li>
                       <a
@@ -773,9 +777,6 @@
                     </li>
                   {%- endfor -%}
                 </ul>
-        <form id="FacetFiltersFormMobile" class="mobile-facets">
-          <div class="mobile-facets__inner gradient">
-            <div class="mobile-facets__header">
               <div class="mobile-facets__header-inner">
                 <h2 class="mobile-facets__heading medium-hide large-up-hide">
                   {%- if enable_filtering and enable_sorting -%}
