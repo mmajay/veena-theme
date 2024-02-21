@@ -236,6 +236,7 @@
                                     viewBox="0 0 16 16"
                                     aria-hidden="true"
                                     focusable="false"
+                                  style="{% if filter.label == "Color" %} display:none; {% endif %}"
                                   >
                                     <rect width="16" height="16" stroke="currentColor" fill="none" stroke-width="1"></rect>
                                   </svg>
@@ -248,6 +249,7 @@
                                     viewBox="0 0 11 7"
                                     fill="none"
                                     xmlns="http://www.w3.org/2000/svg"
+                                  style="{% if filter.label == "Color" %} display:none; {% endif %}"
                                   >
                                     <path d="M1.5 3.5L2.83333 4.75L4.16667 6L9.5 1"
                                       stroke="currentColor"
@@ -307,7 +309,7 @@
                                   viewBox="0 0 16 16"
                                   aria-hidden="true"
                                   focusable="false"
-                                  style="{% if filter.label == "Color" %} display:none; {% endif %}"
+                                  
                                 >
                                   <rect width="16" height="16" stroke="currentColor" fill="none" stroke-width="1"></rect>
                                 </svg>
