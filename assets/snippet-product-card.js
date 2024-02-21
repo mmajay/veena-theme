@@ -40,9 +40,7 @@ class ProductCard extends HTMLElement {
 
     this.variantData = JSON.parse(this.querySelector("script").textContent);
 
-    this.querySelectorAll(".product-card__swatch").forEach(swatch => {
-      swatch.addEventListener('mouseenter', this.onHoverVariantChange.bind(this));
-    })
+    
     
     // this.labelEl.forEach((each) => {
     //   each.addEventListener("mouseover", () => {
@@ -65,7 +63,9 @@ class ProductCard extends HTMLElement {
   }
 
   connectedCallback() {
-    console.log("Custom element added to page.");
+    this.querySelectorAll(".product-card__swatch").forEach(swatch => {
+      swatch.addEventListener('mouseenter', this.onHoverVariantChange.bind(this));
+    })
   }
 
   onHoverVariantChange() {
