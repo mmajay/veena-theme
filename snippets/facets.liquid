@@ -206,7 +206,7 @@
                             <li class="list-menu__item facets__item{% if forloop.index > show_more_number and filter_type == 'vertical' %} show-more-item hidden{% endif %}">
                               <label
                                 for="Filter-{{ filter.param_name | escape }}-{{ forloop.index }}"
-                                class="facets__label item-swatch  facet-checkbox{% if is_disabled %} facet-checkbox--disabled disabled{% endif %}{% if has_visual_display %} visual-display-parent visual-display-parent--{{ filter.presentation }}{% endif %}{% if value.active %} active{% endif %}"
+                                class="facets__label facet-checkbox{% if is_disabled %} facet-checkbox--disabled disabled{% endif %}{% if has_visual_display %} visual-display-parent visual-display-parent--{{ filter.presentation }}{% endif %}{% if value.active %} active{% endif %}"
                               >
                                 <input
                                   type="checkbox"
@@ -231,18 +231,16 @@
                                   </div>
                                 {% else %}
                                   <svg
-                                    class= "custom-svg-checkbox-icon"
-                                    width="2.6rem"
-                                    height="2.6rem"
+                                    width="1.6rem"
+                                    height="1.6rem"
                                     viewBox="0 0 16 16"
                                     aria-hidden="true"
                                     focusable="false"
-                                    data-value= "{{ value.value }}"
                                   >
                                     <rect width="16" height="16" stroke="currentColor" fill="none" stroke-width="1"></rect>
                                   </svg>
 
-                                  <!-- <svg
+                                  <svg
                                     aria-hidden="true"
                                     class="icon icon-checkmark"
                                     width="1.1rem"
@@ -256,8 +254,12 @@
                                       stroke-width="1.75"
                                       stroke-linecap="round"
                                       stroke-linejoin="round" />
-                                  </svg> -->
+                                  </svg>
                                 {% endif %}
+
+                                      {% if filter.label=="Color" %}
+                                        <span style="width: 20px; height: 20px; background-color: {{ value.label }}"> </span>
+                                        {% endif %}
 
                                 <span class="facet-checkbox__text" aria-hidden="true">
                                   {{- value.label | escape }} ({{ value.count }})</span
@@ -753,7 +755,7 @@
                               <li class="mobile-facets__item list-menu__item">
                                 <label
                                   for="Filter-{{ filter.param_name | escape }}-mobile-{{ forloop.index }}"
-                                  class="item-swatch facets__label mobile-facets__label{% if is_disabled %} mobile-facets__label--disabled disabled{% endif %}{% if has_visual_display %} visual-display-parent visual-display-parent--{{ filter.presentation }}{% endif %}{% if value.active %} active{% endif %}"
+                                  class="facets__label mobile-facets__label{% if is_disabled %} mobile-facets__label--disabled disabled{% endif %}{% if has_visual_display %} visual-display-parent visual-display-parent--{{ filter.presentation }}{% endif %}{% if value.active %} active{% endif %}"
                                 >
                                   <input
                                     class="mobile-facets__checkbox"
@@ -786,12 +788,11 @@
                                       viewBox="0 0 16 16"
                                       aria-hidden="true"
                                       focusable="false"
-                                    data-value="{{ value.value }}"
                                     >
                                       <rect width="16" height="16" stroke="currentColor" fill="none" stroke-width="1"></rect>
                                     </svg>
 
-                                    <!-- <svg
+                                    <svg
                                       aria-hidden="true"
                                       class="icon icon-checkmark"
                                       width="1.1rem"
@@ -801,7 +802,7 @@
                                       xmlns="http://www.w3.org/2000/svg"
                                     >
                                       <path d="M1.5 3.5L2.83333 4.75L4.16667 6L9.5 1" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg> -->
+                                    </svg>
                                   {% endif %}
 
                                   <span class="facet-checkbox__text" aria-hidden="true">
