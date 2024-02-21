@@ -261,7 +261,7 @@
                                 {% endif %}
 
                                 {% if filter-label  == 'color' %}
-                                  <span class="custom-swatch-color" style="background-color: {{ value.value }};"></span>
+                                  <span class="custom-swatch-color" style="background-color: {{ value.label }};"></span>
                                 {% endif %}
                                 <span class="facet-checkbox__text" aria-hidden="true">
                                   {{- value.label | escape }} ({{ value.count }})</span
