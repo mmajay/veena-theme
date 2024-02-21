@@ -64,6 +64,10 @@ class ProductCard extends HTMLElement {
     // });
   }
 
+  connectedCallback() {
+    console.log("Custom element added to page.");
+  }
+
   onHoverVariantChange() {
     this.optionName = event.target.dataset.optionValue;
     this.currentVariant = this.variantData.find((item) => item.title === this.optionName);
