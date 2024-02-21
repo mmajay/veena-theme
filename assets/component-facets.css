@@ -161,8 +161,12 @@
 }
 
 .facets {
-  display: block;
-  grid-column-start: span 2;
+  /* display: block; */
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  /* grid-column-start: span 2; */
 }
 
 .facets__form {
