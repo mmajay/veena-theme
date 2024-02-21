@@ -208,8 +208,9 @@
                                 for="Filter-{{ filter.param_name | escape }}-{{ forloop.index }}"
                                 class="facets__label facet-checkbox{% if is_disabled %} facet-checkbox--disabled disabled{% endif %}{% if has_visual_display %} visual-display-parent visual-display-parent--{{ filter.presentation }}{% endif %}{% if value.active %} active{% endif %}"
                               >
+                            
                                 <input
-                                  type="checkbox"
+                                  type="{% if filter.label=="color" %} radio {% else %}checkbox {% endif %}"
                                   name="{{ value.param_name }}"
                                   value="{{ value.value }}"
                                   id="Filter-{{ filter.param_name | escape }}-{{ forloop.index }}"
@@ -256,10 +257,6 @@
                                       stroke-linejoin="round" />
                                   </svg>
                                 {% endif %}
-
-                                      {% if filter.label=="Color" %}
-                                        <span> jay</span>
-                                        {% endif %}
 
                                 <span class="facet-checkbox__text" aria-hidden="true">
                                   {{- value.label | escape }} ({{ value.count }})</span
