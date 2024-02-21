@@ -154,12 +154,20 @@
               "title": "green",
               "color_code": "#7ad50d"
             }
+          },
+          "color_settings_tHna8V": {
+            "type": "colorSettings",
+            "settings": {
+              "title": "orange",
+              "color_code": "#d8a005"
+            }
           }
         },
         "block_order": [
           "color_settings_UViq7Y",
           "color_settings_iz7YB4",
-          "color_settings_xgyjeK"
+          "color_settings_xgyjeK",
+          "color_settings_tHna8V"
         ],
         "settings": {
         }
