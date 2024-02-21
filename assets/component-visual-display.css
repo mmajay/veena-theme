@@ -99,3 +99,9 @@
 .custom-svg-checkbox-icon{
   border-radius: 50%;
 }
+
+.facets__custom-checkbox{
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+}
