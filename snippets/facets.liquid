@@ -257,16 +257,9 @@
                                   </svg>
                                 {% endif %}
 
-                                {% if filter.label == 'Color' %}
-                                  <span
-                                    class="custom-swatch-color"
-                                    style="
-                                      background-color: {{ value.label }};
-                                    "
-                                  >
-                                  </span>
+                                {% if filter.label | downcase == 'color' %}
+                                  <span class="custom-swatch-color" style="background-color: {{ value.label }};"></span>
                                 {% endif %}
-
                                 <span class="facet-checkbox__text" aria-hidden="true">
                                   {{- value.label | escape }} ({{ value.count }})</span
                                 >
