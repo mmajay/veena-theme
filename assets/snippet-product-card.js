@@ -75,8 +75,9 @@ class ProductCard extends HTMLElement {
     fetch(url)
       .then((response) => response.text())
       .then((responseText) => {
-        const html = new DOMParser().parseFromString( responseText, "text/html" );
-        this.innerHTML = html.querySelector( `[data-product-handle="${this.productHandle}"]`).innerHTML;
+        console.log(responseText)
+        // const html = new DOMParser().parseFromString( responseText, "text/html" );
+        // this.innerHTML = html.querySelector( `[data-product-handle="${this.productHandle}"]`).innerHTML;
       });
   }
 }
