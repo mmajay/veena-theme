@@ -262,7 +262,10 @@
                                 {% endif %}
 
                                 {% if filter.label  == 'Color' %}
-                                  <span class="custom-swatch-color" style="background-color: {{ value.label }};"></span>
+                                  <div class="item-swatch">
+                                  
+                                  <span class="custom-swatch-color" data-value="{{ value.label }}"></span>
+                                  </div>
                                 {% endif %}
                             
                                 <span class="facet-checkbox__text" aria-hidden="true">
