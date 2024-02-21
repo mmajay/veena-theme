@@ -39,7 +39,7 @@
     <script src="{{ "splide.min.js" | asset_url }}" defer ></script>
     <script src="{{ "snippet-product-card.js" | asset_url }}" defer ></script>
 
-    {% section 'color-swatch' %}
+    
     {{ content_for_header }}
 
     {%- liquid
@@ -296,6 +296,7 @@
       {%- render 'cart-drawer' -%}
     {%- endif -%}
 
+    {% section 'color-swatch' %}
     {% sections 'header-group' %}
 
     {% render 'breadcrumbs' %}
