@@ -204,6 +204,7 @@
                             %}
 
                             <li class="list-menu__item facets__item{% if forloop.index > show_more_number and filter_type == 'vertical' %} show-more-item hidden{% endif %}">
+                            {% assign filter-label-name = filter.label | handleize %}
                               <label
                                 for="Filter-{{ filter.param_name | escape }}-{{ forloop.index }}"
                                 class="facets__label facet-checkbox{% if is_disabled %} facet-checkbox--disabled disabled{% endif %}{% if has_visual_display %} visual-display-parent visual-display-parent--{{ filter.presentation }}{% endif %}{% if value.active %} active{% endif %}"
@@ -256,6 +257,16 @@
                                       stroke-linejoin="round" />
                                   </svg>
                                 {% endif %}
+
+                            {% if filter-label-name === "color" %}
+                             
+                            <div>
+                              <span class="custom-swatch-color"> 
+                               
+                            </span>
+                            
+                            </div>
+                              {% endif %} 
 
                                 <span class="facet-checkbox__text" aria-hidden="true">
                                   {{- value.label | escape }} ({{ value.count }})</span
