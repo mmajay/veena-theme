@@ -40,9 +40,15 @@ class ProductCard extends HTMLElement {
 
     this.variantData = JSON.parse(this.querySelector("script").textContent);
 
-    this.querySelectorAll(".product-card__swatch").forEach(swatch => {
-      swatch.addEventListener('mouseenter', this.onHoverVariantChange.bind(this));
-    })
+
+    this.addEventListener('mouseenter', function(e) {
+      console.log(e.target)
+    });
+
+    
+    // this.querySelectorAll(".product-card__swatch").forEach(swatch => {
+    //   swatch.addEventListener('mouseenter', this.onHoverVariantChange.bind(this));
+    // })
 
     
     
