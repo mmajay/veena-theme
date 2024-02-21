@@ -512,6 +512,6 @@
   fill: rgba(0, 0, 0, 0.6);
 }
 
-.custom-grid-change-container button svg {
+.custom-grid-change-container button svg:hover {
   fill: rgb(0, 0, 0);
 }
