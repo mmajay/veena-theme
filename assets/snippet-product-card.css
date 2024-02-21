@@ -28,6 +28,10 @@
   font-size: 14px;
 }
 
+.product-card__content{
+  text-align: center;
+}
+
 
 .product-card__left-tags{
   position: absolute;
