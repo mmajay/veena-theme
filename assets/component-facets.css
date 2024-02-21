@@ -320,6 +320,7 @@
 .facets-layout-list .facets__label:hover .facet-checkbox__text,
 .facets-layout-list input:focus ~ .facet-checkbox__text {
   text-decoration: underline;
+  column-count: 2;
 }
 
 .facets-layout-grid > * {
