@@ -102,9 +102,8 @@
   /* box-shadow: 0 0 0 3px rgb(var(--color-background)) inset; */
 }
 .facets__form-vertical{
-  width: 500px;
-  border: 1px solid red;
+  width: 380px;
 }
 .facets-wrapper .parent{
-  width: 500px;
+  width: 380px;
 }
