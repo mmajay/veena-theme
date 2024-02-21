@@ -500,6 +500,10 @@
     fill: rgb(0,0,0,.6);
 }
 
+.custom-grid-change-container button svg{
+  fill: rgb(0,0,0)
+}
+
 
 
 
