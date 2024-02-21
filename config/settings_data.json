@@ -161,13 +161,21 @@
               "title": "orange",
               "color_code": "#d8a005"
             }
+          },
+          "color_settings_4zAxx3": {
+            "type": "colorSettings",
+            "settings": {
+              "title": "purple",
+              "color_code": "#7d25ca"
+            }
           }
         },
         "block_order": [
           "color_settings_UViq7Y",
           "color_settings_iz7YB4",
           "color_settings_xgyjeK",
-          "color_settings_tHna8V"
+          "color_settings_tHna8V",
+          "color_settings_4zAxx3"
         ],
         "settings": {
         }
