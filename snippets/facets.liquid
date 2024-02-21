@@ -220,7 +220,7 @@
                                     disabled
                                   {% endif %}
                                 >
-                            {% assign filter-label = filter.label | handleize %}
+                            {% assign swatch-color = filter.label | handleize %}
 
                                 {% if has_visual_display %}
                                   <div class="facets__visual-display-wrapper">
@@ -237,7 +237,7 @@
                                     viewBox="0 0 16 16"
                                     aria-hidden="true"
                                     focusable="false"
-                                  {% if filter-label  == 'color' %}
+                                  {% if swatch-color  == 'color' %}
                                       style="display:none;"
                                       {% endif %}
                                   >
@@ -252,7 +252,7 @@
                                     viewBox="0 0 11 7"
                                     fill="none"
                                     xmlns="http://www.w3.org/2000/svg"
-                                     {% if filter-label  == 'color' %}
+                                     {% if swatch-color  == 'color' %}
                                       style="display:none;"
                                       {% endif %}
                                   
@@ -265,7 +265,7 @@
                                   </svg>
                                 {% endif %}
 
-                                {% if filter-label  == 'color' %}
+                                {% if swatch-color  == 'color' %}
                                   <span class="custom-swatch-color" style="background-color: {{ value.label }};"></span>
                                 {% endif %}
                                 <span class="facet-checkbox__text" aria-hidden="true">
