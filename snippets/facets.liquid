@@ -759,11 +759,12 @@
                 </p>
               </div>
             </div>
-             {% render 'breadcrumbs' %}
+             
             <div
               id="FacetsWrapperMobile"
               class="mobile-facets__main has-submenu gradient"
             >
+            {% render 'breadcrumbs' %}
                 <ul>
                   {%- for link in linklists['sidebar-menu'].links -%}
                     <li>
