@@ -764,7 +764,7 @@
               id="FacetsWrapperMobile"
               class="mobile-facets__main has-submenu gradient"
             >
-            {% render 'breadcrumbs' %}
+            
                 <ul>
                   {%- for link in linklists['sidebar-menu'].links -%}
                     <li>
@@ -813,6 +813,7 @@
                     </li>
                   {%- endfor -%}
                 </ul>
+              {% render 'breadcrumbs' %}
               {%- if enable_filtering -%}
                 {%- for filter in results.filters -%}
                   {% liquid
