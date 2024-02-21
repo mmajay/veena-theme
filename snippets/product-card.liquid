@@ -1,4 +1,4 @@
-{{ 'snippet-product-card.css' | asset_url | stylesheet_tag }}
+
 
 {% liquid
   assign current_varient = product.selected_or_first_available_variant
@@ -40,7 +40,7 @@
     </div>
   </a>
 
-  <div class="product-card__content {{ product_text_alignment }}">
+  <div class="product-card__content">
     <div class="jdgm-widget jdgm-preview-badge">
       {{ product.metafields.judgeme.badge }}
     </div>
