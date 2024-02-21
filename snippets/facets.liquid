@@ -232,13 +232,14 @@
                                   </div>
                                 {% else %}
                                   <svg
-                                    width="1.6rem"
-                                    height="1.6rem"
                                     viewBox="0 0 16 16"
                                     aria-hidden="true"
                                     focusable="false"
                                     class="facets__custom-checkbox"
-                                  {% if swatch-color != "color" %}
+                                  {% if swatch-color == "color" %}
+                                    width="2.6rem"
+                                    height="2.6rem"
+                                    {% else %}
                                    style="border: 1px solid gray;"
                                   
                                   {% endif %}
