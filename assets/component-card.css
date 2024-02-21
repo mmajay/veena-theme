@@ -482,3 +482,8 @@
     clip-path: polygon(var(--shape--blob-5));
   }
 }
+
+.custom-grid-change-container{
+  display:flex;
+  align-items: center;
+}
