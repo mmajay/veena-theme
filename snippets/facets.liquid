@@ -725,6 +725,54 @@
         <span tabindex="0" class="mobile-facets__close mobile-facets__close--no-js">{%- render 'icon-close' -%}</span>
       </summary>
       <facet-filters-form>
+          <ul>
+                  {%- for link in linklists['sidebar-menu'].links -%}
+                    <li>
+                      <a
+                        href="{{ link.url }}"
+                        {% if link.active %}
+                          aria-current="page"
+                        {% endif %}
+                      >
+                        {{ link.title }}
+                      </a>
+
+                      {%- if link.links != blank -%}
+                        <ul>
+                          {%- for child_link in link.links -%}
+                            <li>
+                              <a
+                                href="{{ child_link.url }}"
+                                {% if child_link.active %}
+                                  aria-current="page"
+                                {% endif %}
+                              >
+                                {{ child_link.title }}
+                              </a>
+
+                              {%- if child_link.links != blank -%}
+                                <ul>
+                                  {%- for grandchild_link in child_link.links -%}
+                                    <li>
+                                      <a
+                                        href="{{ grandchild_link.url }}"
+                                        {% if grandchild_link.active %}
+                                          aria-current="page"
+                                        {% endif %}
+                                      >
+                                        {{ grandchild_link.title }}
+                                      </a>
+                                    </li>
+                                  {%- endfor -%}
+                                </ul>
+                              {%- endif -%}
+                            </li>
+                          {%- endfor -%}
+                        </ul>
+                      {%- endif -%}
+                    </li>
+                  {%- endfor -%}
+                </ul>
         <form id="FacetFiltersFormMobile" class="mobile-facets">
           <div class="mobile-facets__inner gradient">
             <div class="mobile-facets__header">
@@ -1219,54 +1267,7 @@
   </div>
   {%- if filter_type == 'drawer' -%}
     <facet-filters-form class="facets facets-pill small-hide">
-       <ul>
-                  {%- for link in linklists['sidebar-menu'].links -%}
-                    <li>
-                      <a
-                        href="{{ link.url }}"
-                        {% if link.active %}
-                          aria-current="page"
-                        {% endif %}
-                      >
-                        {{ link.title }}
-                      </a>
-
-                      {%- if link.links != blank -%}
-                        <ul>
-                          {%- for child_link in link.links -%}
-                            <li>
-                              <a
-                                href="{{ child_link.url }}"
-                                {% if child_link.active %}
-                                  aria-current="page"
-                                {% endif %}
-                              >
-                                {{ child_link.title }}
-                              </a>
-
-                              {%- if child_link.links != blank -%}
-                                <ul>
-                                  {%- for grandchild_link in child_link.links -%}
-                                    <li>
-                                      <a
-                                        href="{{ grandchild_link.url }}"
-                                        {% if grandchild_link.active %}
-                                          aria-current="page"
-                                        {% endif %}
-                                      >
-                                        {{ grandchild_link.title }}
-                                      </a>
-                                    </li>
-                                  {%- endfor -%}
-                                </ul>
-                              {%- endif -%}
-                            </li>
-                          {%- endfor -%}
-                        </ul>
-                      {%- endif -%}
-                    </li>
-                  {%- endfor -%}
-                </ul>
+     
       <form id="FacetFiltersPillsForm" class="facets__form">
         <div class="active-facets active-facets-desktop">
           {%- for filter in results.filters -%}
