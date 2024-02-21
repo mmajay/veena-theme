@@ -130,6 +130,23 @@
         "settings": {
           "color_scheme": "scheme-1"
         }
+      },
+      "color-swatch": {
+        "type": "color-swatch",
+        "blocks": {
+          "color_settings_UViq7Y": {
+            "type": "colorSettings",
+            "settings": {
+              "title": "ivy",
+              "color_code": "#ff0000"
+            }
+          }
+        },
+        "block_order": [
+          "color_settings_UViq7Y"
+        ],
+        "settings": {
+        }
       }
     },
     "content_for_index": [
