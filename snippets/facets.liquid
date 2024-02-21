@@ -242,7 +242,8 @@
                                     <rect width="16" height="16" stroke="currentColor" 
                                   {% if swatch-color == "color" %}
                                     fill="{{ value.value }}"
-                                    
+                                    {% else %}
+                                    fill ="none"
                                   {% endif %}
                                     stroke-width="0">
                                   </rect>
