@@ -39,7 +39,7 @@
     <div class="grid grid--2-col grid--4-col-desktop">
       {% for product in section.settings.product_list %}
         <div class="grid__item color-{{ section.settings.color_scheme }}">
-          {% render "product-card", product: product, section_id: section.id, product_text_alignment: section.settings.product_text_alignment %}
+          {% render "product-card", product: product, section_id: section.id %}
         </div>
       {% endfor %}  
       
