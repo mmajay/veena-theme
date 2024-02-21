@@ -88,3 +88,10 @@
 .visual-display--presentation-swatch .visual-display__image {
   object-fit: cover;
 }
+
+
+.custom-swatch-color{
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
