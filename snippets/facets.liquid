@@ -180,15 +180,13 @@
                           </facet-remove>
                         </div>
                       {%- endif -%}
-                      <fieldset class="facets-wrap parent-wrap {% if filter_type == 'vertical' %} facets-wrap-vertical{% endif %}">
+                      <fieldset class="facets-wrap parent-wrap {% if filter_type == 'vertical' %}  facets-wrap-vertical{% endif %}" style="column-count: 2;">
                         <legend class="visually-hidden">{{ filter.label | escape }}</legend>
                         <ul
-                          class="{{ visual_layout_class }}{% if filter_type == 'vertical' %} facets__list--vertical{% else %} facets__list{% endif %} list-unstyled no-js-hidden facets__custom-unorder-list"
-                          role="list"
+                          class="{{ visual_layout_class }}{% if filter_type == 'vertical' %} facets__list--vertical{% else %} facets__list{% endif %} list-unstyled no-js-hidden"
+                          role="list" 
                         >
-                          
                           {%- liquid
-                            assign filter_name = filter.label | handleize | escape
                             assign sorted_values = filter.values
                             # Keep the selected values grouped together when operator is AND
                             if filter.operator == 'AND'
@@ -204,14 +202,12 @@
                                 assign is_disabled = true
                               endif
                             %}
-
+                    
                             <li class="list-menu__item facets__item{% if forloop.index > show_more_number and filter_type == 'vertical' %} show-more-item hidden{% endif %}">
                               <label
                                 for="Filter-{{ filter.param_name | escape }}-{{ forloop.index }}"
                                 class="facets__label facet-checkbox{% if is_disabled %} facet-checkbox--disabled disabled{% endif %}{% if has_visual_display %} visual-display-parent visual-display-parent--{{ filter.presentation }}{% endif %}{% if value.active %} active{% endif %}"
                               >
-
-                                
                                 <input
                                   type="checkbox"
                                   name="{{ value.param_name }}"
@@ -223,7 +219,6 @@
                                   {% if is_disabled %}
                                     disabled
                                   {% endif %}
-                                  
                                 >
 
                                 {% if has_visual_display %}
@@ -235,23 +230,23 @@
                                     %}
                                   </div>
                                 {% else %}
-                                {% assign swatch_image = value.label | escape | append: '.jpg' | file_url %}
-                                {% assign swatch_color = value.label | handleize | escape %}
-
-                                <svg
+                                  <svg
+                                  {% if  filter.label == "Color" %}
+                                      style="display: none;"
+                                    {% endif %}   
                                     width="1.6rem"
                                     height="1.6rem"
                                     viewBox="0 0 16 16"
                                     aria-hidden="true"
                                     focusable="false"
-                                    {% if filter_name == "color" %}
-                                      style="display: none;"
-                                  {% endif %} 
                                   >
                                     <rect width="16" height="16" stroke="currentColor" fill="none" stroke-width="1"></rect>
                                   </svg>
 
-                                  <svg 
+                                  <svg
+                                  {% if  filter.label == "Color" %}
+                                      style="display: none;"
+                                    {% endif %}   
                                     aria-hidden="true"
                                     class="icon icon-checkmark"
                                     width="1.1rem"
@@ -259,9 +254,6 @@
                                     viewBox="0 0 11 7"
                                     fill="none"
                                     xmlns="http://www.w3.org/2000/svg"
-                                    {% if filter_name == "color" %}
-                                      style="display: none;"
-                                    {% endif %} 
                                   >
                                     <path d="M1.5 3.5L2.83333 4.75L4.16667 6L9.5 1"
                                       stroke="currentColor"
@@ -269,23 +261,20 @@
                                       stroke-linecap="round"
                                       stroke-linejoin="round" />
                                   </svg>
-
-                                  
-
-
                                 {% endif %}
-                                {% if  filter_name == "color" %}                                
-                                  <div class="fects-card__swatch-container item-swatch" style="border : 1px solid {{ swatch_color }}; background-color: {{ swatch_color }};" data-value="{{ swatch_color }}"  >
-                                    {% comment %} <span
-                                      class="fects-card__swatch "
-                                      data-value="{{ swatch_color }}"
-                                    ></span> {% endcomment %}
-                                  </div>                                   
-                                {% endif %}
+                              <div class="filter-color-container">
 
-                                <span class="facet-checkbox__text" aria-hidden="true">
-                                   {{- value.label | escape }} ({{ value.count }})</span
+                                {% if filter.label == 'Color' %}     
+                                  <span
+                                   class="filter__swatch filter__colorswatch"
+                                   style="background-color: {{ value.label | escape }}; background-image: url({{ swatch_image }});"
+                                  ></span>
+                                {% endif %}
+                              
+                                <span class="facet-checkbox__text"  aria-hidden="true">
+                                  {{- value.label | escape }} ({{ value.count }})</span
                                 >
+                              </div>
                                 <span class="visually-hidden">
                                   {{- value.label | escape }} (
                                   {%- if value.count == 1 -%}
@@ -308,46 +297,54 @@
                             <li class="list-menu__item facets__item">
                               <label
                                 for="Filter-{{ filter.param_name | escape }}-{{ forloop.index }}-no-js"
+                             
                                 class="facet-checkbox{% if value.count == 0 and value.active == false %} facet-checkbox--disabled{% endif %}"
                               >
-                                <input
-                                  type="checkbox"
-                                  name="{{ value.param_name }}"
-                                  value="{{ value.value }}"
-                                  id="Filter-{{ filter.param_name | escape }}-{{ forloop.index }}-no-js"
-                                  {% if value.active %}
-                                    checked
-                                  {% endif %}
-                                  {% if value.count == 0 and value.active == false %}
-                                    disabled
-                                  {% endif %}
-                                >
-
-                                <svg
+                               
+                              
+                              <input
+                                      type="checkbox"
+                                    name="{{ value.param_name }}"
+                                    value="{{ value.value }}"
+      
+                                    id="Filter-{{ filter.param_name | escape }}-{{ forloop.index }}-no-js"
+                                    {% if value.active %}
+                                      checked
+                                    {% endif %}
+                                    {% if value.count == 0 and value.active == false %}
+                                      disabled
+                                    {% endif %}
+                                  >
+                              
+                
+                                  <svg 
+                                 
                                   width="1.6rem"
-                                  height="1.6rem"
-                                  viewBox="0 0 16 16"
-                                  aria-hidden="true"
-                                  focusable="false"
-                                >
-                                  <rect width="16" height="16" stroke="currentColor" fill="none" stroke-width="1"></rect>
-                                </svg>
-
-                                <svg
-                                  aria-hidden="true"
-                                  class="icon icon-checkmark"
-                                  width="1.1rem"
-                                  height="0.7rem"
-                                  viewBox="0 0 11 7"
-                                  fill="none"
-                                  xmlns="http://www.w3.org/2000/svg"
-                                >
-                                  <path d="M1.5 3.5L2.83333 4.75L4.16667 6L9.5 1"
-                                    stroke="currentColor"
-                                    stroke-width="1.75"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                                </svg>
+                                    height="1.6rem"
+                                    viewBox="0 0 16 16"
+                                    aria-hidden="true"
+                                    focusable="false"
+                                  >
+                                    <rect width="16" height="16" stroke="currentColor" fill="none" stroke-width="1"></rect>
+                                  </svg>
+  
+                                  <svg
+                                 
+                                    aria-hidden="true"
+                                    class="icon icon-checkmark"
+                                    width="1.1rem"
+                                    height="0.7rem"
+                                    viewBox="0 0 11 7"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                  >
+                                    <path d="M1.5 3.5L2.83333 4.75L4.16667 6L9.5 1"
+                                      stroke="currentColor"
+                                      stroke-width="1.75"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round" />
+                                  </svg>
+                                  
 
                                 <span aria-hidden="true">{{ value.label | escape }} ({{ value.count }})</span>
                                 <span class="visually-hidden">
@@ -478,6 +475,7 @@
                           </label>
                         </div>
                       </price-range>
+                      
                     </div>
                   </details>
               {% endcase %}
