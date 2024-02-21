@@ -81,6 +81,10 @@
                             style="background-color: {{ downcased_option_value }};background-image: url({{ swatch_image }});"
                           >
                           </span>
+                          {% comment %}
+                            {% else %}
+                              <span class="product-card__swatch">{{ option_value }}</span>
+                          {% endcomment %}
                         {% endif %}
                       </label>
                     </li>
