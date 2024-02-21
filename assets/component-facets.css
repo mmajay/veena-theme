@@ -322,6 +322,11 @@
   text-decoration: underline;
 }
 
+.facets-layout-list {
+  column-count: 2;
+}
+
+
 .facets-layout-grid > * {
   align-items: flex-start;
 }
