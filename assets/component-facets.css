@@ -1064,6 +1064,7 @@ input.mobile-facets__checkbox {
     display: flex;
     flex-direction: column;
     width: 46rem;
+    border: 1px solid red;
   }
 
   .facets__disclosure-vertical {
