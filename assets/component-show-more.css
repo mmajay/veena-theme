@@ -8,3 +8,9 @@
 .button-show-less {
   margin-top: 1.5rem;
 }
+
+.custom-swatch-color{
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
