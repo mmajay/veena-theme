@@ -238,6 +238,11 @@
                                     aria-hidden="true"
                                     focusable="false"
                                     class="facets__custom-checkbox"
+                                  {% if swatch-color != "color" %}
+                                   style="boder: 1px solid gray;"
+                                  
+                                  {% endif %}
+                                  
                                   >
                                     <rect width="16" height="16" stroke="currentColor" 
                                   {% if swatch-color == "color" %}
@@ -245,7 +250,7 @@
                                     stroke-width="0"
                                     {% else %}
                                     fill ="none"
-                                    style="boder: 1px solid gray;"
+                                    
                                     stroke-width="0"
                                   {% endif %}
                                   >
