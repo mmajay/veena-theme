@@ -515,3 +515,13 @@
 .custom-grid-change-container button svg:hover {
   fill: rgb(0, 0, 0);
 }
+
+
+
+
+.custom-grid-change-container button:active{
+  color: red;
+}
+
+
+
