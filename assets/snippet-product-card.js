@@ -80,8 +80,8 @@ class ProductCard extends HTMLElement {
       .then((response) => response.text())
       .then((responseText) => {
         // console.log(responseText)
-        // const html = new DOMParser().parseFromString( responseText, "text/html" );
-        // this.innerHTML = html.querySelector( `[data-product-handle="${this.productHandle}"]`).innerHTML;
+        const html = new DOMParser().parseFromString( responseText, "text/html" );
+        this.innerHTML = html.querySelector( `[data-product-handle="${this.productHandle}"]`).innerHTML;
       });
   }
 }
