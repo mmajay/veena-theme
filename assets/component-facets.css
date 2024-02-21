@@ -326,6 +326,11 @@
   column-count: 2;
 }
 
+@media (max-width: 1100px){
+  column-count: 1;
+  
+}
+
 
 .facets-layout-grid > * {
   align-items: flex-start;
