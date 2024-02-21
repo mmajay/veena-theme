@@ -509,7 +509,7 @@
 
 .custom-grid-change-container button svg {
   height: 18px;
- border: 1px solid red;
+  fill: rgb(0, 0, 0, 0.6);
 }
 
 .custom-grid-change-container button svg {
