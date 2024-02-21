@@ -41,9 +41,11 @@
   </a>
 
   <div class="product-card__content">
-    <div class="jdgm-widget jdgm-preview-badge">
-      {{ product.metafields.judgeme.badge }}
-    </div>
+    {% comment %}
+      <div class="jdgm-widget jdgm-preview-badge">
+        {{ product.metafields.judgeme.badge }}
+      </div>
+    {% endcomment %}
 
     <div class="product-card-varients">
       {% form 'product', product %}
