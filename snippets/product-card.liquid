@@ -7,14 +7,14 @@
 
   assign new_badge = ''
   for tag in product.tags
-    if tag contains 'New'
+    if tag contains 'New_'
       assign new_badge = tag | split: '_' | last
       break
     endif
   endfor
 %}
 
-<product-card class="product-card" data-product-handle="{{ product.url }}" data-section-id="{{ section_id }}">
+<product-card class="product-card" data-product-handle="{{ product.handle }}" data-section-id="{{ section_id }}">
   <a href="{{ product.url }}">
     <div class="product-card__image">
       {% render 'responsive-image',
@@ -80,10 +80,10 @@
                             style="background-color: {{ downcased_option_value }};background-image: url({{ swatch_image }});"
                           >
                           </span>
-                        <!-- {% else %}
+                        {% else %}
                           <span class="product-card__swatch"
                             data-option-value = "{{ option_value }}"
-                            >{{ option_value }}</span> -->
+                            >{{ option_value }}</span>
                         {% endif %}
 
                       </label>
