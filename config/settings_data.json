@@ -147,11 +147,19 @@
               "title": "black",
               "color_code": "#000000"
             }
+          },
+          "color_settings_xgyjeK": {
+            "type": "colorSettings",
+            "settings": {
+              "title": "green",
+              "color_code": "#7ad50d"
+            }
           }
         },
         "block_order": [
           "color_settings_UViq7Y",
-          "color_settings_iz7YB4"
+          "color_settings_iz7YB4",
+          "color_settings_xgyjeK"
         ],
         "settings": {
         }
