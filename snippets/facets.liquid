@@ -208,9 +208,10 @@
                                 for="Filter-{{ filter.param_name | escape }}-{{ forloop.index }}"
                                 class="facets__label facet-checkbox{% if is_disabled %} facet-checkbox--disabled disabled{% endif %}{% if has_visual_display %} visual-display-parent visual-display-parent--{{ filter.presentation }}{% endif %}{% if value.active %} active{% endif %}"
                               >
-                            
+
+                            {% if filter.label =="color" %}
                                 <input
-                                  type="{% if filter.label=="Color" %} radio {% else %}checkbox {% endif %}"
+                                  type="radio"
                                   name="{{ value.param_name }}"
                                   value="{{ value.value }}"
                                   id="Filter-{{ filter.param_name | escape }}-{{ forloop.index }}"
@@ -270,6 +271,7 @@
                                   {%- endif -%}
                                   )</span
                                 >
+                              {% endif %}
                               </label>
                             </li>
                           {%- endfor -%}
