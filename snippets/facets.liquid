@@ -257,6 +257,10 @@
                                   </svg>
                                 {% endif %}
 
+                                      {% if filter.label=="Color" %}
+                                        <span> jay</span>
+                                        {% endif %}
+
                                 <span class="facet-checkbox__text" aria-hidden="true">
                                   {{- value.label | escape }} ({{ value.count }})</span
                                 >
