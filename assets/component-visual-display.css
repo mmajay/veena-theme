@@ -102,7 +102,7 @@
   /* box-shadow: 0 0 0 3px rgb(var(--color-background)) inset; */
 }
 .facets__form-vertical{
-  width: 380px;
+  max-width: 500px;
 }
 .facets-wrapper .parent{
   width: 380px;
