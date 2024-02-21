@@ -183,12 +183,10 @@
                       <fieldset class="facets-wrap parent-wrap {% if filter_type == 'vertical' %} facets-wrap-vertical{% endif %}">
                         <legend class="visually-hidden">{{ filter.label | escape }}</legend>
                         <ul
-                          class="{{ visual_layout_class }}{% if filter_type == 'vertical' %} facets__list--vertical{% else %} facets__list{% endif %} list-unstyled no-js-hidden facets__custom-unorder-list"
+                          class="{{ visual_layout_class }}{% if filter_type == 'vertical' %} facets__list--vertical{% else %} facets__list{% endif %} list-unstyled no-js-hidden"
                           role="list"
                         >
-                          
                           {%- liquid
-                            assign filter_name = filter.label | handleize | escape
                             assign sorted_values = filter.values
                             # Keep the selected values grouped together when operator is AND
                             if filter.operator == 'AND'
@@ -206,12 +204,11 @@
                             %}
 
                             <li class="list-menu__item facets__item{% if forloop.index > show_more_number and filter_type == 'vertical' %} show-more-item hidden{% endif %}">
+                            {% assign filter-label-name = filter.label | handleize %}
                               <label
                                 for="Filter-{{ filter.param_name | escape }}-{{ forloop.index }}"
                                 class="facets__label facet-checkbox{% if is_disabled %} facet-checkbox--disabled disabled{% endif %}{% if has_visual_display %} visual-display-parent visual-display-parent--{{ filter.presentation }}{% endif %}{% if value.active %} active{% endif %}"
                               >
-
-                                
                                 <input
                                   type="checkbox"
                                   name="{{ value.param_name }}"
@@ -223,7 +220,6 @@
                                   {% if is_disabled %}
                                     disabled
                                   {% endif %}
-                                  
                                 >
 
                                 {% if has_visual_display %}
@@ -235,56 +231,43 @@
                                     %}
                                   </div>
                                 {% else %}
-                                
-                                {% assign swatch_color = value.label | handleize | escape %}
-
                                   <svg
                                     width="1.6rem"
                                     height="1.6rem"
                                     viewBox="0 0 16 16"
                                     aria-hidden="true"
                                     focusable="false"
-                                    {% if filter_name == "color" %}
-                                        style="display: none;"
-                                    {% endif %}   
-                                   >
-                                    <circle cx="8" cy="8" r="7" stroke="currentColor" fill="none" stroke-width="1"></circle>
+                                  >
+                                    <rect width="16" height="16" stroke="currentColor" fill="none" stroke-width="1"></rect>
                                   </svg>
 
-                                   
                                   <svg
                                     aria-hidden="true"
                                     class="icon icon-checkmark"
                                     width="1.1rem"
                                     height="0.7rem"
                                     viewBox="0 0 11 7"
-                                    fill="block"
+                                    fill="none"
                                     xmlns="http://www.w3.org/2000/svg"
-                                    {% if  filter_name == "color" %}
-                                      style="display: none;"
-                                    {% endif %}  
-                                    >
+                                  >
                                     <path d="M1.5 3.5L2.83333 4.75L4.16667 6L9.5 1"
                                       stroke="currentColor"
                                       stroke-width="1.75"
                                       stroke-linecap="round"
                                       stroke-linejoin="round" />
                                   </svg>
-
-
                                 {% endif %}
-                                {% if  filter_name == "color" %}                                
-                                  <div class="item-swatch" style="border : 1px solid {{ swatch_color }};" >
-                                    <span
-                                      class="custom-swatch-color"
-                                      style="width:100px;height:100px;"
-                                      data-value="{{ swatch_color }}"
-                                    ></span>
-                                  </div>                                   
-                                {% endif %}
+
+                            {% if filter-label-name == "color" %}
+                             
+                            <div class="item-swatch">
+                              <span class="custom-swatch-color" style="width:50px; height:50px; " data-value="{{ value.value }}"></span>
+                            
+                            </div>
+                              {% endif %} 
 
                                 <span class="facet-checkbox__text" aria-hidden="true">
-                                   {{- value.label | escape }} ({{ value.count }})</span
+                                  {{- value.label | escape }} ({{ value.count }})</span
                                 >
                                 <span class="visually-hidden">
                                   {{- value.label | escape }} (
