@@ -231,13 +231,14 @@
                                     %}
                                   </div>
                                 {% else %}
+                                  {% assign filter-label-name = filter.label | handleize %}
                                   <svg
                                     width="1.6rem"
                                     height="1.6rem"
                                     viewBox="0 0 16 16"
                                     aria-hidden="true"
                                     focusable="false"
-                                  style="{% if filter.label == "Color" %} display:none; {% endif %}"
+                                  style="{% if filter-label-name == "Color" %} display:none; {% endif %}"
                                   >
                                     <rect width="16" height="16" stroke="currentColor" fill="none" stroke-width="1"></rect>
                                   </svg>
@@ -250,7 +251,7 @@
                                     viewBox="0 0 11 7"
                                     fill="none"
                                     xmlns="http://www.w3.org/2000/svg"
-                                  style="{% if filter.label == "Color" %} display:none; {% endif %}"
+                                  style="{% if filter-label-name == "Color" %} display:none; {% endif %}"
                                   
                                   >
                                     <path d="M1.5 3.5L2.83333 4.75L4.16667 6L9.5 1"
@@ -261,7 +262,7 @@
                                   </svg>
                                 {% endif %}
 
-                                {% if filter.label  == 'Color' %}
+                                {% if filter-label-name  == 'Color' %}
 
                                 
                                   
