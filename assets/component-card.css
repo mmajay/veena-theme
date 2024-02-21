@@ -494,3 +494,20 @@
     min-height: 45px;
     text-align: center;
 }
+
+.custom-grid-change-container button svg{
+    height: 18px;
+    fill: rgb(0,0,0,.6);
+}
+
+
+
+
+
+
+
+
+
+
+
+
