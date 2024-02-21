@@ -752,7 +752,7 @@
                               <li class="mobile-facets__item list-menu__item">
                                 <label
                                   for="Filter-{{ filter.param_name | escape }}-mobile-{{ forloop.index }}"
-                                  class="facets__label mobile-facets__label{% if is_disabled %} mobile-facets__label--disabled disabled{% endif %}{% if has_visual_display %} visual-display-parent visual-display-parent--{{ filter.presentation }}{% endif %}{% if value.active %} active{% endif %}"
+                                  class="item-swatch facets__label mobile-facets__label{% if is_disabled %} mobile-facets__label--disabled disabled{% endif %}{% if has_visual_display %} visual-display-parent visual-display-parent--{{ filter.presentation }}{% endif %}{% if value.active %} active{% endif %}"
                                 >
                                   <input
                                     class="mobile-facets__checkbox"
@@ -785,6 +785,7 @@
                                       viewBox="0 0 16 16"
                                       aria-hidden="true"
                                       focusable="false"
+                                    data-value="{{ value.value }}"
                                     >
                                       <rect width="16" height="16" stroke="currentColor" fill="none" stroke-width="1"></rect>
                                     </svg>
