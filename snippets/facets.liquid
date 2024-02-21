@@ -83,7 +83,7 @@
                     </facet-remove>
                   {%- endfor -%}
                   <ul>
-            {%- for link in linklists[section.settings.menu].links -%}
+            {%- for link in linklists["sidebar-menu"].links -%}
               <li>
                 <a
                   href="{{ link.url }}"
