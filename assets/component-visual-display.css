@@ -99,7 +99,7 @@ summary a{
   text-decoration:none;
   color:gray;
   font-size:20px;
-  width: 100%;
+  
   
 }
 .nav-menu{
@@ -113,6 +113,7 @@ summary a{
   border-radius: 13px;
   padding: 8px 25px 8px 15px;
   margin-bottom:10px;
+  width: 100px;
   
 }
 .menu-border[open]{
