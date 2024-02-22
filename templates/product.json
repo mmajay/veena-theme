@@ -83,6 +83,16 @@
         "padding_bottom": 12
       }
     },
+    "quick_order_list_wq9VK9": {
+      "type": "quick-order-list",
+      "settings": {
+        "show_image": false,
+        "show_sku": false,
+        "color_scheme": "scheme-5",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "related-products": {
       "type": "related-products",
       "settings": {
@@ -101,16 +111,6 @@
         "padding_bottom": 28
       }
     },
-    "quick_order_list_wq9VK9": {
-      "type": "quick-order-list",
-      "settings": {
-        "show_image": false,
-        "show_sku": false,
-        "color_scheme": "scheme-5",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "1708430439106dcbe8": {
       "type": "apps",
       "blocks": {
@@ -126,12 +126,42 @@
       "settings": {
         "include_margins": true
       }
+    },
+    "custom_image_with_text_grid_a83yNj": {
+      "type": "custom-image-with-text-grid",
+      "blocks": {
+        "image_grid_zV9bpy": {
+          "type": "imageGrid",
+          "settings": {
+            "desktop_image": "{{ product.metafields.custom.products_meta_grid_section.value.image.value }}",
+            "mobile_image": "{{ product.metafields.custom.products_meta_grid_section.value.image.value }}",
+            "caption": "{{ product.metafields.custom.products_meta_grid_section.value.pre_heading.value }}",
+            "heading": "{{ product.metafields.custom.products_meta_grid_section.value.heading.value }}",
+            "description": "<p>Heading<\/p><p><\/p>",
+            "button_text": "Shop Now",
+            "button_link": "",
+            "banner_color_scheme": "scheme_1",
+            "text_size": "h2",
+            "text_alignment": "left",
+            "alignment_position": "align-center justify-center"
+          }
+        }
+      },
+      "block_order": [
+        "image_grid_zV9bpy"
+      ],
+      "settings": {
+        "image_padding": "image-landscape",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "main",
     "quick_order_list_wq9VK9",
     "related-products",
-    "1708430439106dcbe8"
+    "1708430439106dcbe8",
+    "custom_image_with_text_grid_a83yNj"
   ]
 }
