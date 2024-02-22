@@ -79,11 +79,11 @@
         class="product__info-container{% if section.settings.enable_sticky_info %} product__column-sticky{% endif %}"
       >
         {%- assign product_form_id = 'product-form-' | append: section.id -%}
-        {%- for variant in product.variants -%}
-<div class="hide {{variant.id}} variant_desc">
-{{variant.metafields.custom.description_for_variant | metafield_tag}}
+
+<div class="hide {{product.variant.id}} variant_desc">
+{{product.variant.metafields.custom.description_for_variant | metafield_tag}}
 </div>
-{%- endfor -%}
+
 
         {%- for block in section.blocks -%}
           {%- case block.type -%}
