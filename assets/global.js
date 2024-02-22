@@ -1115,10 +1115,11 @@ class VariantSelects extends HTMLElement {
       .then((response) => response.text())
       .then((responseText) => {
         // prevent unnecessary ui changes from abandoned selections
-        console.log(responseText)
+        console.log(responseText,"responseText")
         if (this.currentVariant.id !== requestedVariantId) return;
 
         const html = new DOMParser().parseFromString(responseText, 'text/html');
+        
         const destination = document.getElementById(`price-${this.dataset.section}`);
         const source = html.getElementById(
           `price-${this.dataset.originalSection ? this.dataset.originalSection : this.dataset.section}`
