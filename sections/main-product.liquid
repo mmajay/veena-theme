@@ -442,7 +442,7 @@
               
               {%- unless shop.enabled_payment_types == empty -%}
                 <span class="visuallyhidden">Supported payment methods</span>
-
+                <div>
                 <h2> Secure checkout with </h2>
                 <ul class="payment-options">
                   {%- for type in shop.enabled_payment_types -%}
@@ -451,6 +451,7 @@
                     </li>
                   {%- endfor -%}
                 </ul>
+                </div>
               {%- endunless -%}
             {%- when 'rating' -%}
             
