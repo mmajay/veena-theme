@@ -1119,6 +1119,7 @@ class VariantSelects extends HTMLElement {
         if (this.currentVariant.id !== requestedVariantId) return;
 
         const html = new DOMParser().parseFromString(responseText, 'text/html');
+        console.log(html)
         
         const destination = document.getElementById(`price-${this.dataset.section}`);
         const source = html.getElementById(
@@ -1231,7 +1232,7 @@ class VariantSelects extends HTMLElement {
 
   getVariantData() {
     this.variantData = this.variantData || JSON.parse(this.querySelector('[type="application/json"]').textContent);
-    console.log(this.variantData)
+    // console.log(this.variantData)
     return this.variantData;
   }
 }
