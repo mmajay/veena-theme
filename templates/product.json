@@ -137,9 +137,9 @@
             "mobile_image": "{{ product.metafields.custom.products_meta_grid_section.value.image.value }}",
             "caption": "{{ product.metafields.custom.products_meta_grid_section.value.pre_heading.value }}",
             "heading": "{{ product.metafields.custom.products_meta_grid_section.value.heading.value }}",
-            "description": "<p>Heading<\/p><p><\/p>",
+            "description": "<p>{{ product.metafields.custom.products_meta_grid_section.value.description | metafield_tag }}<\/p><p><\/p>",
             "button_text": "Shop Now",
-            "button_link": "",
+            "button_link": "{{ product.metafields.custom.products_meta_grid_section.value.button_url.value }}",
             "banner_color_scheme": "scheme_1",
             "text_size": "h2",
             "text_alignment": "left",
@@ -151,7 +151,7 @@
         "image_grid_zV9bpy"
       ],
       "settings": {
-        "image_padding": "image-landscape",
+        "image_padding": "image-square",
         "padding_top": 36,
         "padding_bottom": 36
       }
