@@ -442,7 +442,8 @@
               
               {%- unless shop.enabled_payment_types == empty -%}
                 <span class="visuallyhidden">Supported payment methods</span>
-              
+
+                <h2> Secure checkout with </h2>
                 <ul class="payment-options">
                   {%- for type in shop.enabled_payment_types -%}
                     <li>
