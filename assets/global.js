@@ -953,6 +953,7 @@ class VariantSelects extends HTMLElement {
   }
 
   onVariantChange(event) {
+    console.log(event.target)
     this.updateOptions();
     this.updateMasterId();
     this.updateSelectedSwatchValue(event);
