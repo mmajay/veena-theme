@@ -420,47 +420,43 @@
               {%- render 'buy-buttons', block: block, product: product, product_form_id: product_form_id, section_id: section.id, show_pickup_availability: true -%}
              <style>
             .payment-container{
-                border-radius: 10px;
-                border: 1px solid rgba(0,0,0,.1);
-                display: flex;
-                justify-content: space-between;
-                padding: 8px 20px;
-                column-gap: 20px;
+            border-radius: 10px;
+            border: 1px solid rgba(0,0,0,.1);
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 20px;
+            column-gap: 20px;
             }
-              .payment-options{
-                  display: flex;
-                  align-items: center;
-                  list-style-type: none;
-              }
-              .icon {
-                width: 3.125em;
-              }
-              .visuallyhidden {
-                border: 0;
-                clip: rect(0 0 0 0);
-                height: 1px;
-                margin: -1px;
-                overflow: hidden;
-                padding: 0;
-                position: absolute;
-                width: 1px;
-                white-space: nowrap;
-              }
-              </style>
-              
-              {%- unless shop.enabled_payment_types == empty -%}
-                <span class="visuallyhidden">Supported payment methods</span>
-                <div class="payment-container">
-                <h2> Secure checkout with </h2>
-                <ul class="payment-options">
-                  {%- for type in shop.enabled_payment_types -%}
-                    <li>
-                      {{ type | payment_type_svg_tag: class: 'icon icon--full-color' }}
-                    </li>
-                  {%- endfor -%}
-                </ul>
-                </div>
-              {%- endunless -%}
+                .icon {
+                  width: 3.125em;
+                }
+                .visuallyhidden {
+                  border: 0;
+                  clip: rect(0 0 0 0);
+                  height: 1px;
+                  margin: -1px;
+                  overflow: hidden;
+                  padding: 0;
+                  position: absolute;
+                  width: 1px;
+                  white-space: nowrap;
+                }
+                </style>
+                
+                {%- unless shop.enabled_payment_types == empty -%}
+                  <span class="visuallyhidden">Supported payment methods</span>
+                  <div class="payment-container">
+                  <h2 class="h4">Secure checkout with</h2>
+                
+                  <ul>
+                    {%- for type in shop.enabled_payment_types -%}
+                      <li>
+                        {{ type | payment_type_svg_tag: class: 'icon icon--full-color' }}
+                      </li>
+                    {%- endfor -%}
+                  </ul>
+                  </div>
+                {%- endunless -%}
             {%- when 'rating' -%}
             
               {%- if product.metafields.reviews.rating.value != blank -%}
