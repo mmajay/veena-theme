@@ -448,7 +448,7 @@
                   <div class="payment-container">
                   <h2 class="h4">Secure checkout with</h2>
                 
-                  <ul>
+                  <ul class="payment-options">
                     {%- for type in shop.enabled_payment_types -%}
                       <li>
                         {{ type | payment_type_svg_tag: class: 'icon icon--full-color' }}
