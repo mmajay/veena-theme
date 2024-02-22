@@ -113,7 +113,7 @@ summary a{
   border-radius: 13px;
   padding: 8px 25px 8px 15px;
   margin-bottom:10px;
-  width: 500px;
+  width: 100%;
   
 }
 .menu-border[open]{
