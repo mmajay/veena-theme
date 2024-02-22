@@ -953,7 +953,6 @@ class VariantSelects extends HTMLElement {
   }
 
   onVariantChange(event) {
-    console.log(event.target)
     this.updateOptions();
     this.updateMasterId();
     this.updateSelectedSwatchValue(event);
@@ -977,6 +976,7 @@ class VariantSelects extends HTMLElement {
   updateOptions() {
     this.options = Array.from(this.querySelectorAll('select, fieldset'), (element) => {
       if (element.tagName === 'SELECT') {
+        console.log(element.value)
         return element.value;
       }
       if (element.tagName === 'FIELDSET') {
