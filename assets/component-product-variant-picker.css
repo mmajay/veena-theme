@@ -165,6 +165,10 @@ variant-selects {
   border: 1px solid white;
 }
 
+.product-variant-options__color-swatch:checked{
+  border: 1px solid red;
+}
+
 .product-variant-options__line-through {
   content: "";
   position: absolute;
