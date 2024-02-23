@@ -1,3 +1,7 @@
+.custom-product-usp{
+  padding: 20px;
+}
+
 .custom-product-usp__usp-list{
     display: flex;
     justify-content: space-between;
