@@ -455,17 +455,20 @@
                 
                 {%- unless shop.enabled_payment_types == empty -%}
                   <!-- <span class="visuallyhidden">Supported payment methods</span> -->
-                  <div class="payment-container">
-  
-                
-                  <ul class="payment-options">
-                    {%- for type in shop.enabled_payment_types -%}
-                      <li>
-                        {{ type | payment_type_svg_tag: class: 'icon icon--full-color' }}
-                      </li>
-                    {%- endfor -%}
+                  <div class="payment-cards-container">
+                <div class="payment-cards">
+                  
+                    <span><strong>Secure checkout with</strong></span>
+                  
+                  <ul class="payment-cards-options">
+                      {%- for type in shop.enabled_payment_types -%}
+                        <li>
+                          {{ type | payment_type_svg_tag: class: 'icon icon--full-color' }}
+                        </li>
+                      {%- endfor -%}
                   </ul>
-                  </div>
+                </div>
+              </div>
                 {%- endunless -%}
             {%- when 'rating' -%}
             
