@@ -1,0 +1,5 @@
+.custom-product-usp__usp-list{
+  display: flex;
+  justify-content: center;
+  column-gap: 20px;
+}
