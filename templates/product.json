@@ -5,6 +5,7 @@
       "blocks": {
         "vendor": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "{{ product.vendor }}",
             "text_style": "uppercase"
@@ -25,6 +26,14 @@
           "settings": {
             "picker_type": "button",
             "swatch_shape": "circle"
+          }
+        },
+        "inventory_Jhxznj": {
+          "type": "inventory",
+          "settings": {
+            "text_style": "body",
+            "inventory_threshold": 100,
+            "show_inventory_quantity": true
           }
         },
         "quantity_selector": {
@@ -61,6 +70,7 @@
         "title",
         "price",
         "variant_picker",
+        "inventory_Jhxznj",
         "quantity_selector",
         "buy_buttons",
         "judge_me_reviews_preview_badge_fJeBFJ",
