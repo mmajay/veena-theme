@@ -1,0 +1,12 @@
+.custom-product-usp__usp-list{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 30px;
+    list-style-type: none;
+}
+
+.custom-product-usp__each-usp{
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
