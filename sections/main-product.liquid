@@ -424,17 +424,18 @@
             {%- when 'buy_buttons' -%}
               {%- render 'buy-buttons', block: block, product: product, product_form_id: product_form_id, section_id: section.id, show_pickup_availability: true -%}
              <style>
-            .payment-container{
-            border-radius: 10px;
-            border: 1px solid rgba(0,0,0,.1);
-            display: flex;
-            justify-content: space-between;
-            width: 100%;
+            .payment-cards{
+              border-radius: 10px;
+              border: 1px solid rgba(0,0,0,.1);
+              display: flex;
+              justify-content: space-between;
+              padding: 8px 20px;
+              column-gap: 20px;
             }
-            .payment-options{
-            display: flex;
-            align-items: center;
-            list-style-type: none;
+            .payment-cards-options{
+                display: flex;
+                align-items: center;
+                list-style-type: none;
             }
         
                 .icon {
