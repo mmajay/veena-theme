@@ -107,6 +107,7 @@ summary a{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  width: 30rem;
 }
 .nav-menu > details > summary{
   background-color:#F5F5F5;
