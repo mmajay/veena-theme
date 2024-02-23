@@ -161,6 +161,24 @@ variant-selects {
   border-radius: 100%;
   width: 40px;
   height: 40px;
-  box-shadow: 0 0 0 3px rgb(var(--color-background)) inset;
+  box-shadow: 0 0 0 3px rgb(0,0,0) inset;
   border: 1px solid white;
+}
+
+.product-variant-options__line-through {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  right: 12px;
+  transform: rotate(45deg);
+  border: none;
+  border-left: 1px solid rgb(0,0,0);
+  opacity: 0.8;
+  border-radius: 0;
+  box-shadow: none;
+  width: auto;
+  height: auto;
+  margin: 1px;
 }
