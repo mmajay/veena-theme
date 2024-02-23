@@ -1120,6 +1120,8 @@ class VariantSelects extends HTMLElement {
 
         const html = new DOMParser().parseFromString(responseText, 'text/html');
         // console.log(html)
+
+        document.querySelector(".product__description").innerHTML = html.querySelector(".product__description").innerHTML
         
         const destination = document.getElementById(`price-${this.dataset.section}`);
         const source = html.getElementById(
