@@ -31,7 +31,7 @@
 <div class="hero-banner-slider padding-{{ section.id }}">
   <div class="page-width">
     <custom-slider>
-      <section class="splide cutom-border-radius" aria-label="Slide Show" data-slider-options='{{ slider-options-data }}'>
+      <section class="splide global-media-settings" aria-label="Slide Show" data-slider-options='{{ slider-options-data }}'>
         <div class="splide__track">
           <ul class="splide__list">
             {% if section.blocks != blank %} 
@@ -175,21 +175,21 @@
       "settings": [
         {
           "type" : "header",
-          "content" : "Image Settings"
+          "content" : "Image settings"
         },
         {
           "type": "image_picker",
           "id": "desktop_image",
-          "label": "Desktop Image"
+          "label": "Image"
         },
         {
           "type": "image_picker",
           "id": "mobile_image",
-          "label": "Mobile Image"
+          "label": "Image (Mobile)" 
         },
         {
           "type" : "header",
-          "content" : "Text Content Settings"
+          "content" : "Text content settings"
         },
         {
           "type": "text",
