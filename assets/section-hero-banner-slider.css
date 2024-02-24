@@ -109,6 +109,9 @@
     justify-content: center;
     align-items: center;
   }
+  .hero-banner-slider_text{
+    text-align: center;
+  }
 }
 
   
