@@ -104,5 +104,11 @@
 }
 
 
+@media (max-width: 749px) {
+  .hero-banner-slider__text-container{
+    justify-content: center;
+    align-items: center;
+  }
+}
 
   
